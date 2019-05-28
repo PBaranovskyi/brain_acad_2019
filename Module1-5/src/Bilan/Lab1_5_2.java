@@ -1,4 +1,4 @@
-package mainclasses.Bilan;
+package Bilan;
 import java.util.Scanner;
 
 public class Lab1_5_2 {

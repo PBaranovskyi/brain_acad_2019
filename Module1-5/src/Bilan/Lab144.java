@@ -1,4 +1,4 @@
-package mainclasses.Bilan;
+package Bilan;
 
 public class Lab144 {
     public static void main(String[] args) {

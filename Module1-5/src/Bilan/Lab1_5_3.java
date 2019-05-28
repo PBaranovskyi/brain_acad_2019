@@ -1,4 +1,4 @@
-package mainclasses.Bilan;
+package Bilan;
 
 public class Lab1_5_3 {
     public static void main(String[] args) {
