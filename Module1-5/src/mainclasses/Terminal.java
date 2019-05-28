@@ -7,12 +7,6 @@ class Terminal1 {
 
     static public void main(String[] args) {
 
-        char symbolh = 'h';
-        char symbolH = 'H';
-
-        System.out.println(symbolh > symbolH );
-
-
         String textValue = "text".toUpperCase();
 
         System.out.println(textValue);
