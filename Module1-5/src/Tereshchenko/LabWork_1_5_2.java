@@ -1,4 +1,5 @@
 package Tereshchenko;
+
 import java.util.Scanner;
 
 public class LabWork_1_5_2 {

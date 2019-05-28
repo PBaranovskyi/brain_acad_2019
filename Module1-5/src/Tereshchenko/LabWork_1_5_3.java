@@ -6,10 +6,10 @@ public class LabWork_1_5_3 {
         System.out.println("----------------------");
         for (int i = 1; i < 10; i++) {
             System.out.print(" " + i + " " + "|" + " ");
-            for (int n = 1; n<9; n++) {
-                System.out.print( (i*n + " "));
+            for (int n = 1; n < 9; n++) {
+                System.out.print((i * n + " "));
             }
-            System.out.println(i*9);
+            System.out.println(i * 9);
         }
     }
 }
