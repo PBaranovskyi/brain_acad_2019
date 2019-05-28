@@ -1,12 +1,13 @@
 package sinitsyn_ihor;
 
 import java.util.Scanner;
+
 class Laba1_5_2 {
     public static void main(String[] args) {
         System.out.println("Please, enter the number Х (within the limits of Int type): ");
         Scanner scanNumber = new Scanner(System.in);
         int x = scanNumber.nextInt();
-        switch(x){
+        switch (x) {
             case 0:
                 System.out.println("You entered the number Zero.");
                 break;
@@ -41,10 +42,9 @@ class Laba1_5_2 {
                 System.out.println("You entered the number Ten.");
                 break;
             default:
-                if (x<0){
+                if (x < 0) {
                     System.out.println("You entered the number less then Zero.");
-                }
-                else {
+                } else {
                     System.out.println("You entered the number more than Ten.");
                 }
                 break;
