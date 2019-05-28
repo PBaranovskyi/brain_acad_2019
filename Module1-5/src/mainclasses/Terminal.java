@@ -34,7 +34,3 @@ class Terminal1 {
     }
 
 }
-
-class A {
-
-}
