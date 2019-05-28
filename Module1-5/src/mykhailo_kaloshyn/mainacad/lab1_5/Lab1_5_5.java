@@ -12,6 +12,6 @@ public class Lab1_5_5 {
             sumOfNumbers += i;
         }
         System.out.println("Summ of numbers in between 0 and " + n + " is equal to: " + sumOfNumbers);
-        System.out.println("Average of numbers in between 0 and " + n + " is equal to: " + sumOfNumbers/n);
+        System.out.println("Average of numbers in between 0 and " + n + " is equal to: " + sumOfNumbers/(double)n);
     }
 }
