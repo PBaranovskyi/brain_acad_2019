@@ -1,6 +1,6 @@
-package Bilan;
+package bilan_max;
 
-public class Lab141 {
+public class Lab1_4_1 {
     public static void main(String[] args) {
         byte a =1;
         short b =2;

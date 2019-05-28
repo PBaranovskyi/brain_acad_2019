@@ -1,4 +1,4 @@
-package Bilan;
+package bilan_max;
 import java.util.Scanner;
 
 public class Lab1_5_2 {
