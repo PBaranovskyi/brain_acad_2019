@@ -1,4 +1,4 @@
-package Bilan;
+package bilan_max;
 
 public class Lab151 {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Bilan;
+package bilan_max;
 
 import java.util.Scanner;
 

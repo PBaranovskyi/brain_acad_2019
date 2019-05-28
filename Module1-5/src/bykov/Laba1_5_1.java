@@ -11,8 +11,6 @@ public class Laba1_5_1 {
             while (c > 0) {
                 System.out.print(c);
                 c--;
-
-
             }
             System.out.println();
         }

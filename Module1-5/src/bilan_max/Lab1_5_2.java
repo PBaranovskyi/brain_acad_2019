@@ -1,10 +1,9 @@
-package Bilan;
+package bilan_max;
 import java.util.Scanner;
 
 public class Lab1_5_2 {
     public static void main(String[] args) {
-        int x = 1;
-        while (x > 0) {
+        while (true) {
             System.out.println("Enter number x:");
             Scanner scan = new Scanner(System.in);
             int number = scan.nextInt();
