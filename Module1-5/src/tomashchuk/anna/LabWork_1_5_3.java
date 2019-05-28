@@ -1,4 +1,4 @@
-package Tomashchuk.Anna;
+package tomashchuk.anna;
 // табл умножения
 public class LabWork_1_5_3 {
     public static void main(String... args){
