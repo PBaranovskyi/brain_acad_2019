@@ -1,4 +1,4 @@
-package Sinitsyn;
+package sinitsyn_ihor;
 
 public class Laba1_5_3 {
     public static void main(String[] args) {

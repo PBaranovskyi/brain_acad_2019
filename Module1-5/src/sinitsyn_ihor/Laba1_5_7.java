@@ -1,4 +1,4 @@
-package Sinitsyn;
+package sinitsyn_ihor;
 
 import java.util.Scanner;
 //import java.util.stream.LongStream;
@@ -15,7 +15,6 @@ public class Laba1_5_7 {
             }
         }
     }
-
     private static boolean checkForPerfective(int number) {
         int summ = 0;
         int counter = 1;

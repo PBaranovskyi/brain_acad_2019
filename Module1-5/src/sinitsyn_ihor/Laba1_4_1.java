@@ -1,4 +1,4 @@
-package Sinitsyn;
+package sinitsyn_ihor;
 
 import java.util.Random;
 public class Laba1_4_1 {

@@ -1,4 +1,4 @@
-package Sinitsyn;
+package sinitsyn_ihor;
 
 import java.util.Scanner;
 public class Laba1_4_5 {
