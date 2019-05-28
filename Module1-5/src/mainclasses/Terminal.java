@@ -21,14 +21,14 @@ class Terminal1 {
 
         byte byteType2 = ++byteType;
 
-        System.out.println(byteType2);
+        System.out.println(byteType2 + "Test");
 
 
         int marks = 8;
 
         ++marks;
 
-        System.out.println("ffff" + 'f');
+        System.out.println("ffff" + 'f' + marks);
 
 
     }
