@@ -5,35 +5,43 @@ public class LabWork_1_5_1 {
         int n = 1;
         while (n < 9) {
             int i = 8;
-            if (n>7){
-            System.out.print(i);}
+            if (n > 7) {
+                System.out.print(i);
+            }
             i--;
-            if (n>6){
-            System.out.print(" " + i);}
+            if (n > 6) {
+                System.out.print(" " + i);
+            }
             i--;
-            if (n>5){
-            System.out.print(" " + i);}
+            if (n > 5) {
+                System.out.print(" " + i);
+            }
             i--;
-            if (n>4){
-            System.out.print(" " + i);}
+            if (n > 4) {
+                System.out.print(" " + i);
+            }
             i--;
-            if (n>3){
-            System.out.print(" " + i);}
+            if (n > 3) {
+                System.out.print(" " + i);
+            }
             i--;
-            if (n>2){
-            System.out.print(" " + i);}
+            if (n > 2) {
+                System.out.print(" " + i);
+            }
             i--;
-            if (n>1){
-            System.out.print(" " + i);}
+            if (n > 1) {
+                System.out.print(" " + i);
+            }
             i--;
-            if (n>0){
-            System.out.println(" " + i);}
+            if (n > 0) {
+                System.out.println(" " + i);
+            }
             n++;
         }
     }
 }
 
-class Version2{
+class Version2 {
     public static void main(String[] args) {
         int i = 0;
         int x;
@@ -45,6 +53,6 @@ class Version2{
                 x--;
             }
             System.out.println(" 1");
+        }
     }
-}
 }
