@@ -8,28 +8,16 @@ public class Laba1_6_4 {
         int[] myArray = new int[100];
         for (int iterative = 0; iterative < myArray.length; iterative++) {
             int num = iterative;
-            myArray[num] = iterative+1;
+            myArray[num] = iterative + 101;
         }
-        shuffleArray(myArray);
-        System.out.println(Arrays.toString(myArray));
-        System.out.print("Enter your number from 1 to 100: ");
+        System.out.print("Enter your number from 101 to 200: ");
         Scanner scanValue = new Scanner(System.in);
         int myValue = scanValue.nextInt();
-        if (myValue < 1 || myValue > 100) {
+        if (myValue < 100 || myValue > 200) {
             System.out.println("Error! Your number is out of values limits!");
         } else {
             int myIndex = Arrays.binarySearch(myArray, myValue);
             System.out.println("Your value " + myValue + " has index " + myIndex);
-        }
-    }
-
-    static void shuffleArray(int[] ar) {
-        Random rnd = ThreadLocalRandom.current();
-        for (int i = ar.length - 1; i > 0; i--) {
-            int index = rnd.nextInt(i + 1);
-            int a = ar[index];
-            ar[index] = ar[i];
-            ar[i] = a;
         }
     }
 }
