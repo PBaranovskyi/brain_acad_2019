@@ -14,7 +14,12 @@ public class Laba1_6_3 {
         }
         for (int masterArray = 0; masterArray < arrayOfArrays.length; masterArray++) {
             for (int slaveArray = 0; slaveArray < arrayOfArrays.length; slaveArray++) {
-                System.out.print(arrayOfArrays[slaveArray][masterArray] + " ");
+                if(arrayOfArrays[slaveArray][masterArray] < 10){
+                    System.out.print(" "+arrayOfArrays[slaveArray][masterArray] + " ");
+                }
+                else {
+                    System.out.print(arrayOfArrays[slaveArray][masterArray] + " ");
+                }
             }
             System.out.println();
         }
