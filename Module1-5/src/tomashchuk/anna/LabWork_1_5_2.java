@@ -8,10 +8,8 @@ public class LabWork_1_5_2 {
         int number = scan.nextInt();
         System.out.println ("Вы ввели число " + number);
 
-        int temp;
-        temp=number;
         String numberStr;
-        switch(temp){
+        switch(number){
             case 1:numberStr="One";
                 break;
             case 2:numberStr="Two";

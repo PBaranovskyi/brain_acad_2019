@@ -8,7 +8,7 @@ public class Laba1_5_1 {
             i++;
             x = i;
             while (x > 0) {
-                System.out.print(" "+x);
+                System.out.print(" " + x);
                 x--;
             }
             System.out.println();
