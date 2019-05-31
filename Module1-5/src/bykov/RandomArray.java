@@ -15,7 +15,7 @@ public class RandomArray {
         }
         for (int i=0;i < a.length;i++,System.out.println()) {
             for (int j=0;j < a[i].length;j++) {
-                System.out.print(a[i][j]+" ");
+                System.out.printf("%4d" , a[i][j]);
             }
         }
     }
