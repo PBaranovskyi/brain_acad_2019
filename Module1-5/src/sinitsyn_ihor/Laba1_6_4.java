@@ -1,7 +1,7 @@
 package sinitsyn_ihor;
 
-import java.util.*;
-import java.util.concurrent.ThreadLocalRandom;
+import java.util.Arrays;
+import java.util.Scanner;
 
 public class Laba1_6_4 {
     public static void main(String[] args) {
@@ -19,5 +19,7 @@ public class Laba1_6_4 {
             int myIndex = Arrays.binarySearch(myArray, myValue);
             System.out.println("Your value " + myValue + " has index " + myIndex);
         }
+
+
     }
 }

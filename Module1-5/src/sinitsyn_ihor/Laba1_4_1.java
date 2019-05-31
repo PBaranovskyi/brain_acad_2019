@@ -22,7 +22,7 @@ public class Laba1_4_1 {
             ft = false;
         }
 /*
-        Random randGen = new Random();
+        RandomTestClass randGen = new RandomTestClass();
         int minB = -128;
         int maxB = 127;
         int diffB = maxB - minB;

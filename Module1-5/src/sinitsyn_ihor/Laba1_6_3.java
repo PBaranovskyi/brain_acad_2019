@@ -4,22 +4,17 @@ public class Laba1_6_3 {
     public static void main(String[] args) {
         int[][] arrayOfArrays = new int[4][4];
         int numFirstArray, numSecondArray, coef = 0;
-        for (int iterative = 0; iterative < arrayOfArrays.length; iterative++) {
-            numFirstArray = iterative;
-            for (int iterativeTwo = 0; iterativeTwo < arrayOfArrays.length; iterativeTwo++) {
-                numSecondArray = iterativeTwo;
+        for (int j = 0; j < arrayOfArrays.length; j++) {
+            numFirstArray = j;
+            for (int j2 = 0; j2 < arrayOfArrays.length; j2++) {
+                numSecondArray = j2;
                 coef++;
                 arrayOfArrays[numFirstArray][numSecondArray] = coef;
             }
         }
-        for (int masterArray = 0; masterArray < arrayOfArrays.length; masterArray++) {
-            for (int slaveArray = 0; slaveArray < arrayOfArrays.length; slaveArray++) {
-                if(arrayOfArrays[slaveArray][masterArray] < 10){
-                    System.out.print("0"+arrayOfArrays[slaveArray][masterArray] + " ");
-                }
-                else {
-                    System.out.print(arrayOfArrays[slaveArray][masterArray] + " ");
-                }
+        for (int i = 0; i < arrayOfArrays.length; i++) {
+            for (int i2 = 0; i2 < arrayOfArrays.length; i2++) {
+                    System.out.printf("%02d |", arrayOfArrays[i2][i]);
             }
             System.out.println();
         }
