@@ -1,4 +1,4 @@
-package sinitsyn_ihor;
+package sinitsyn_ihor.LabWorks1_6;
 
 public class Laba1_6_1 {
     public static void main(String[] args) {
