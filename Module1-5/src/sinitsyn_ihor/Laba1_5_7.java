@@ -6,15 +6,16 @@ import java.util.Scanner;
 public class Laba1_5_7 {
 
     public static void main(String[] args) {
-        System.out.print("Enter top edge for number check: ");
+        System.out.print("Please, enter top edge for number check: ");
         Scanner scanner = new Scanner(System.in);
         Integer topEdge = scanner.nextInt();
-        for (int iterative = 1; iterative <= topEdge; iterative ++) {
+        for (int iterative = 1; iterative <= topEdge; iterative++) {
             if (checkForPerfective(iterative)) {
                 System.out.println("Perfect number: " + iterative);
             }
         }
     }
+
     private static boolean checkForPerfective(int number) {
         int summ = 0;
         int counter = 1;
@@ -22,7 +23,7 @@ public class Laba1_5_7 {
             if (number % counter == 0) {
                 summ += counter;
             }
-            counter ++;
+            counter++;
         }
         return summ == number;
     }

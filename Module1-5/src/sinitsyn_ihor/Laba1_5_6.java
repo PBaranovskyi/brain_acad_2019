@@ -1,6 +1,7 @@
 package sinitsyn_ihor;
 
 import java.util.Scanner;
+
 public class Laba1_5_6 {
 
     public static void main(String[] args) {
@@ -12,11 +13,11 @@ public class Laba1_5_6 {
 //        myNumber = Math.abs(myNumber);
         String numberToString = myNumber.toString();
         int maxSymbols = numberToString.length();
-        for (int iterative =0; iterative <maxSymbols; iterative++){
+        for (int iterative = 0; iterative < maxSymbols; iterative++) {
             char myChar = numberToString.charAt(iterative);
             int numberToInt = Character.getNumericValue(myChar);
-            myResult = myResult + numberToInt*numberToInt;
+            myResult = myResult + numberToInt * numberToInt;
         }
-        System.out.println("Your result: "+myResult);
+        System.out.println("Your result: " + myResult);
     }
 }
