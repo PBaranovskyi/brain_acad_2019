@@ -1,4 +1,4 @@
-package sinitsyn_ihor;
+package sinitsyn_ihor.LabWorks1_6;
 
 import java.util.Arrays;
 
