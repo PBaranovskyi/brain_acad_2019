@@ -1,4 +1,4 @@
-package sinitsyn_ihor;
+package sinitsyn_ihor.LabWorks1_5;
 
 import java.util.Scanner;
 
