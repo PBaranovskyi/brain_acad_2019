@@ -1,6 +1,6 @@
 package sinitsyn_ihor;
 
-import java.util.*;
+import java.util.Scanner;
 
 public class Laba1_6_7 {
     public static void main(String[] args) {
@@ -14,6 +14,7 @@ public class Laba1_6_7 {
         }
         System.out.print("And finds a some number, choose it (from 1 to 4): ");
         Scanner scanNumb = new Scanner(System.in);
+
         int myNumb = scanNumb.nextInt();
         boolean check = true;
         if (myNumb > 4 || myNumb < 0) {
