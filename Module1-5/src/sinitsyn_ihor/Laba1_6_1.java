@@ -2,11 +2,12 @@ package sinitsyn_ihor;
 
 public class Laba1_6_1 {
     public static void main(String[] args) {
-        int[] myArray = new int[15];
-        for (int iterative = 1; iterative <= myArray.length; iterative++) {
-            int num = iterative-1;
-            myArray[num] = iterative + iterative;
-            System.out.println("array[" + num + "] = " + myArray[num]);
+        int[] myArray = new int[30/2];
+        int myIndex = 0;
+        for (int iterative = 2; iterative <= 30; iterative += 2) {
+            myArray[myIndex] = iterative;
+            System.out.println("Index: "+myIndex+".  Value: "+iterative);
+            myIndex++;
         }
     }
 }
