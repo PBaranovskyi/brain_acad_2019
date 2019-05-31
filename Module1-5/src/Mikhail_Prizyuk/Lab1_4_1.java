@@ -22,7 +22,7 @@ public class Lab1_4_1 {
         char myCharForward = '\n';
         char myCharUni = '\u00a9';
 
-        System.out.println();
+        System.out.println("myChar =" + myChar);
 
 
     }
