@@ -23,6 +23,8 @@ public class Lab1_4_1 {
         char myCharUni = '\u00a9';
 
         System.out.println("myChar =" + myChar);
+        System.out.println("myCharForward =" + myCharForward);
+        System.out.println("myCharUni =" + myCharUni);
 
 
     }
