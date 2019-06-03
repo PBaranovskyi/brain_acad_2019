@@ -1,6 +1,6 @@
-package tomashchuk.anna;
+package tomashchuk.anna.LabWork_1_6;
 
-public class LabWork_1_6_5 {
+public class LabWork_1_6_3 {
     public static void main(String args[]) {
         int array[][] = new int[4][4];
         int i, j, k = 1;
@@ -11,18 +11,12 @@ public class LabWork_1_6_5 {
                 k++;
             }
         }
-        System.out.println("Origin:");
-        for (i = 0; i < array.length; i++) {
-            for (j = 0; j < array[i].length; j++) {
-                System.out.printf("%4d", array[i][j]);
-            }
-            System.out.println();
-        }
-        System.out.println("Transpose:");
+
         for (i = 0; i < array.length; i++) {
             for (j = 0; j < array[i].length; j++) {
                 System.out.printf("%4d", array[j][i]);
             }
+
             System.out.println();
         }
     }

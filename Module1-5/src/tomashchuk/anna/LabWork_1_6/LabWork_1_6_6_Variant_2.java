@@ -1,4 +1,4 @@
-package tomashchuk.anna;
+package tomashchuk.anna.LabWork_1_6;
 
 import java.util.Arrays;
 
