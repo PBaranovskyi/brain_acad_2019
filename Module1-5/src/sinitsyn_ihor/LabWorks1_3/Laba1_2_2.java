@@ -1,4 +1,4 @@
-package sinitsyn_ihor;
+package sinitsyn_ihor.LabWorks1_3;
 
 import java.util.Scanner;
 class Laba1_2_2 {
