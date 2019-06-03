@@ -1,4 +1,4 @@
-package tomashchuk.anna;
+package tomashchuk.anna.LabWork_1_5;
 
 public class LabWork_1_5_1 {
     public static void main(String[] args) {
