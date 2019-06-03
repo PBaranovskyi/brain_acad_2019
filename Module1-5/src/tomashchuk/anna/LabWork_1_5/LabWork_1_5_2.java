@@ -1,4 +1,4 @@
-package tomashchuk.anna;
+package tomashchuk.anna.LabWork_1_5;
 import java.util.Scanner;
 
 public class LabWork_1_5_2 {
