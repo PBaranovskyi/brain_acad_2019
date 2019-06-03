@@ -14,8 +14,9 @@ public class LabWork_1_6_3 {
 
         for (i = 0; i < array.length; i++) {
             for (j = 0; j < array[i].length; j++) {
-                System.out.print(array[j][i] + " ");
+                System.out.printf("%4d", array[j][i]);
             }
+
             System.out.println();
         }
     }
