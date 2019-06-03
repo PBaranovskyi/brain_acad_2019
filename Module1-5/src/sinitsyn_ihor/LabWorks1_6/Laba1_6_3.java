@@ -3,13 +3,10 @@ package sinitsyn_ihor.LabWorks1_6;
 public class Laba1_6_3 {
     public static void main(String[] args) {
         int[][] arrayOfArrays = new int[4][4];
-        int numFirstArray, numSecondArray, coef = 0;
+        int coef = 1;
         for (int j = 0; j < arrayOfArrays.length; j++) {
-            numFirstArray = j;
             for (int j2 = 0; j2 < arrayOfArrays.length; j2++) {
-                numSecondArray = j2;
-                coef++;
-                arrayOfArrays[numFirstArray][numSecondArray] = coef;
+                arrayOfArrays[j][j2] = coef++;
             }
         }
         for (int i = 0; i < arrayOfArrays.length; i++) {
