@@ -1,4 +1,4 @@
-package Mikhail_Prizyuk;
+package Mikhail_Prizyuk.Lab1_4;
 
 public class Lab1_4_1 {
     public static void main(String[] args) {
@@ -19,12 +19,18 @@ public class Lab1_4_1 {
         System.out.println("myDoublVal =" + myDoublVal);
 
         char myChar = 'A';
-        char myCharForward = '\n';
-        char myCharUni = '\u00a9';
+        char myForward = '\n';
+        char myUni = '\u00a9';
 
         System.out.println("myChar =" + myChar);
-        System.out.println("myCharForward =" + myCharForward);
-        System.out.println("myCharUni =" + myCharUni);
+        System.out.println("myForward =" + myForward);
+        System.out.println("myUni =" + myUni);
+
+        boolean b1 = false;
+        boolean b2 = true;
+
+        System.out.println("boolean b1 =" + b1);
+        System.out.println("boolean b2 =" + b2);
 
 
     }
