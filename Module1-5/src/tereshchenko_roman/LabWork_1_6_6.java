@@ -1,4 +1,4 @@
-package com.brainacad.controlFlowStatements.Arrays;
+package com.brainacad.arrays;
 
 import java.util.Arrays;
 
@@ -17,14 +17,18 @@ public class LabWork_1_6_6 {
             Arrays.sort(avTempPos);
 
         for (int val : avTempNeg) {
-            System.out.print(val + " ");
+            if (val != 0){
+                System.out.print(val + " ");
+            }
         }
         ;
 
         System.out.println();
 
         for (int val : avTempPos) {
-            System.out.print(val + " ");
+            if (val != 0){
+                System.out.print(val + " ");
+            }
         }
         ;
     }
