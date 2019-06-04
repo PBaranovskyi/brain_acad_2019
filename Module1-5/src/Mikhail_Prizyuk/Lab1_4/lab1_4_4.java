@@ -6,8 +6,8 @@ public class lab1_4_4 {
         int a = 10;
         int b = 20;
 
-        a --;
-        b ++;
+        a--;
+        b++;
 
         System.out.println("a =" + a);
         System.out.println("b =" + b);
