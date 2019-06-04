@@ -8,20 +8,25 @@ public class Animal {
     public boolean isMamal() {
         return mamal;
     }
-    public int getLegs(){
+
+    public void setMamal(boolean mamal) {
+        this.mamal = mamal;
+    }
+
+    public int getLegs() {
         return legs;
     }
-    public void setLegs(int legs){
-     this.legs = legs;
+
+    public void setLegs(int legs) {
+        this.legs = legs;
     }
-    public String getName(){
-            return name;
+
+    public String getName() {
+        return name;
     }
-    public void setName(String name){
-        if (this.name == null){
-            this.name = "mamal";
-        } else {
-            this.name = name;
-        }
+
+    public void setName(String name) {
+        this.name = name;
     }
+
 }
