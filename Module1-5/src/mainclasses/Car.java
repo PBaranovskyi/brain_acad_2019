@@ -33,4 +33,24 @@ class Car {
             this.year = year;
         }
     }
+
+    public int getSpeed() {
+        return speed;
+    }
+
+    public void setSpeed(int speed) {
+        this.speed = speed;
+    }
+
+    public int getMaxSpeed() {
+        return maxSpeed;
+    }
+
+    public void setMaxSpeed(int maxSpeed) {
+        this.maxSpeed = maxSpeed;
+    }
+
+    public void setAutomatic(boolean automatic) {
+        this.automatic = automatic;
+    }
 }

@@ -18,11 +18,11 @@ public class Lab1_6_7b {
                 }
             }
             int[] arr = new int[counter];
-            counter = 0;
+            int counter2 = 0;
             for (int j = 0; j <= 4; j++) {
                 if (mArr[i - 1][j] == num) {
-                    arr[counter] = j;
-                    counter++;
+                    arr[counter2] = j;
+                    counter2++;
                 }
             }
             System.out.println(Arrays.toString(arr));

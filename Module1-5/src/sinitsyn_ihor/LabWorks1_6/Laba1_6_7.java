@@ -16,18 +16,14 @@ public class Laba1_6_7 {
         Scanner scanNumb = new Scanner(System.in);
 
         int myNumb = scanNumb.nextInt();
-        boolean check = true;
         if (myNumb > 4 || myNumb < 0) {
             System.out.println("FROM 1 TO 4! Repeat, please.");
         } else {
             for (int i = 0; i < myArray.length; i++) {
-                if (check == true) {
-                    System.out.print("Line " + (i + 1) + ": [");
-                }
+                System.out.print("Line " + (i + 1) + ": [");
                 for (int j = 0; j <= myArray.length; j++) {
                     if (myArray[i][j] == myNumb) {
                         System.out.print(j + " ");
-                        check = true;
                     }
                 }
                 System.out.print("]");
