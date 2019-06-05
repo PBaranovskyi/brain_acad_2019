@@ -11,6 +11,6 @@ public class RandomTestClass {
 
         int nextInt = rand.nextInt(1000);
 
-        System.out.println(nextInt);
+        System.out.println(nextInt);;
     }
 }
