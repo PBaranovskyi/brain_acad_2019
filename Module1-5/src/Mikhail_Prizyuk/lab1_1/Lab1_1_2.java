@@ -1,4 +1,4 @@
-package Mikhail_Prizyuk;
+package Mikhail_Prizyuk.lab1_1;
 
 
 //import Scanner

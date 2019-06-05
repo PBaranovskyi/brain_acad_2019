@@ -1,5 +1,6 @@
 package sinitsyn_ihor.Works;
 
+
 import java.util.Random;
 
 public class RandomValuesForArray {
@@ -14,5 +15,6 @@ public class RandomValuesForArray {
             }
             System.out.println();
         }
+
     }
 }

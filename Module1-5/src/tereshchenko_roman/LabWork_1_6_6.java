@@ -1,10 +1,10 @@
-package com.brainacad.controlFlowStatements.Arrays;
+package com.brainacad.arrays;
 
 import java.util.Arrays;
 
 public class LabWork_1_6_6 {
     public static void main(String[] args) {
-        int[] avTemp = new int[]{-10, -5, 1, 10, 20, 25, 27, 24, 15, 10, -2, -8};
+        int[] avTemp = {-10, -5, 1, 10, 20, 25, 27, 24, 15, 10, -2, -8};
         int[] avTempNeg = new int[12];
         int[] avTempPos = new int[12];
 
@@ -13,18 +13,22 @@ public class LabWork_1_6_6 {
                 avTempNeg[n] = avTemp[n];
             else avTempPos[n] = avTemp[n];
 
-            Arrays.sort(avTempNeg);
-            Arrays.sort(avTempPos);
+        Arrays.sort(avTempNeg);
+        Arrays.sort(avTempPos);
 
         for (int val : avTempNeg) {
-            System.out.print(val + " ");
+            if (val != 0){
+                System.out.print(val + " ");
+            }
         }
         ;
 
         System.out.println();
 
         for (int val : avTempPos) {
-            System.out.print(val + " ");
+            if (val != 0){
+                System.out.print(val + " ");
+            }
         }
         ;
     }
