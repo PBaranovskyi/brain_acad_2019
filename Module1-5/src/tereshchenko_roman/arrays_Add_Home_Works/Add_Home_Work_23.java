@@ -11,7 +11,7 @@ public class Add_Home_Work_23 {
             for (int j = 0; j < 5; j++) {
                 mArr[i][j] = n;
                 n--;
-                System.out.print(mArr[i][j] + " ");
+                System.out.printf("%4d@, mArr[i][j] + " ");
             }
             System.out.println();
         }
