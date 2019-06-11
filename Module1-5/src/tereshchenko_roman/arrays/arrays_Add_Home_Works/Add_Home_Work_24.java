@@ -1,4 +1,4 @@
-package com.brainacad.arrays.arrays_Add_Home_Works;
+package tereshchenko_roman.arrays.arrays_Add_Home_Works;
 
 import java.util.Arrays;
 import java.util.Random;
