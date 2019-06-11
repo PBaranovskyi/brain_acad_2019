@@ -1,4 +1,4 @@
-package Lab2_1;
+package bilan_max.Lab2_1;
 
 
 public class Lab2_1_1 {
