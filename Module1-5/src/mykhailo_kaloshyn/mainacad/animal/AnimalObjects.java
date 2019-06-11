@@ -11,7 +11,7 @@ public class AnimalObjects {
 
         Animal WolfPetya = new Animal();
 
-        WolfPetya.setMamal(true);
+        WolfPetya.setMamal(true); //fggfjghjfghfgfjg
         WolfPetya.setPaws(4);
 
         System.out.println(WolfPetya.getName());
