@@ -9,6 +9,7 @@ public class LabWork_2_1_34 {
             arr[i].setQuantityCPU(4);
             arr[i].setFrequencyCPU(300);
             arr[i].setPrice(200);
+
             System.out.print(" Manufacturer: Asus");
             System.out.print(", Serial number: " + arr[i].getSerialNumber());
             System.out.print(", Quantity CPU: " + arr[i].getQuantityCPU()+i);
