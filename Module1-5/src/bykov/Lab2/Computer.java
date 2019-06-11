@@ -9,13 +9,16 @@ public class Computer {
     private int frequencyCPU;
 
 
-    public void setManufacterer(String manufacterer) {
-        this.manufacterer = manufacterer;
-
-    }
 
     public String getManufacterer() {
         return manufacterer;
+    }
+    public void setManufacterer (boolean manufacturer) {
+        if (manufacturer == true) {
+            this.manufacterer = "Apple";
+        } else {
+            this.manufacterer = "Microsoft";
+        }
     }
 
     public void setSerialNumber(int serialNumber) {

@@ -5,8 +5,8 @@ public class Lab2_1_1 {
         Computer Comp1 = new Computer();
         Computer Comp2 = new Computer();
 
-        Comp1.setManufacterer("Apple");
-        Comp2.setManufacterer("Microsoft");
+//        Comp1.setManufacterer("Apple");
+//        Comp2.setManufacterer("Microsoft");
         Comp1.setSerialNumber(866589036);
         Comp2.setSerialNumber(234521123);
         Comp1.setPrice(65.770f);
@@ -16,7 +16,19 @@ public class Lab2_1_1 {
         Comp1.setFrequencyCPU(3);
         Comp2.setFrequencyCPU(2);
 
-        System.out.println("Производитель" + Comp1.getManufacterer() + "Серийный номер" + Comp1.getSerialNumber() + "Цена" +
-                Comp1.getPrice() + "Количество процессоров" + Comp1.getQuantityCPU() + "Частота процессора" + Comp1.getFrequencyCPU());
+        System.out.println("Производитель первого компьютера" +" "+ Comp1.getManufacterer());
+        System.out.println("Серийный номер первого компьютера" + " "+  Comp1.getSerialNumber());
+        System.out.println( "Цена первого компьютера" +  " " + Comp1.getPrice());
+        System.out.println("Количество процессоров первого компьютера" + " " + Comp1.getQuantityCPU());
+        System.out.println("Частота процессора первого компьютера" + " " + Comp1.getFrequencyCPU());
+        System.out.println();
+
+        System.out.println("Производитель второго компьютера" +" "+ Comp2.getManufacterer());
+        System.out.println("Серийный номер второго компьютера" + " "+  Comp2.getSerialNumber());
+        System.out.println( "Цена второго компьютера" +  " " + Comp2.getPrice());
+        System.out.println("Количество процессоров второго компьютера" + " " + Comp2.getQuantityCPU());
+        System.out.println("Частота процессора второго компьютера" + " " + Comp2.getFrequencyCPU());
+
+
     }
 }
