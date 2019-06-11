@@ -11,12 +11,8 @@ public class Computer {
         return manufacturer;
     }
 
-    public void setManufacturer(boolean manufacturer) {
-        if (manufacturer == true) {
-            this.manufacturer = "Apple";
-        } else {
-            this.manufacturer = "Microsoft";
-        }
+    public void setManufacturer(String manufacturer) {
+        this.manufacturer = manufacturer;
     }
 
     public int getSerialNumber() {
@@ -54,4 +50,5 @@ public class Computer {
     public void view() {
         System.out.println("The manufacturer: " + this.getManufacturer() + ". Serial number: " + this.getSerialNumber() + ". Quantity of CPU: " + this.getQuantityCPU() + ". CPU frequency: " + this.getFrequencyCPU() + ". Old price: " + String.format("%.2f", this.getPrice()) + ". Actual price (+10%): " + String.format("%.2f", this.getPrice() * 1.1));
     }
+
 }

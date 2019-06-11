@@ -1,15 +1,17 @@
 package sinitsyn_ihor.LabWorks2_1;
 
-import java.sql.SQLOutput;
 import java.util.Random;
 
 public class Laba2_1_345 {
+
+    static String[] manufacturers = {"Apple", "Microsoft", "Dell", "Toshiba"};
+
     public static void main(String[] args) {
-        Computer[] compArr = new Computer[5];
+        Computer[] compArr = new Computer[500];
         for (int i = 0; i < compArr.length; i++) {
             compArr[i] = new Computer();
             Random myRand = new Random();
-            compArr[i].setManufacturer(myRand.nextBoolean());
+            compArr[i].setManufacturer(generateManufacturer(myRand));
             compArr[i].setSerialNumber(myRand.nextInt(100) + 1);
             compArr[i].setQuantityCPU(myRand.nextInt(7) + 1);
             compArr[i].setFrequencyCPU(myRand.nextInt(3400) + 1000);
@@ -24,5 +26,10 @@ public class Laba2_1_345 {
 //            System.out.println(". Actual price (+10%): " + String.format("%.2f", compArr[i].getPrice()*1.1));
             compArr[i].view();
         }
+    }
+
+    private static String generateManufacturer(Random myRand) {
+        int manuID = myRand.nextInt(manufacturers.length);
+        return manufacturers[manuID];
     }
 }
