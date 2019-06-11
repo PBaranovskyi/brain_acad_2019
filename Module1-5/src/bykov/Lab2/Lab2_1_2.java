@@ -1,10 +1,12 @@
 package Lab2;
 
+import bykov.Lab2.Computer;
+
 import java.util.Random;
 
 public class Lab2_1_2 {
     public static void main(String[] args) {
-        Computer[] CompArr = new Computer[5];
+        bykov.Lab2.Computer[] CompArr = new Computer[5];
         for (int i=0; i < CompArr.length; i++) {
             CompArr[i] = new Computer();
             Random CompRandom = new Random();
