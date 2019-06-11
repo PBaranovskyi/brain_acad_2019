@@ -1,7 +1,6 @@
-package Lab2;
+package bykov.Lab2;
 
 public class Computer {
-
     private String manufacterer;
     private int serialNumber;
     private float price;
@@ -29,6 +28,7 @@ public class Computer {
     public void setPrice(float price) {
         this.price = price;
     }
+
     public float getPrice() {
         return price;
     }
@@ -48,6 +48,4 @@ public class Computer {
     public int getFrequencyCPU() {
         return frequencyCPU;
     }
-
-
 }

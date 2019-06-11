@@ -1,4 +1,4 @@
-package com.brainacad.arrays.arrays_Add_Home_Works;
+package tereshchenko_roman.arrays.arrays_Add_Home_Works;
 
 public class Add_Home_Work_23 {
     public static void main(String[] args) {
