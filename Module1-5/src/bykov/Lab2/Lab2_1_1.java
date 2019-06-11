@@ -1,5 +1,7 @@
 package Lab2;
 
+import bykov.Lab2.Computer;
+
 public class Lab2_1_1 {
     public static void main(String[] args) {
         Computer Comp1 = new Computer();
