@@ -48,7 +48,7 @@ public class Computer {
     }
 
     public void view() {
-        System.out.println("The manufacturer: " + this.getManufacturer() + ". Serial number: " + this.getSerialNumber() + ". Quantity of CPU: " + this.getQuantityCPU() + ". CPU frequency: " + this.getFrequencyCPU() + ". Old price: " + String.format("%.2f", this.getPrice()) + ". Actual price (+10%): " + String.format("%.2f", this.getPrice() * 1.1));
+        System.out.println("The manufacturer: " + getManufacturer() + ". Serial number: " + getSerialNumber() + ". Quantity of CPU: " + this.getQuantityCPU() + ". CPU frequency: " + this.getFrequencyCPU() + ". Old price: " + String.format("%.2f", this.getPrice()) + ". Actual price (+10%): " + String.format("%.2f", this.getPrice() * 1.1));
     }
 
 }
