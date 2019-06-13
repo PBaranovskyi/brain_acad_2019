@@ -10,8 +10,8 @@ public class Laba2_1_345 {
         Computer[] compArr = new Computer[500];
         for (int i = 0; i < compArr.length; i++) {
             generateComputers(compArr, i);
-            printComputers(compArr[i], i);
-//            compArr[i].view();
+//            printComputers(compArr[i], i);
+            compArr[i].view();
         }
     }
 
