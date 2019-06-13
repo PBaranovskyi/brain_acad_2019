@@ -2,11 +2,11 @@ package anna.LabWork_2_1;
 
 import java.util.Random;
 
-public class LabWork_2_1_34 {
+public class LabWork_2_1_5_Var_1 {
     static String[] manufacturers = {"Apple", "Microsoft", "Dell", "Toshiba"};
 
     public static void main(String[] args) {
-        Computer[] arr = new Computer[5];
+        Computer[] arr = new Computer[10];
         for (int i = 0; i < arr.length; i++) {
             arr[i] = new Computer();
             Random myRand = new Random();
@@ -15,12 +15,8 @@ public class LabWork_2_1_34 {
             arr[i].setQuantityCPU(4 * i);
             arr[i].setFrequencyCPU(300 + 30 * i);
             arr[i].setPrice(200 + i * 10);
-            //System.out.print(" Manufacturer: Asus");
-            System.out.print(" Manufacturer: " + arr[i].getManufacturer());
-            System.out.print(", Serial number: " + arr[i].getSerialNumber());
-            System.out.print(", Quantity CPU: " + arr[i].getQuantityCPU());
-            System.out.print(", Frequency CPU : " + (arr[i].getFrequencyCPU()));
-            System.out.println(", Price : " + arr[i].getPrice());
+
+            arr[i].view();
         }
     }
 
