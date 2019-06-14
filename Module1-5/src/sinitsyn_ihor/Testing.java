@@ -6,11 +6,12 @@ public class Testing {
         int a = 10;
 
         int b = 1;
-        double c = a&b;
+        double c = a & b;
         System.out.println("  ,,, ");
-        System.out.println(" ("+c+")");
+        System.out.println(" (" + c + ")");
         System.out.println("o(   )o");
         System.out.println("  o o");
     }
 }
+
 
