@@ -1,4 +1,4 @@
-package LabWork_2_1.Add_Work_1;
+package Tomashchuk_Anna.LabWork_2_1.Add_Work_1;
 
 public class DogTestDrive {
     public static void main(String[] args) {

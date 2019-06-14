@@ -1,4 +1,4 @@
-package LabWork_2_1.Add_Work_8;
+package Tomashchuk_Anna.LabWork_2_1.Add_Work_8;
 
 public class PersonMain_8 {
     public static void main(String[] args) {

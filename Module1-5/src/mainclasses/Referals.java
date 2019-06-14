@@ -17,6 +17,9 @@ public class Referals {
         chageArray(arr);
         System.out.println(Arrays.toString(arr));
 
+        //////
+
+
     }
 
     private static void chageArray(int[] list) {

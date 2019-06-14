@@ -1,4 +1,4 @@
-package LabWork_2_1.Add_Work_3;
+package Tomashchuk_Anna.LabWork_2_1.Add_Work_3;
 
 public class Person {
     public String name;

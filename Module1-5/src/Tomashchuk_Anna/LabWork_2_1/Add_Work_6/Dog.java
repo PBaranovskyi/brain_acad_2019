@@ -1,4 +1,4 @@
-package LabWork_2_1.Add_Work_6;
+package Tomashchuk_Anna.LabWork_2_1.Add_Work_6;
 
 public class Dog {
     private String name;

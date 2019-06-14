@@ -60,7 +60,7 @@ public class Person {
         newPerson.age = 12;
         newPerson.gender = "мужчина";
         newPerson.yearOfBirth = 1981;
-//        dog.name = "Tузик";
+//        newPerson.dog.name = "Tузик";
 //        dog.age = 5;
 
         dog.setName("Tузик");

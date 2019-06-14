@@ -1,4 +1,4 @@
-package LabWork_2_1.Add_Work_7;
+package Tomashchuk_Anna.LabWork_2_1.Add_Work_7;
 
 public class PresonMain_7 {
     public static void main(String[] args) {

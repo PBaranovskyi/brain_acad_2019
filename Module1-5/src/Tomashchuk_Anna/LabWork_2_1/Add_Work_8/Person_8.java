@@ -1,6 +1,6 @@
-package LabWork_2_1.Add_Work_8;
+package Tomashchuk_Anna.LabWork_2_1.Add_Work_8;
 
-import LabWork_2_1.Add_Work_6.Dog;
+import Tomashchuk_Anna.LabWork_2_1.Add_Work_6.Dog;
 
 public class Person_8 {
     private String name;
