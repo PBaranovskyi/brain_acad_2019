@@ -10,7 +10,7 @@ public class MainMethod {
         int[][]arr3 = new int[5][5];
         myMatrix.setFirstArr(arr1);
         myMatrix.setSecondArr(arr2);
-        myMatrix.setMultiplicationOfArr(arr3);
+//        myMatrix.setMultiplicationOfArr(arr3);
         System.out.println(Arrays.toString(myMatrix.getMultiplicationOfArr()));
     }
 }
