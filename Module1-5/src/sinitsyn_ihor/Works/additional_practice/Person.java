@@ -11,7 +11,7 @@ public class Person {
     private int age;
     private String gender;
     private int yearOfBirth;
-    private static Dog dog = new Dog();
+    private static Dog dog;
 
     public static Dog getDog() {
         return dog;
