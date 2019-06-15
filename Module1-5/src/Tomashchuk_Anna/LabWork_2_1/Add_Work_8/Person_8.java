@@ -7,7 +7,8 @@ public class Person_8 {
     private int age;
     private String gender;
     private int yearOfBirth;
-    private static Dog dog;
+    private Dog dog; // null по умолчанию
+    //  private static Dog dog=new Dog(); собака пустая - так првильно
 
 
     public void setName(String name) {

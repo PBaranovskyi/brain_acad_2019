@@ -4,9 +4,9 @@ public class Dog {
     public String name;
     public int age;
 
-    void setName(String name) { this.name = name; }
-    String getName() { return name; }
+    public void setName(String name) { this.name = name; }
+    public String getName() { return name; }
 
-    void setAge(int age) {this.age=age;}
-    int getAge() {return age;}
+    public void setAge(int age) {this.age=age;}
+    public int getAge() {return age;}
 }
