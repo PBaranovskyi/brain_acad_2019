@@ -1,4 +1,4 @@
-package LabWork_2_1.Add_Work_5;
+package Tomashchuk_Anna.LabWork_2_1.Add_Work_5;
 
 public class BusMain {
     public static void main(String[] args) {

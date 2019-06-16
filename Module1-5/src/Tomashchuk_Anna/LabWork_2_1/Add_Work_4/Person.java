@@ -1,10 +1,21 @@
-package Tomashchuk_Anna.LabWork_2_1.Add_Work_7;
+package LabWork_2_1.Add_Work_4;
 
-public class Person_7 {
-    private String name;
-    private int age;
-    private String gender;
-    private int yearOfBirth;
+import Tomashchuk_Anna.LabWork_2_1.Add_Work_2.Dog;
+
+public class Person {
+    public String name;
+    public int age;
+    public String gender;
+    public int yearOfBirth;
+    public Dog dog;
+
+    public void setDog(Dog dog) {
+        this.dog = dog;
+    }
+
+    public Dog getDog() {
+        return dog;
+    }
 
     public void setName(String name) {this.name=name;}
     public String getName() {return name;}
@@ -17,5 +28,4 @@ public class Person_7 {
 
     public void setYearOfBirth(int yearOfBirth) {this.yearOfBirth=yearOfBirth;}
     public int getYearOfBirth() {return yearOfBirth;}
-
 }

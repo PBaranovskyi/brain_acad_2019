@@ -1,4 +1,4 @@
-package LabWork_2_1.Add_Work_3;
+package Tomashchuk_Anna.LabWork_2_1.Add_Work_3;
 
 public class Person {
     public String name;
@@ -6,16 +6,16 @@ public class Person {
     public String gender;
     public int yearOfBirth;
 
-    void setName(String name) {this.name=name;}
-    String getName() {return name;}
+    public void setName(String name) {this.name=name;}
+    public String getName() {return name;}
 
-    void setAge(int age) {this.age=age;}
-    int getAge() {return age;}
+    public void setAge(int age) {this.age=age;}
+    public int getAge() {return age;}
 
-    void setGender(String gender) {this.gender=gender;}
-    String getGender() {return gender;}
+    public void setGender(String gender) {this.gender=gender;}
+    public String getGender() {return gender;}
 
-    void setYearOfBirth(int yearOfBirth) {this.yearOfBirth=yearOfBirth;}
-    int getYearOfBirth() {return yearOfBirth;}
+    public void setYearOfBirth(int yearOfBirth) {this.yearOfBirth=yearOfBirth;}
+    public int getYearOfBirth() {return yearOfBirth;}
 
 }

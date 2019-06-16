@@ -9,7 +9,7 @@ public class Laba2_1_345 {
     public static void main(String[] args) {
         Computer[] compArr = new Computer[500];
         for (int i = 0; i < compArr.length; i++) {
-            generateComputers(compArr, i);
+            generateComputers(i, compArr);
 //            printComputers(compArr[i], i);
             compArr[i].view();
         }
@@ -26,7 +26,7 @@ public class Laba2_1_345 {
         System.out.println(". Actual price (+10%): " + String.format("%.2f", computer.getPrice()*1.1));
     }
 
-    private static void generateComputers(Computer[] compArr, int i) {
+    private static void generateComputers( int i, Computer... compArr) {
         compArr[i] = new Computer();
         Random myRand = new Random();
         compArr[i].setManufacturer(generateManufacturer(myRand));
