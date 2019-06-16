@@ -4,12 +4,15 @@ import Tomashchuk_Anna.LabWork_2_1.Add_Work_3.Person;
 
 public class BusMain {
     public static void main(String[] args) {
+        //create a copy of the bus
         Bus bus = new Bus();
         System.out.println("New bus with: " + bus.getSeats() + " seats");
 
         bus.setSeats(5);
         System.out.println("New bus with: " + bus.getSeats() + " seats");
 
+        //create a copy of the person
+        //put tis person on the bus as a driver using setDriver method
         Person driver = new Person();
         driver.setName("Vasya");
 
