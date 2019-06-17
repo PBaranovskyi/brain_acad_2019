@@ -3,7 +3,7 @@ package LabWork_2_2.Overloading_methods_1;
 public class OverloadDemo {
     public static void main(String[] args) {
         Overload ob=new Overload();
-       int resI;
+        int resI;
         double resD;
 
         //Поочередный вызов всех версий метода ovlDemo()
