@@ -13,6 +13,5 @@ public class PersonMain {
         person.PersonDemo(12);
         person.PersonDemo("Оля", 12);
 
-
     }
 }
