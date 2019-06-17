@@ -1,6 +1,7 @@
 package sinitsyn_ihor.LabWorks1_4;
 
 import java.util.Scanner;
+
 public class Laba1_4_2 {
     public static void main(String[] args) {
         System.out.println("Введите по очереди два любых числа от 1 до 100 включительно: ");
@@ -19,12 +20,10 @@ public class Laba1_4_2 {
                 System.out.println("Частное ваших чисел = " + abD);
                 System.out.println("Произведение ваших чисел = " + abU);
                 System.out.println("Неделимый остаток ваших чисел = " + abP);
-            }
-            else {
+            } else {
                 System.out.println("Я же попросил - в диапазоне ОТ 1 ДО 100! Попробуй еще раз...");
             }
-        }
-        else {
+        } else {
             System.out.println("Я же попросил - в диапазоне ОТ 1 ДО 100! Попробуй еще раз...");
         }
     }
