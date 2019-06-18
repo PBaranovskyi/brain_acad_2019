@@ -1,16 +1,29 @@
 package sinitsyn_ihor.LabWorks2_2;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class MainMethod {
     public static void main(String[] args) {
-        Matrix myMatrix = new Matrix();
-        int[][] arr1 = {{1,2,3,4,5}, {2,3,4,5,6}, {3,4,5,6,7}, {4,5,6,7,8}, {5,6,7,8,9}};
-        int[][] arr2 = {{1,2,3,4,5}, {2,3,4,5,6}, {3,4,5,6,7}, {4,5,6,7,8}, {5,6,7,8,9}};
-        int[][]arr3 = new int[5][5];
-        myMatrix.setFirstArr(arr1);
-        myMatrix.setSecondArr(arr2);
-//        myMatrix.setMultiplicationOfArr(arr3);
-        System.out.println(Arrays.toString(myMatrix.getMultiplicationOfArr()));
+        System.out.println("Задайте первый массив.");
+        Matrix firstArr = new Matrix();
+        firstArr.generateMatrix();
+        int[][] arr1 = firstArr.getMyArray();
+        System.out.println("Сейчас задайте второй массив:");
+        Matrix secondArr = new Matrix();
+        secondArr.generateMatrix();
+        int[][] arr2 = secondArr.getMyArray();
+        System.out.println("Первая матрица: ");
+        firstArr.arrayToPrint();
+        System.out.println("Вторая матрица");
+        secondArr.arrayToPrint();
+        System.out.println("Результат суммирования матриц: ");
+        Matrix thirdArr = new Matrix();
+        thirdArr.additionOfArr(arr1, arr2);
+        thirdArr.arrayToPrint();
+        System.out.println("Результат умножения матриц: ");
+        Matrix fourthArr = new Matrix();
+        fourthArr.multiplicationOfArr(arr1, arr2);
+        fourthArr.arrayToPrint();
     }
 }
