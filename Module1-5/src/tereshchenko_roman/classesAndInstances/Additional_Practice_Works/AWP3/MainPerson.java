@@ -1,6 +1,7 @@
 package com.brainacad.classesAndInstances.Additional_Practice_Works.AWP3;
 
 import com.brainacad.classesAndInstances.Additional_Practice_Works.AWP2.Dog;
+import tereshchenko_roman.classesAndInstances.Additional_Practice_Works.AWP3.Person;
 
 //AWP 3
 

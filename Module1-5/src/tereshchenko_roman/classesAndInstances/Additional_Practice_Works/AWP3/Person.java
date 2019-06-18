@@ -1,4 +1,4 @@
-package com.brainacad.classesAndInstances.Additional_Practice_Works.AWP3;
+package tereshchenko_roman.classesAndInstances.Additional_Practice_Works.AWP3;
 
 import com.brainacad.classesAndInstances.Additional_Practice_Works.AWP2.Dog;
 
@@ -7,7 +7,18 @@ public class Person {
     private int age;
     private String gender;
     private int yearOfBirth;
-    private Dog dog;
+    private Dog dog = new Dog();
+
+    public Person(){
+
+    }
+
+    public Person(String name, int yearOfBirth) {
+        this.name = name;
+        this.yearOfBirth = yearOfBirth;
+
+        dog.setName(name + "'s" + " dog");
+    }
 
     public void setName(String name){
         this.name = name;

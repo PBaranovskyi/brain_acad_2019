@@ -1,6 +1,7 @@
 package mainclasses.classwork3;
 
-import com.brainacad.classesAndInstances.Additional_Practice_Works.AWP3.Person;
+
+import tereshchenko_roman.classesAndInstances.Additional_Practice_Works.AWP3.Person;
 
 public class UseBus {
 
@@ -14,8 +15,8 @@ public class UseBus {
 
         System.out.println("New bus with: " + bus.getSeats() + " seats");
 
-        Person driver = new Person();
-        driver.setName("Vasya");
+        Person driver = new Person("Vasya", 1987);
+//        driver.setName("Vasya");
 
         System.out.println("Seats before : " + bus.getSeats());
 
@@ -24,8 +25,8 @@ public class UseBus {
         System.out.println("Seats after : " + bus.getSeats());
 
 
-        Person driver2 = new Person();
-        driver2.setName("Petya");
+        Person driver2 = new Person("Petya", 1991);
+//        driver2.setName("Petya");
 
         bus.setDriver(driver2);
 

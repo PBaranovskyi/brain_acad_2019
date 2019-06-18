@@ -1,4 +1,6 @@
-package com.brainacad.constructors;
+package tereshchenko_roman.constructors;
+
+import tereshchenko_roman.constructors.MyWindow;
 
 public class MainMyWindow {
     public static void main(String[] args) {

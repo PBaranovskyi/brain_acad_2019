@@ -1,6 +1,8 @@
 package bilan_max.Lab2_1;
 
 
+import bilan_max.Lab2_1.Lab2_2.Computer;
+
 public class Lab2_1_1 {
     public static void main(String[] args) {
         Computer[] comp = new Computer[5];
