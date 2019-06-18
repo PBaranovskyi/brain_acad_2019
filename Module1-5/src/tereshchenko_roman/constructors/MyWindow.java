@@ -1,4 +1,4 @@
-package com.brainacad.constructors;
+package tereshchenko_roman.constructors;
 
 public class MyWindow {
 
