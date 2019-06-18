@@ -1,4 +1,4 @@
-package LabWork_2_3.Construct_Vihicle;
+package Tomashchuk_Anna.LabWork_2_3.Construct_Vihicle;
 
 public class Vihicle {
     int passengers;
