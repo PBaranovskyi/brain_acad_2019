@@ -1,6 +1,6 @@
 package mykhailo_kaloshyn.mainacad.lab2_3;
 
-import static com.mainacad.lab2_3.MyWindow.printFields;
+import static mykhailo_kaloshyn.mainacad.lab2_3.MyWindow.printFields;
 
 public class MyWindowObjects {
     public static void main(String[] args) {
