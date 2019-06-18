@@ -1,6 +1,6 @@
 package mykhailo_kaloshyn.mainacad.lab2_2.myA;
 
-import static com.mainacad.lab2_2.myA.A.calcSquare;
+import static mykhailo_kaloshyn.mainacad.lab2_2.myA.A.calcSquare;
 
 public class objectsA {
 
