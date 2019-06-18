@@ -5,7 +5,7 @@ public class Person {
 //    public int age;
 //    public String gender;
 //    public int yearOfBirth;
-//    public static Dog dog = new Dog();
+//    public static Dog dog;
 
     private String name;
     private int age;
