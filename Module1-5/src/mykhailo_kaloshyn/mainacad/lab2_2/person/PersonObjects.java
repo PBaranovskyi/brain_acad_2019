@@ -1,6 +1,6 @@
 package mykhailo_kaloshyn.mainacad.lab2_2.person;
 
-import static com.mainacad.lab2_2.person.Person.personCreature;
+import static mykhailo_kaloshyn.mainacad.lab2_2.person.Person.personCreature;
 
 public class PersonObjects {
 
