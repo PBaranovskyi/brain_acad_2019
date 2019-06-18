@@ -1,7 +1,7 @@
 package mainclasses.classwork3;
 
-import com.brainacad.classesAndInstances.Additional_Practice_Works.AWP3.Person;
 import com.brainacad.classesAndInstances.Additional_Practice_Works.AWP2.Dog;
+import tereshchenko_roman.classesAndInstances.Additional_Practice_Works.AWP3.Person;
 
 public class Main {
 
@@ -9,8 +9,9 @@ public class Main {
 
         // Создать человека Васю
 
-        Person person = new Person();
-        person.setName("Vasya");
+        Person person = new Person("Vasya", 1987);
+
+//        person.setName("Vasya");
         person.setAge(12);
         person.setGender("Male");
 
@@ -22,14 +23,16 @@ public class Main {
 
         // У Васи была собака Тузик
 
-        Person person2 = new Person();
-        person.setName("Olya");
-        person.setAge(8);
-        person.setGender("Female");
+        Person person2 = new Person("Olya", 2000);
+//        person.setName("Olya");
+        person2.setAge(8);
+        person2.setGender("Female");
+
+        System.out.println(person2.getDog().getName());
 
 
-
-
+        Car car = new Car(200, 1);
+        Car car2 = new Car();
 
 
     }

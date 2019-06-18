@@ -1,6 +1,7 @@
 package com.brainacad.classesAndInstances.Additional_Practice_Works.AWP5;
 
-import com.brainacad.classesAndInstances.Additional_Practice_Works.AWP3.Person;
+
+import tereshchenko_roman.classesAndInstances.Additional_Practice_Works.AWP3.Person;
 
 public class MainBus {
     public static void main(String[] args) {

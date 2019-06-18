@@ -1,4 +1,4 @@
-package LabWork_2_3.Lab231;
+package Tomashchuk_Anna.LabWork_2_3.Lab231;
 
 public class MyWindow {
     public double width;

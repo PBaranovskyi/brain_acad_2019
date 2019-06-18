@@ -5,6 +5,9 @@ import java.util.Scanner;
 
 public class MatrixObjects {
 
+    private MatrixObjects(){
+    }
+
     static int[][] additionMatrixes(int[][] arr1, int[][] arr2) {
         int a1 = arr1.length;
         int a2 = arr2.length;
