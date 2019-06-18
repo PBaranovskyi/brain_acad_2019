@@ -1,4 +1,4 @@
-package bilan_max.Lab2_1;
+package bilan_max.Lab2_1.Lab2_2;
 
 public class Computer {
     private String manufacturer;
