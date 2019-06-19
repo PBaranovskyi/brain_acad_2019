@@ -5,10 +5,7 @@ public class  MyWindowMain {
         MyWindow myWindow=new MyWindow("White", 3.2, 0.9);
         double win;
 
-       // win=myWindow.height(5);
-       // win=myWindow.printFields(5,4);
-
-
+        System.out.println(myWindow.getColor());
 
 
     }
