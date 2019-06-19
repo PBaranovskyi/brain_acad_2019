@@ -3,40 +3,69 @@ package sinitsyn_ihor.LabWorks.LabWorks2_3;
 import java.util.Random;
 
 public class MyWindow {
-    private double width;
-    private double height;
-    private int numberOfGlass;
-    private String color;
-    private boolean isOpen;
+    private double width = 40.0;
+    private double height = 120.0;
+    private int numberOfGlass = 2;
+    private String color = "белое";
+    private boolean isOpen = true;
     private String state;
     Random rand = new Random();
     private String[] colorArr = {"белое", "черное", "коричневое", "синее", "желтое", "красное"};
 
     public static void main(String[] args) {
-        for (int i = 0; i < 5; i++){
+        for (int i = 0; i < 5; i++) {
             MyWindow newWindow = new MyWindow();
             newWindow.setWindow();
             newWindow.printFields();
         }
+
+        System.out.println();
+        MyWindow wind2 = new MyWindow();
+        wind2.myWindow();
+        wind2.printFields();
+
+        System.out.println();
+        MyWindow wind3 = new MyWindow();
+        wind3.myWindow(33, 55);
+        wind3.printFields();
+
+        System.out.println();
+        MyWindow wind4 = new MyWindow();
+        wind4.myWindow(77, 99, 32);
+        wind4.printFields();
     }
 
-    public void setWindow(){
-        width = Math.round((rand.nextDouble()*100+20)*100.0)/100.0;
-        height = Math.round((rand.nextDouble()*100+100)*100.0)/100.0;
+    public void myWindow() {
+//        this(width, 111);
+    }
+
+    public void myWindow(int width, int height) {
+        this.width = width;
+        this.height = height;
+    }
+
+    public void myWindow(int width, int height, int numberOfGlass) {
+        this.width = width;
+        this.height = height;
+        this.numberOfGlass = numberOfGlass;
+    }
+
+    public void setWindow() {
+        width = Math.round((rand.nextDouble() * 100 + 20) * 100.0) / 100.0;
+        height = Math.round((rand.nextDouble() * 100 + 100) * 100.0) / 100.0;
         color = colorArr[rand.nextInt(colorArr.length)];
         numberOfGlass = rand.nextInt(4) + 1;
         isOpen = rand.nextBoolean();
     }
 
-    public void printFields(){
+    public void printFields() {
         System.out.println("Окно " + this.getColor() + " по цвету " + this.getHeight() + " см в высоту и " + this.getWidth() + " см в длину имеет " + this.getNumberOfGlass() + " стекла и всегда " + this.getState());
     }
 
     private String getState() {
-        if (isOpen){
+        if (isOpen) {
             state = "открыто";
-        }
-        else {
+        } else {
             state = "закрыто";
         }
         return state;
