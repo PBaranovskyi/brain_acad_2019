@@ -21,30 +21,27 @@ public class MyWindow {
 
         System.out.println();
         MyWindow wind2 = new MyWindow();
-        wind2.myWindow();
         wind2.printFields();
 
         System.out.println();
-        MyWindow wind3 = new MyWindow();
-        wind3.myWindow(33, 55);
+        MyWindow wind3 = new MyWindow(33, 55);
         wind3.printFields();
 
         System.out.println();
-        MyWindow wind4 = new MyWindow();
-        wind4.myWindow(77, 99, 32);
+        MyWindow wind4 = new MyWindow(77, 99, 32);
         wind4.printFields();
     }
 
-    public void myWindow() {
-//        this(width, 111);
+    public MyWindow() {
+        this(35, 111);
     }
 
-    public void myWindow(int width, int height) {
+    public MyWindow(int width, int height) {
         this.width = width;
         this.height = height;
     }
 
-    public void myWindow(int width, int height, int numberOfGlass) {
+    public MyWindow(int width, int height, int numberOfGlass) {
         this.width = width;
         this.height = height;
         this.numberOfGlass = numberOfGlass;
@@ -59,7 +56,7 @@ public class MyWindow {
     }
 
     public void printFields() {
-        System.out.println("Окно " + this.getColor() + " по цвету " + this.getHeight() + " см в высоту и " + this.getWidth() + " см в длину имеет " + this.getNumberOfGlass() + " стекла и всегда " + this.getState());
+        System.out.println("Окно " + this.getColor() + " по цвету " + this.getHeight() + " см в высоту и " + this.getWidth() + " см в ширину, имеет " + this.getNumberOfGlass() + " стекла и всегда " + this.getState());
     }
 
     private String getState() {
