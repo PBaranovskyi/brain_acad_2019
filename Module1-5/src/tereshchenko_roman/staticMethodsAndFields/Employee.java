@@ -12,9 +12,9 @@ public class Employee {
         numberOfEmployees++;
     }
 
-    public static void setNumberOfEmployees(int numberOfEmployees) {
-        Employee.numberOfEmployees = numberOfEmployees;
-    }
+//    public static void setNumberOfEmployees(int numberOfEmployees) {
+//        Employee.numberOfEmployees = numberOfEmployees;
+//    }
 
     public static int getNumberOfEmployees() {
         return numberOfEmployees;

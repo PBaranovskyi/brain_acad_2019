@@ -2,10 +2,12 @@ package tereshchenko_roman.staticMethodsAndFields;
 
 public class MyMath {
 
-//    static int[] arr = {1, 5, 18, 3, 39};
+    //    static int[] arr = {1, 5, 18, 3, 39};
+    private static int minValue;
 
     public static int findMin(int[] arr) {
-        int minValue = arr[0];
+
+        minValue = arr[0];
         for (int i = 1; i < arr.length; i++) {
             if (arr[i] < minValue) {
                 minValue = arr[i];
@@ -13,6 +15,7 @@ public class MyMath {
         }
         return minValue;
     }
+
 
     public static int findMax(int[] arr) {
         int maxValue = arr[0];
@@ -26,11 +29,12 @@ public class MyMath {
 
     public static final double PI = 3.14;
 
-    public static double areaOfCircle (double r){
+    public static double areaOfCircle(double r) {
         double area = (r * r * PI);
         return area;
-    };
+    }
 
+    ;
 
 
 //    public static void main(String[] args) {
