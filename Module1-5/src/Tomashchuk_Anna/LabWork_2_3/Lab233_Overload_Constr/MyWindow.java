@@ -1,4 +1,4 @@
-package Tomashchuk_Anna.LabWork_2_3.Lab231;
+package Tomashchuk_Anna.LabWork_2_3.Lab233_Overload_Constr;
 
 public class MyWindow {
     public double width;
@@ -7,24 +7,45 @@ public class MyWindow {
     public String color;
     public boolean open;
 
-    private void setNumberOfGlass(int numberOfGlass){
+    public void setNumberOfGlass(int numberOfGlass){
         if (numberOfGlass>3) {
             System.out.println("Not allowed to create a window with numberOfGlass: "+ numberOfGlass);
         }
         else{
             this.numberOfGlass=numberOfGlass;
-        }
+       }
     }
 
-    public int getNumberOfGlass() {return numberOfGlass;}
+   public int getNumberOfGlass() {return numberOfGlass;}
 
+//////////////////////////// overloaded constructors
     // Это конструктор класса MyWindow
-   public MyWindow( String col,double wid, double hei ) {
-        color=col;
+
+    // Конструктор без параметров
+    public MyWindow() {
+        color="White";
+        width=2.7;
+        height=3.0;
+    }
+
+
+    public MyWindow( double wid, double hei ) {
         width=wid;
         height=hei;
     }
 
+    public MyWindow( double wid, double hei , int glass) {
+        width=wid;
+        height=hei;
+        numberOfGlass=glass;
+    }
+     //user-defined constructor
+    public MyWindow( String col,double wid, double hei ) {
+        color=col;
+        width=wid;
+        height=hei;
+    }
+////////////////////////////
     // Определение размера окна
     double size() {
         return width*height;
@@ -45,9 +66,6 @@ public class MyWindow {
                 ", IsOpen: "+open);
         return color+width+height+numberOfGlass+open;
     }
-
-
-
 
 
 }

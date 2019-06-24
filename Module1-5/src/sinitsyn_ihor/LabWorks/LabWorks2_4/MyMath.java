@@ -30,9 +30,9 @@ public class MyMath {
     }
 
     public void setArr() {
-        int rows = rand.nextInt(5) + 10;
-        int[] newArr = new int[rows];
-        for (int i = 0; i < rows; i++) {
+        int columns = rand.nextInt(5) + 10;
+        int[] newArr = new int[columns];
+        for (int i = 0; i < columns; i++) {
             newArr[i] = rand.nextInt(100);
         }
         this.arr = newArr;

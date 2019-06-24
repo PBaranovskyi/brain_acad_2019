@@ -1,4 +1,4 @@
-package Tomashchuk_Anna.LabWork_2_3.Lab231;
+package Tomashchuk_Anna.LabWork_2_3.Lab234;
 
 public class MyWindow {
     public double width;
@@ -7,31 +7,26 @@ public class MyWindow {
     public String color;
     public boolean open;
 
-    private void setNumberOfGlass(int numberOfGlass){
-        if (numberOfGlass>3) {
-            System.out.println("Not allowed to create a window with numberOfGlass: "+ numberOfGlass);
-        }
-        else{
-            this.numberOfGlass=numberOfGlass;
-        }
-    }
-
-    public int getNumberOfGlass() {return numberOfGlass;}
 
     // Это конструктор класса MyWindow
-   public MyWindow( String col,double wid, double hei ) {
-        color=col;
-        width=wid;
-        height=hei;
+
+    public MyWindow() {
+        this(2.4,4.0);
+        System.out.println("This Constructor ");
+
     }
 
-    // Определение размера окна
-    double size() {
-        return width*height;
+    public MyWindow( double wid, double hei ) {
+        this.width=wid;
+        this.height=hei;
     }
 
-   // public void setOpen(boolean open) {this.open = open;}
-   // public boolean isOpen() {     return open;}
+    public MyWindow( double wid, double hei , int glass) {
+        this.width=wid;
+        this.height=hei;
+        this.numberOfGlass=glass;
+    }
+
 
     public void setColor(String color) {
         this.color = color;
@@ -45,9 +40,6 @@ public class MyWindow {
                 ", IsOpen: "+open);
         return color+width+height+numberOfGlass+open;
     }
-
-
-
 
 
 }

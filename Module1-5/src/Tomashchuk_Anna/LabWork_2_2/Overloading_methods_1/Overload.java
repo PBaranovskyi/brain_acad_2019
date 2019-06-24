@@ -1,4 +1,4 @@
-package LabWork_2_2.Overloading_methods_1;
+package Tomashchuk_Anna.LabWork_2_2.Overloading_methods_1;
 
 public class Overload {
     //Первая версия

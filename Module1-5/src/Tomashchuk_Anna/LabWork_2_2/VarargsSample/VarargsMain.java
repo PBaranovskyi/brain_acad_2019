@@ -1,4 +1,4 @@
-package LabWork_2_2.VarargsSample;
+package Tomashchuk_Anna.LabWork_2_2.VarargsSample;
 
 public class VarargsMain {
     public static void main(String[] args) {

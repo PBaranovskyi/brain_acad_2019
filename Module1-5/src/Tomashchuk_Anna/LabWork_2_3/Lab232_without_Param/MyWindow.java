@@ -1,4 +1,4 @@
-package Tomashchuk_Anna.LabWork_2_3.Lab231;
+package Tomashchuk_Anna.LabWork_2_3.Lab232_without_Param;
 
 public class MyWindow {
     public double width;
@@ -19,10 +19,10 @@ public class MyWindow {
     public int getNumberOfGlass() {return numberOfGlass;}
 
     // Это конструктор класса MyWindow
-   public MyWindow( String col,double wid, double hei ) {
-        color=col;
-        width=wid;
-        height=hei;
+   public MyWindow() {
+        color="White";
+        width=2.7;
+        height=3.0;
     }
 
     // Определение размера окна
@@ -30,8 +30,8 @@ public class MyWindow {
         return width*height;
     }
 
-   // public void setOpen(boolean open) {this.open = open;}
-   // public boolean isOpen() {     return open;}
+    public void setOpen(boolean open) {this.open = open;}
+    public boolean getOpen() { return open;}
 
     public void setColor(String color) {
         this.color = color;

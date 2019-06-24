@@ -1,10 +1,10 @@
-package Tomashchuk_Anna.LabWork_2_3.Lab231;
+package Tomashchuk_Anna.LabWork_2_3.Lab232_without_Param;
 
 public class  MyWindowMain {
     public static void main(String[] args) {
-        MyWindow myWindow=new MyWindow("White", 3.2, 0.9);
+        MyWindow myWindow=new MyWindow();
 
-        System.out.println(myWindow.getColor());
+       // System.out.println(myWindow.getColor());
         System.out.println(myWindow.color);
         System.out.println(myWindow.width);
         System.out.println(myWindow.height);

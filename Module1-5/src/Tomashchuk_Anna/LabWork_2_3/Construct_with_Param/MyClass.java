@@ -1,4 +1,4 @@
-package LabWork_2_3.Construct_with_Param;
+package Tomashchuk_Anna.LabWork_2_3.Construct_with_Param;
 
 public class MyClass {
     int x;
