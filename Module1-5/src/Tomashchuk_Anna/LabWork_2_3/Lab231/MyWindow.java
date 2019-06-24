@@ -19,7 +19,7 @@ public class MyWindow {
     public int getNumberOfGlass() {return numberOfGlass;}
 
     // Это конструктор класса MyWindow
-    MyWindow( String c,double w, double h ) {
+   public MyWindow( String c,double w, double h ) {
         color=c;
         width=w;
         height=h;

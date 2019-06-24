@@ -5,7 +5,7 @@ public class MyClass {
 
     //Конструктор класса MyClass
     // Имя конструктора совпадает с именем класса
-    MyClass() {
+    public MyClass() {
         x=15;
     }
 }
