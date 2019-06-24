@@ -1,4 +1,4 @@
-package LabWork_2_2.Lab224;
+package Tomashchuk_Anna.LabWork_2_2.Lab224;
 
 public class PersonMain {
     public static void main(String[] args) {

@@ -5,9 +5,9 @@ public class MyWindow {
     public double height;
     public int numberOfGlass;
     public String color;
-   // public boolean open;
+    public boolean open;
 
-    public void setNumberOfGlass(int numberOfGlass){
+    private void setNumberOfGlass(int numberOfGlass){
         if (numberOfGlass>3) {
             System.out.println("Not allowed to create a window with numberOfGlass: "+ numberOfGlass);
         }
@@ -19,10 +19,10 @@ public class MyWindow {
     public int getNumberOfGlass() {return numberOfGlass;}
 
     // Это конструктор класса MyWindow
-   public MyWindow( String c,double w, double h ) {
-        color=c;
-        width=w;
-        height=h;
+   public MyWindow( String col,double wid, double hei ) {
+        color=col;
+        width=wid;
+        height=hei;
     }
 
     // Определение размера окна
@@ -39,9 +39,15 @@ public class MyWindow {
 
     public String getColor() { return color; }
 
-    public void printFields(double width, double height) {
-        System.out.println(width+height);
+    // Метод printFields
+    public String printFields(String color, double width, double height, int numberOfGlass, boolean open) {
+        System.out.println("Color: "+color+", Width: "+width+", Heigth: "+height+", NumberOfGlass: "+numberOfGlass+
+                ", IsOpen: "+open);
+        return color+width+height+numberOfGlass+open;
     }
+
+
+
 
 
 }

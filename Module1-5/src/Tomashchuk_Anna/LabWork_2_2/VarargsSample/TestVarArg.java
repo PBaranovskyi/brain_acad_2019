@@ -1,4 +1,4 @@
-package LabWork_2_2.VarargsSample;
+package Tomashchuk_Anna.LabWork_2_2.VarargsSample;
 
 public class TestVarArg {
     public int calcSum(int... values){

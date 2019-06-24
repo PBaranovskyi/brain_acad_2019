@@ -1,4 +1,4 @@
-package LabWork_2_2.Lab224;
+package Tomashchuk_Anna.LabWork_2_2.Lab224;
 
 public class Person {
     public String PersonDemo(String firstName, String lastName, String gender) {
