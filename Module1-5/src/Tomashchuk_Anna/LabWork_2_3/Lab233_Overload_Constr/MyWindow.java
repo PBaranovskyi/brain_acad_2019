@@ -28,6 +28,7 @@ public class MyWindow {
         height=3.0;
     }
 
+
     public MyWindow( double wid, double hei ) {
         width=wid;
         height=hei;
@@ -38,7 +39,7 @@ public class MyWindow {
         height=hei;
         numberOfGlass=glass;
     }
-
+     //user-defined constructor
     public MyWindow( String col,double wid, double hei ) {
         color=col;
         width=wid;
