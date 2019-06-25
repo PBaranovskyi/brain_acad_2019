@@ -7,6 +7,7 @@ public class UseBus {
 
     public static void main(String[] args) {
 
+
         Bus bus = new Bus();
 
         System.out.println("New bus with: " + bus.getSeats() + " seats");

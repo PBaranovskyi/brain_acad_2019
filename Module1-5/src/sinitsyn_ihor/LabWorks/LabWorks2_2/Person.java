@@ -22,13 +22,13 @@ public class Person {
         Random rand = new Random();
         this.firstName = firstN[rand.nextInt(firstN.length)];
         this.lastName = lastN[rand.nextInt(lastN.length)];
-        this.age = rand.nextInt(60) + 18;
+        this.age = (int) (Math.random() * 60 + 18);
         this.gender = gend[rand.nextInt(gend.length)];
         this.oper = operators[rand.nextInt(operators.length)];
-        this.phoneNumber = rand.nextInt(8999999)  + 999999;
+        this.phoneNumber = rand.nextInt(8999999) + 999999;
     }
 
-    public void personToPrint(){
+    public void personToPrint() {
         System.out.println(getFirstName() + " " + getLastName() + " " + getGender() + " " + getAge() + " лет, телефон: " + "(0" + this.oper + ")" + getPhoneNumber());
     }
 

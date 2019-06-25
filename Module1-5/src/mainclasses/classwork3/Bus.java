@@ -5,11 +5,11 @@ import tereshchenko_roman.classesAndInstances.Additional_Practice_Works.AWP3.Per
 
 public class Bus {
 
-    private int seats = 15;
+    private static int seats = 15;
     private Person driver;
 
-    public void setSeats(int seats) {
-        this.seats = seats;
+    public static void setSeats(int seatsT) {
+        seats = seatsT;
     }
 
     public int getSeats() {
@@ -26,4 +26,6 @@ public class Bus {
     public Person getDriver() {
         return driver;
     }
+
+
 }
