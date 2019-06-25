@@ -8,30 +8,27 @@ public class MyPyramid {
         for (int i = 0; i < hight; i++) {
             switch (i) {
                 case 0:
-                    System.out.printf("         ");
-                    break;
-                case 1:
                     System.out.printf("        ");
                     break;
-                case 2:
+                case 1:
                     System.out.printf("       ");
                     break;
-                case 3:
+                case 2:
                     System.out.printf("      ");
                     break;
-                case 4:
+                case 3:
                     System.out.printf("     ");
                     break;
-                case 5:
+                case 4:
                     System.out.printf("    ");
                     break;
-                case 6:
+                case 5:
                     System.out.printf("   ");
                     break;
-                case 7:
+                case 6:
                     System.out.printf("  ");
                     break;
-                case 8:
+                case 7:
                     System.out.printf(" ");
                     break;
                 default:
