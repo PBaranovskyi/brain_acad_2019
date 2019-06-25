@@ -1,5 +1,6 @@
 package sinitsyn_ihor.LabWorks.LabWorks2_4;
 
+import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -19,6 +20,10 @@ public class Calculation {
         Scanner scan = new Scanner(System.in);
         System.out.print("Please, set the radius of the circle (double type): ");
         double rad = scan.nextDouble();
-        System.out.println("Square of the circle is " + Math.round(MyMath.areaOfCircle(rad)*100.0)/100.0);
+        double area = MyMath.areaOfCircle(rad);
+        System.out.println("Square of the circle is " + Math.round(area *100.0)/100.0);
+        BigDecimal decimal = new BigDecimal(area);
+        double result = decimal.setScale(5, BigDecimal.ROUND_FLOOR).doubleValue();
+        System.out.println(result);
     }
 }
