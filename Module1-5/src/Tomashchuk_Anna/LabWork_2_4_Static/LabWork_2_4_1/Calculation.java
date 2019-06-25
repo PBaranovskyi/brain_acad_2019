@@ -1,6 +1,6 @@
 package Tomashchuk_Anna.LabWork_2_4_Static.LabWork_2_4_1;
 
-public class MyMathMain {
+public class Calculation {
     public static void main(String[] args) {
         int[] arr1 = {7, 18, 23, 42};
         int[] arr2 = {14, 67, 9, 83};

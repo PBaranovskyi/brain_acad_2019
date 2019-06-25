@@ -1,4 +1,4 @@
-package LabWork_2_2.Sample_Multiplication;
+package Tomashchuk_Anna.LabWork_2_2.Sample_Multiplication;
 
 import java.util.Arrays;
 

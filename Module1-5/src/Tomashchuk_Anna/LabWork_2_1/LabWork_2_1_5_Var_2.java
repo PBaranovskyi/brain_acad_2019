@@ -1,4 +1,4 @@
-package LabWork_2_1;
+package Tomashchuk_Anna.LabWork_2_1;
 
 import java.util.Random;
 
