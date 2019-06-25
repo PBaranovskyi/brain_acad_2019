@@ -9,7 +9,7 @@ public class MyMath {
     public static int findMin(int[] arr) {
 
         int minValue = arr[0];
-        for (int i = 0; i < arr.length; i++) {
+        for  (int i = 0; i <= arr.length-1; i++) {
             if (arr[i] < minValue) {
                 minValue = arr[i];
             }
@@ -20,7 +20,7 @@ public class MyMath {
 
     public static int findMax(int[] arr) {
         int maxValue = arr[0];
-        for (int i = 0; i < arr.length; i++)
+        for (int i = 0; i <= arr.length-1; i++)
             if (arr[i] > maxValue) {
                 maxValue = arr[i];
             }
