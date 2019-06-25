@@ -6,6 +6,12 @@ public class EmployeeMain {
         Employee employee2 = new Employee("Artem", "Zaliznyak", "Programmer", 635507600);
         Employee employee3 = new Employee("Tanya", "Kalosha", "QA", 0503302040);
 
+        int numberOfEmployees=Employee.getNumberOfEmployees();
+        System.out.println(numberOfEmployees);
+        System.out.println(
+
+        );
+        //Второй вариант вывода на консоль
         System.out.println(Employee.getNumberOfEmployees());
     }
 }
