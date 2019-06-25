@@ -5,6 +5,7 @@ public class EmployeeMain {
         Employee employee1 = new Employee("Anna", "Tomashchuk", "Billing system admin", 504406800);
         Employee employee2 = new Employee("Artem", "Zaliznyak", "Programmer", 635507600);
         Employee employee3 = new Employee("Tanya", "Kalosha", "QA", 0503302040);
+
         System.out.println(Employee.getNumberOfEmployees());
     }
 }
