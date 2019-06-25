@@ -42,7 +42,7 @@ public class Employee {
     public Employee(String firstName, String lastName, String occupation, int telephone) {
         numberOfEmployees++;
     }
-
+     // static method declaration
     public static int getNumberOfEmployees() {
         return numberOfEmployees;
     }
