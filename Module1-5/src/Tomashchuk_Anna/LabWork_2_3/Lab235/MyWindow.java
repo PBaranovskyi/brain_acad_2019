@@ -1,4 +1,4 @@
-package Tomashchuk_Anna.LabWork_2_3.Lab234;
+package Tomashchuk_Anna.LabWork_2_3.Lab235;
 
 public class MyWindow {
     public double width;
@@ -40,8 +40,13 @@ public class MyWindow {
                 ", IsOpen: "+open);
         return color+width+height+numberOfGlass+open;
     }
+    public int daysOffWork(int... days) {
+        int daysOff = 0;
+        for (int i = 0; i < days.length; i++) {
+            daysOff += days[i];
+        }
+        return daysOff;
 
-
-
+    }
 
 }
