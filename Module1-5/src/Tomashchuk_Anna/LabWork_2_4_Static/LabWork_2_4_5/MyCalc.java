@@ -7,7 +7,7 @@ public class MyCalc {
 // У меня неправтльно - считает только целые числа, дробные не считает
     public static double calcPi(int n) {
         if (n == 1) {
-            PI = (4 - 1); // PI =( 4 - 4/3 );
+            PI = (4.0 - 4.0/3.0   ); // PI =( 4 - 4/3 );
         } else if (n == 2) {
             PI = (4 - 1 + 2); //PI = (4 - 4/3 + 4/5);
         } else if (n == 3) {

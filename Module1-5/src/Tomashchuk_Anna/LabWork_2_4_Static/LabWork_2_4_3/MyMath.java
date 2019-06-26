@@ -9,7 +9,7 @@ public class MyMath {
     private double area;
 
 
-    public static int findMin(int... arr) {
+    public static int findMin(int[] arr) {
 
         int minValue = arr[0];
         for (int i = 0; i < arr.length; i++) {
@@ -31,11 +31,11 @@ public class MyMath {
         return maxValue;
     }
 
-    //which will take radius, use constant PI and calculate area.
+   //which will take radius, use constant PI and calculate area.
     public static double areaOfCircle(double r) {
         double area;
-        area = Math.pow(r, 2) * PI;
-        return area;
+       area = r *r * PI;
+       return area;
 
     }
 

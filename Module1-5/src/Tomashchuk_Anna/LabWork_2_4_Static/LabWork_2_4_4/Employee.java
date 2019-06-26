@@ -5,7 +5,7 @@ public class Employee {
     private String lastName;
     private String occupation;
     private int telephone;
-    private static int numberOfEmployees;
+    private static int numberOfEmployees; // numberOfEmployees - общий для всех
 
     public void setFirstName(String firstName) {
         this.firstName = firstName;
