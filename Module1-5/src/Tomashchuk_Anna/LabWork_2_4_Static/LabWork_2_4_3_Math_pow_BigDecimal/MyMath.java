@@ -1,4 +1,4 @@
-package Tomashchuk_Anna.LabWork_2_4_Static.LabWork_2_4_3;
+package Tomashchuk_Anna.LabWork_2_4_Static.LabWork_2_4_3_Math_pow_BigDecimal;
 
 public class MyMath {
 
@@ -7,6 +7,7 @@ public class MyMath {
     public static final double PI = 3.14;
     private double r;
     private double area;
+    private double areaMath;
 
 
     public static int findMin(int[] arr) {
@@ -36,6 +37,13 @@ public class MyMath {
         double area;
        area = r *r * PI;
        return area;
+
+    }
+// Второй способ нахождения площади круга - с использованием Math
+    public static double areaOfCircleMath(double r) {
+        double areaMath;
+        areaMath = Math.pow(r,2.0)*PI; // 2 -это степень, это r в степени 2, тоесть r *r
+        return areaMath;
 
     }
 
