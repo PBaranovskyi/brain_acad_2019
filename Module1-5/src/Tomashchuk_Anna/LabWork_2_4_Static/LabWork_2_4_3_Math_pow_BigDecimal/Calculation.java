@@ -28,7 +28,7 @@ public class Calculation {
         //.doubleValue() - Чтобы был тип double
         //decimal.setScale -- установить размер - 5 знаков после запятой
         double result1 = decimal.setScale(5, BigDecimal.ROUND_FLOOR).doubleValue();
-        System.out.println("Округляем 2 метод: "+result1);
+        System.out.println("Округляем до 5 знака после запятой- 2 метод: "+result1);
 
 
         // или так можно сделать- просто другая форма записи
@@ -36,7 +36,7 @@ public class Calculation {
         double area=MyMath.areaOfCircle(2.75);
         BigDecimal decimal2 = new BigDecimal(area);
         double result2 = decimal.setScale(5, BigDecimal.ROUND_FLOOR).doubleValue();
-        System.out.println(result2);
+        System.out.println("Округляем до 5 знака после запятой- 2 метод, упрощенная запись: "+result2);
 
 
     }
