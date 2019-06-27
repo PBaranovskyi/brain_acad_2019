@@ -1,4 +1,4 @@
-package Tomashchuk_Anna.LabWork_2_4_Static.LabWork_2_4_5;
+package Tomashchuk_Anna.LabWork_2_4_Static.LabWork_2_4_5_Simple_var;
 
 public class MyCalcMain {
     public static void main(String[] args) {
