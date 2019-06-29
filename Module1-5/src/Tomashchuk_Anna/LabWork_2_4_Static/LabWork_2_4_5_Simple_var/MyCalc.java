@@ -10,6 +10,7 @@ public class MyCalc {
     public static double calcPi(int n) {
         if (n == 1) {
             // PI =( 4 - 4/3 ); - так будет считать неправильно
+            // 4 - 4/3  - приводит к integer, поэтому результат integer
             PI = (4.0 - 4.0/3.0  );
         } else if (n == 2) {
             PI = (4.0 - 4.0/3.0 + 4.0/5.0);
