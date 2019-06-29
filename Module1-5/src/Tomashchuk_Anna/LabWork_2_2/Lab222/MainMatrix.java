@@ -1,4 +1,4 @@
-package LabWork_2_2.Lab222;
+package Tomashchuk_Anna.LabWork_2_2.Lab222;
 
 import java.util.Arrays;
 

@@ -1,13 +1,13 @@
-package Tomashchuk_Anna.LabWork_1_6.Home_Work;
+package Tomashchuk_Anna.LabWork_2_5_Initialization_sections.Lab252;
 
 import java.util.Arrays;
 
-public class Home_Work_2 {
+public class Sample {
     public static void main(String[] args) {
         int[] arr = new int[10];
-        int a = 1;
         for (int i = 0; i < arr.length; i++) {
-            arr[i] = a++;
+            //  arr[i] = a++;
+            arr[i] = (int) (100 * Math.random());
         }
         System.out.println(Arrays.toString(arr));
     }

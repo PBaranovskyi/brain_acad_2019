@@ -1,4 +1,4 @@
-package LabWork_2_2.VarargsSample3;
+package Tomashchuk_Anna.LabWork_2_2.VarargsSample3;
 
 public class VarArgs {
     public static void vaTest( String msg,int ...v){
