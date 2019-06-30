@@ -18,7 +18,11 @@ public class MainMyWindow {
         arr[3] = window4;
         arr[4] = window5;
 
+
+
         for (int i = 0; i < 5; i++) {
+            arr[i].printFields(arr);
+
             System.out.println("Width: " + arr[i].getWidth());
             System.out.println("Height: " + arr[i].getHeight());
             System.out.println("Number of glasses: " + arr[i].getNumberOfGlass());

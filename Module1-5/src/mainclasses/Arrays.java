@@ -34,4 +34,7 @@ public class Arrays {
         }
 
     }
+
+    public static void toString(int[] arr) {
+    }
 }

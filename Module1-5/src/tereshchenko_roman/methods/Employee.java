@@ -1,4 +1,4 @@
-package com.brainacad.methods;
+package tereshchenko_roman.methods;
 
 public class Employee {
     public String name;

@@ -1,4 +1,4 @@
-package com.brainacad.methods;
+package tereshchenko_roman.methods;
 
 public class Accountant {
     public static void main(String[] args) {

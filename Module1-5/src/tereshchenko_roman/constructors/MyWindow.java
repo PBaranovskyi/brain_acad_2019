@@ -75,7 +75,7 @@ public class MyWindow {
 //    MyWindow window4;
 //    MyWindow window5;
 
-    public void printFields(int[] arr) {
+    public void printFields(MyWindow[] arr) {
 
         ;
 
