@@ -1,4 +1,4 @@
-package LabWork_2_2.Lab225;
+package Tomashchuk_Anna.LabWork_2_2.Lab225;
 
 public class A {
     public int calcSquareRectangle(int a, int b) {
