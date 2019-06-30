@@ -12,19 +12,18 @@ public class MyInit {
             arr[i] = (int) (100 * Math.random());
 
         }
-        System.out.println(Arrays.toString(arr));
+       System.out.println(Arrays.toString(arr));
     }
 
-    public void setArr(int[] arr) {
-        this.arr=arr;
-    }
+   // public void setArr(int[] arr) {
+       // this.arr=arr;
+   // }
 
-    public int[] getArr(){return arr;}
+   // public int[] getArr(){return arr;}
 
-    public int[] printArray(int[] arr){
-       System.out.println(Arrays.toString(getArr()));
-       //System.out.println(Arrays.toString(arr));
-       return arr;
+    public void printArray(){
+       System.out.println(Arrays.toString(arr));
+
     }
 
 }
