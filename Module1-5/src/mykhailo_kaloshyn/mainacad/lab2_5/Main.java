@@ -1,6 +1,6 @@
 package mykhailo_kaloshyn.mainacad.lab2_5;
 
-import static com.mainacad.lab2_5.MyInit.printArray;
+import static mykhailo_kaloshyn.mainacad.lab2_5.MyInit.printArray;
 
 public class Main {
     public static void main(String[] args) {
