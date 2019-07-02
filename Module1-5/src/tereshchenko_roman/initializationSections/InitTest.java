@@ -1,6 +1,6 @@
 package tereshchenko_roman.initializationSections;
 
-public class InitTest<id> {
+public class InitTest {
 
     private int id;
     private static int nextId;
