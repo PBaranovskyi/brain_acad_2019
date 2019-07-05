@@ -18,7 +18,7 @@ public class MyCalcMain {
         System.out.print("Число π на этом уровне точности вычисления равно ");
         System.out.print(MyCalc.calcPi(n));
         System.out.print(".");
-        //        System.out.printf("%.7f", MyCalc.calcPi(n));
+        //        System.out.printf("%.7f", myCalc.calcPi(n));
 
     }
 }
