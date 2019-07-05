@@ -2,6 +2,10 @@ package tereshchenko_roman.staticMethodsAndFields;
 
 public class MyCalc {
 
+    static {
+        System.out.println("Start MyCalc");
+    }
+
     private static double Pi;
 
     public static double calcPi(int n) {

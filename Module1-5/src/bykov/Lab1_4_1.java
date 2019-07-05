@@ -1,3 +1,5 @@
+package bykov;
+
 public class Lab1_4_1 {
     public static void main(String[] args) {
         byte a = 31;
@@ -16,6 +18,7 @@ public class Lab1_4_1 {
         System.out.println(f);
         System.out.println(g);
         System.out.println(h);
+
 
 
     }
