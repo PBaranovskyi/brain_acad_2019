@@ -13,7 +13,7 @@ public class Triangle {
 
     public double getArea (){
         double p = (a + b + c)/2;
-        double area = Math.sqrt(p*(p-a)*(p-b)*(p-c));
+        double area = sqrt(p*(p-a)*(p-b)*(p-c));
         return area;
     }
 
