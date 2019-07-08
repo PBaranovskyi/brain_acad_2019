@@ -1,4 +1,5 @@
-package tereshchenko_roman.myCalc.com.brainacad.shapes;
+package tereshchenko_roman.MyCalc.com.brainacad.shapes;
+import static java.lang.Math.sqrt;
 
 public class Triangle {
     double a = 1.0;
