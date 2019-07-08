@@ -1,10 +1,20 @@
 package tereshchenko_roman.staticMethodsAndFields;
 
 public class Employee {
+    static int test;
     public String firstName;
     public String lastName;
     public String occupation;
     public String telephone;
+
+    static {
+        System.out.println("static start Emploee: test " + test);
+    }
+
+    {
+        System.out.println("start Emploee: test" + test);
+        System.out.println("start Emploee: firstName" + firstName);
+    }
 
     private static int numberOfEmployees;
 

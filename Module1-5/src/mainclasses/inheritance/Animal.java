@@ -1,4 +1,4 @@
-package sinitsyn_ihor.Works;
+package mainclasses.inheritance;
 
 public class Animal {
     private boolean mamal;
@@ -29,7 +29,14 @@ public class Animal {
         this.name = name;
     }
 
-    public void may() {
-        System.out.println("MAY by tiger");
+    public void eat(Animal animal){
+        prepareFood();
+        System.out.println(animal.getName() + " поел");
     }
+
+    protected void prepareFood() {
+        System.out.println("prepareFood");
+    }
+
+
 }

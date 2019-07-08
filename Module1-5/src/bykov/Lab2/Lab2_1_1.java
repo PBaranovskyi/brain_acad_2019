@@ -1,6 +1,4 @@
-package Lab2;
-
-import bykov.Lab2.Computer;
+package bykov.Lab2;
 
 public class Lab2_1_1 {
     public static void main(String[] args) {

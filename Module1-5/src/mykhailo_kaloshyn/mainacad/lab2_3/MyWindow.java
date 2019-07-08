@@ -2,11 +2,17 @@ package mykhailo_kaloshyn.mainacad.lab2_3;
 
 public class MyWindow {
 
-    private double width;
+    private double width ;
     private double height;
     private int numberOfGlass;
     private String color;
     private boolean isOpen;
+
+
+    public MyWindow() {
+        System.out.println("constructor");
+    }
+
 
     public MyWindow(double width, double height, int numberOfGlass, String color, boolean isOpen) {
         this.width = width;
@@ -14,14 +20,6 @@ public class MyWindow {
         this.numberOfGlass = numberOfGlass;
         this.color = color;
         this.isOpen = isOpen;
-    }
-
-    public MyWindow() {
-        this.width = 80;
-        this.height = 100;
-        this.numberOfGlass = 3;
-        this.color = "white";
-        this.isOpen = true;
     }
 
     public MyWindow(double width, double height) {
@@ -76,6 +74,10 @@ public class MyWindow {
 
     public boolean isOpen() {
         return isOpen;
+    }
+
+    {
+        System.out.println("init -block");
     }
 
     public void setOpen(boolean open) {
