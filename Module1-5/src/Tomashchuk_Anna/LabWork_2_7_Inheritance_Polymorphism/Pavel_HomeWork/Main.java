@@ -17,12 +17,21 @@ public class Main {
         zoos[2]=new Goat();
 
         for(int i=0; i<zoos.length; i++){
-            zoos[i].adoptAnimals();
+            //zoos[i].adoptAnimals();
+            System.out.println(tiger.getName()+" "+bear.getName()+" "+goat.getName());
+
         }
 
-        System.out.println(tiger.getName());
-        System.out.println(bear.getName());
-        System.out.println(goat.getName());
+        String[] animalsName= new String[3];
+        animalsName[0]=tiger.getName();
+        animalsName[1]=bear.getName();
+        animalsName[2]=goat.getName();
+
+        for(int y=0; y<animalsName.length; y++){
+            System.out.println(animalsName[y]);
+        }
+
+
 
     }
 }
