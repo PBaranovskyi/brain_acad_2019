@@ -1,4 +1,4 @@
-package Tomashchuk_Anna.LabWork_2_7_Inheritance_Polymorphism.Sample_1;
+package Tomashchuk_Anna.LabWork_2_7_Inheritance_Polymorphism.Sample_2_Private;
 
 //Подкласс для представления треугольников производный от класса TwoDShape
 // класс Triangle наследует класс TwoDShape

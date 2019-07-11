@@ -7,8 +7,8 @@ public class TwoDShape {
     double heigth;
 
     //dimension - размер
-    void showDim(){
-        System.out.println("Ширина и высота - "+width+" и "+heigth);
+    void showDim() {
+        System.out.println("Ширина и высота - " + width + " и " + heigth);
     }
 
 }
