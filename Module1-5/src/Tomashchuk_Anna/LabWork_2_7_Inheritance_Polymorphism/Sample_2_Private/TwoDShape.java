@@ -3,10 +3,10 @@ package Tomashchuk_Anna.LabWork_2_7_Inheritance_Polymorphism.Sample_2_Private;
 // Закрытые члены класса не наследуются
 // Этот код не пройдет компиляцию
 public class TwoDShape {
-    // private double width; // Этот код не пройдет компиляцию потому что private
-    // private double heigth;
+    // private double width; // теперь эти переменные объявлены как закрытые
+    // private double heigth; // Этот код не пройдет компиляцию потому что private
 
-    public double width; // теперь эти переменные объявлены как закрытые
+    public double width;
     public double heigth;
 
     void showDim() {
