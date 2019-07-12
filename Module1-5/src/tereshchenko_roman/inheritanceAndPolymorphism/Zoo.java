@@ -4,7 +4,7 @@ public class Zoo {
 
     public void getAnimals(Animal[] zooAnimals) {
         for (int i = 0; i < 3; i++) {
-            System.out.println(zooAnimals[i]);
+            System.out.println(zooAnimals[i].getName());
         }
     }
 
