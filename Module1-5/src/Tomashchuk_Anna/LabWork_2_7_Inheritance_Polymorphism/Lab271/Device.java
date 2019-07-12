@@ -14,6 +14,8 @@ public class Device {
     public void setPrice(float price){this.price=price;}
     public void setSerialNumber(String serialNumber){this.serialNumber=serialNumber;}
 
-
+    public void showDeviceParam(){
+        System.out.println("manufacturer: "+manufacturer+" price: "+ price+" serialNumber: "+ serialNumber);
+    }
 
 }

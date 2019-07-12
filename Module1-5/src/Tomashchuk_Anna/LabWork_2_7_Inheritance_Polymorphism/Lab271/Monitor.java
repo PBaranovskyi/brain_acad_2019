@@ -5,14 +5,14 @@ public class Monitor extends Device {
     public int resolutionY;
 
     //Add constructor
-
     Monitor(int resX, int resY, String manufacturer, float price, String serialNumber) {
+        resolutionX = resX;
+        resolutionY = resY;
+
         setManufacturer(manufacturer);
         setPrice(price);
         setSerialNumber(serialNumber);
 
-        resolutionX = resX;
-        resolutionY = resY;
     }
 
 }
