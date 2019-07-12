@@ -15,7 +15,7 @@ public class EthernetAdapter extends Device {
     }
 
     public void showAdapter() {
-        System.out.println("Adapter " + speed + " " + mac);
+        System.out.println("Adapter: " +"speed="+speed + ", mac=" + mac);
     }
 
 }

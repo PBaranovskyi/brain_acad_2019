@@ -6,15 +6,15 @@ public class Main {
         EthernetAdapter adapt1 = new EthernetAdapter(400, "19834", "DELL", 129.80f, "373462");
         Device device1=new Device();
 
+        System.out.println(device1);
         monitor1.showDeviceParam();
         monitor1.showMonitor();
 
         System.out.println();
 
+        System.out.println(device1);
         adapt1.showDeviceParam();
         adapt1.showAdapter();
-
-        //device1
 
     }
 

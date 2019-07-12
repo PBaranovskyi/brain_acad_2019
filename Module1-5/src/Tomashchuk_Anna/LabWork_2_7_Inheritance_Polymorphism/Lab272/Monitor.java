@@ -14,8 +14,10 @@ public class Monitor extends Device {
         setSerialNumber(serialNumber);
     }
 
+    //@Override String toString(){return "Monitor: ";}
+
     public void showMonitor() {
-        System.out.println("Monitor " + resolutionX + " " + resolutionY);
+        System.out.println("Monitor: " + "resolutionX=" + resolutionX + ", resolutionY=" + resolutionY);
     }
 
 }

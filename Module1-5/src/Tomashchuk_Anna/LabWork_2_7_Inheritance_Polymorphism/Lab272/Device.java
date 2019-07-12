@@ -7,7 +7,7 @@ public class Device {
 
     @Override
     public String toString(){
-        return "This is Device";
+        return "Device: ";
     }
 
 
@@ -21,7 +21,7 @@ public class Device {
     public void setSerialNumber(String serialNumber){this.serialNumber=serialNumber;}
 
     public void showDeviceParam(){
-        System.out.println("manufacturer: "+manufacturer+" price: "+ price+" serialNumber: "+ serialNumber);
+        System.out.println("manufacturer="+manufacturer+", price="+ price+", serialNumber="+ serialNumber);
     }
 
 }
