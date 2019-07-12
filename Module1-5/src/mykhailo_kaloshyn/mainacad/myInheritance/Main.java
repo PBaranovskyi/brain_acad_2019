@@ -3,6 +3,8 @@ package mykhailo_kaloshyn.mainacad.myInheritance;
 import mainclasses.inheritance2.Animal;
 import mainclasses.inheritance2.Zoo;
 
+import java.util.Arrays;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -20,6 +22,8 @@ public class Main {
 
         zooN1.takeAnimals(arr);
         zooN1.feedAnimals();
+
+        System.out.println(Arrays.toString(arr));
 
     }
 }
