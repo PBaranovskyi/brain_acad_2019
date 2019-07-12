@@ -1,8 +1,8 @@
 package mykhailo_kaloshyn.mainacad.myInheritance;
 
-public class Tiger extends Animal {
+public class Tiger extends mainclasses.inheritance2.Tiger {
 
     public Tiger(String name) {
-        super(name);
+        this.name = name;
     }
 }

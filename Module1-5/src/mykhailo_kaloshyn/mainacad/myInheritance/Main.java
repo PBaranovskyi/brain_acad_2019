@@ -1,5 +1,8 @@
 package mykhailo_kaloshyn.mainacad.myInheritance;
 
+import mainclasses.inheritance2.Animal;
+import mainclasses.inheritance2.Zoo;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -13,7 +16,10 @@ public class Main {
 
         Tiger tiger = new Tiger("tiger Tigra");
 
-        zooN1.takeAnimals(Animal.createArrayOfAnimals(bear, goat, tiger));
+        Animal[] arr = {bear, goat, tiger};
+
+        zooN1.takeAnimals(arr);
+        zooN1.feedAnimals();
 
     }
 }

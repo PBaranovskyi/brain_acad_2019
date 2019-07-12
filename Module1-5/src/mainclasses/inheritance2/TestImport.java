@@ -6,7 +6,7 @@ public class TestImport {
         Tiger tiger = new Tiger();
         tiger.setName("Тигр Тузик");
         tiger.setLegs(4);
-        tiger.eat();
+//        tiger.eat();
         tiger.setTailLength(10);
 
         System.out.println("У тигра " + tiger.countYourLegs());
@@ -16,11 +16,22 @@ public class TestImport {
 
         Bear bear = new Bear();
         bear.setName("медведь Михаил");
-        bear.eat();
+//        bear.eat();
         bear.fishing();
 
         Animal chupakabra = new Animal();
         chupakabra.setName("Чупакабра Оля");
-        chupakabra.eat();
+//        chupakabra.eat();
+
+
+        Zoo kievZoo = new Zoo();
+
+        kievZoo.feedAnimals();
+
+        Animal[] animals = {bear, tiger, chupakabra};
+        kievZoo.takeAnimals(animals);
+
+        kievZoo.feedAnimals();
+
     }
 }
