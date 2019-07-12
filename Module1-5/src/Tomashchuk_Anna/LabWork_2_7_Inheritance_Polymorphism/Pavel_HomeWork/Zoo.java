@@ -14,14 +14,6 @@ public class Zoo {
 
     public void setName(String name){this.name=name;}
 
-    public void adopt(Zoo zoo){
-        adoptAnimals();
-        System.out.println(zoo.getName()+ " имя");
-    }
 
-    public void adoptAnimals(){
-
-        System.out.println("adoptAnimals");
-    }
 
 }

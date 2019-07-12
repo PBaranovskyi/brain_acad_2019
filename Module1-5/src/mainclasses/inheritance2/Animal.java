@@ -3,7 +3,15 @@ package mainclasses.inheritance2;
 public class Animal {
     private boolean mamal;
     private int legs;
-    private String name;
+    protected String name;
+
+    public Animal() {
+
+    }
+
+    public Animal(String name) {
+        this.name = name;
+    }
 
     public boolean isMamal() {
         return mamal;
@@ -29,7 +37,7 @@ public class Animal {
         this.name = name;
     }
 
-    public void eat(){
+    public void eat() {
         prepareFood();
         System.out.println(this.getName() + " поел");
     }
