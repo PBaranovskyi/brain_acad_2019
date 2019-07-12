@@ -4,6 +4,11 @@ public class Monitor extends Device {
     public int resolutionX;
     public int resolutionY;
 
+    @Override
+    public String toString() {
+        return "Monitor: ";
+    }
+
     //Add constructor
     Monitor(int resX, int resY, String manufacturer, float price, String serialNumber) {
         resolutionX = resX;
@@ -14,10 +19,9 @@ public class Monitor extends Device {
         setSerialNumber(serialNumber);
     }
 
-    //@Override String toString(){return "Monitor: ";}
 
     public void showMonitor() {
-        System.out.println("Monitor: " + "resolutionX=" + resolutionX + ", resolutionY=" + resolutionY);
+        System.out.println("resolutionX=" + resolutionX + ", resolutionY=" + resolutionY);
     }
 
 }

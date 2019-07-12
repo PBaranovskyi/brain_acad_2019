@@ -4,6 +4,11 @@ public class EthernetAdapter extends Device {
     public int speed;
     public String mac;
 
+    @Override
+    public String toString() {
+        return "Adapter: ";
+    }
+
     //Add constructor
     EthernetAdapter(int speed1, String mac1, String manufacturer, float price, String serialNumber) {
         speed = speed1;
@@ -15,7 +20,7 @@ public class EthernetAdapter extends Device {
     }
 
     public void showAdapter() {
-        System.out.println("Adapter: " +"speed="+speed + ", mac=" + mac);
+        System.out.println("Adapter: " + "speed=" + speed + ", mac=" + mac);
     }
 
 }
