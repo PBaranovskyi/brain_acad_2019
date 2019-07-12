@@ -1,6 +1,6 @@
-package tereshchenko_roman.myCalc.com.brainacad.calc;
+package tereshchenko_roman.MyCalc.com.brainacad.calc;
 
-import tereshchenko_roman.myCalc.com.brainacad.shapes.Triangle;
+import tereshchenko_roman.MyCalc.com.brainacad.shapes.Triangle;
 
 public class Main {
     public static void main(String[] args) {

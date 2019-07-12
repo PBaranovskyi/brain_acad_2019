@@ -5,34 +5,28 @@ import tereshchenko_roman.constructors.MyWindow;
 public class MainMyWindow {
     public static void main(String[] args) {
 
-        MyWindow window1 = new MyWindow(33.15, 37.18, 2, "white", false);
-        MyWindow window2 = new MyWindow(33.15, 37.18, 2, "white", false);
-        MyWindow window3 = new MyWindow(34.15, 38.18, 3, "white", true);
-        MyWindow window4 = new MyWindow(35.15, 39.18, 2, "white", false);
-        MyWindow window5 = new MyWindow(36.15, 40.18, 3, "white", true);
+        MyWindow window1 = new MyWindow(33.15, 37.18, 1, "white", false);
+        MyWindow window2 = new MyWindow(33.15, 47.18, 2, "yellow", false);
+        MyWindow window3 = new MyWindow(34.15, 38.18, 3, "blue", true);
+        MyWindow window4 = new MyWindow(35.15, 39.18, 4, "red", false);
+        MyWindow window5 = new MyWindow(36.15, 40.18, 3, "green", true);
+        MyWindow window6 = new MyWindow();
+        MyWindow window7 = new MyWindow(20, 50);
+        MyWindow window8 = new MyWindow(100, 200, 2);
 
-        MyWindow[] arr = new MyWindow[5];
-        arr[0] = window1;
-        arr[1] = window2;
-        arr[2] = window3;
-        arr[3] = window4;
-        arr[4] = window5;
+        window1.printFields();
+        window2.printFields();
+        window3.printFields();
+        window4.printFields();
+        window5.printFields();
+        window6.printFields();
+        window7.printFields();
+        window8.printFields();
 
 
-
-        for (int i = 0; i < 5; i++) {
-            arr[i].printFields(arr);
-
-            System.out.println("Width: " + arr[i].getWidth());
-            System.out.println("Height: " + arr[i].getHeight());
-            System.out.println("Number of glasses: " + arr[i].getNumberOfGlass());
-            System.out.println("Color: " + arr[i].getColor());
-            System.out.println("Opens: " + arr[i].getIsOpen());
-            System.out.println();
-
-        }
     }
 }
+
 
 
 

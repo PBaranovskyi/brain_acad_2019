@@ -1,4 +1,5 @@
-package tereshchenko_roman.myCalc.com.brainacad.shapes;
+package tereshchenko_roman.MyCalc.com.brainacad.shapes;
+import static java.lang.Math.sqrt;
 
 public class Triangle {
     double a = 1.0;
@@ -13,7 +14,7 @@ public class Triangle {
 
     public double getArea (){
         double p = (a + b + c)/2;
-        double area = Math.sqrt(p*(p-a)*(p-b)*(p-c));
+        double area = sqrt(p*(p-a)*(p-b)*(p-c));
         return area;
     }
 

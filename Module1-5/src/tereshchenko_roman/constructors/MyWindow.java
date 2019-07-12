@@ -8,14 +8,6 @@ public class MyWindow {
     String color;
     boolean isOpen;
 
-    public MyWindow(){
-        this.width = width;
-        this.height = height;
-        this.numberOfGlass = numberOfGlass;
-        this.color = color;
-        this.isOpen = isOpen;
-    }
-
     public MyWindow(double width, double height, int numberOfGlass, String color, boolean isOpen) {
         this.width = width;
         this.height = height;
@@ -24,69 +16,26 @@ public class MyWindow {
         this.isOpen = isOpen;
     }
 
-    MyWindow window1 = new MyWindow(35.2, 15.1, 2, "white", true);
+public void printFields(){
+    System.out.print(width + " " + height + " " + numberOfGlass + " " + color + " " + isOpen);
+    System.out.println();
+}
 
-//
-//    //     Lab Work 2_3_2
-//    public MyWindow() {
-////        this.width = width;
-////        this.height = height;
-//    }
-//
-//    //    Lab Work 2_3_3
-//    public MyWindow(double width, double height) {
-//    }
-//
-//    public MyWindow(double width, double height, int numberOfGlass) {
-//    }
-//
-////    Lab Work 2_3_4
-////    public MyWindow(double width, double height, int numberOfGlass){
-////        this.width = width;
-////        this.height = height;
-////        this.numberOfGlass = numberOfGlass;
-//
-    public double getWidth() {
-        return width;
+    public MyWindow(){
     }
 
-    public double getHeight() {
-        return height;
+    public MyWindow (double width, double height){
+        this(width, height, 2, "green", false);
     }
 
-    public int getNumberOfGlass() {
-        return numberOfGlass;
+
+    public MyWindow (double width, double height, int numberOfGlass){
+        this(width, height, numberOfGlass, "grey", true);
     }
 
-    public String getColor() {
-        return color;
-    }
-
-    public boolean getIsOpen() {
-        return isOpen;
-    }
-//
-//
-//
-//    MyWindow window1 = new MyWindow;
-//    };
-//    MyWindow window2;
-//    MyWindow window3;
-//    MyWindow window4;
-//    MyWindow window5;
-
-    public void printFields(MyWindow[] arr) {
-
-        ;
-
-    }
 
 
 
 
     }
 
-//    public void printFields(double v, double v1, int i, String white, boolean b) {
-//
-//    }
-//}
