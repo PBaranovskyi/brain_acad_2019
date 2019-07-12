@@ -8,11 +8,11 @@ public class Zoo {
         }
     }
 
-    public void getAnimalNames(String[] zooAnimalsNames) {
-        for (int i = 0; i < 3; i++) {
-            System.out.println(zooAnimalsNames[i]);
-        }
-    }
+//    public void getAnimalNames(String[] zooAnimalsNames) {
+//        for (int i = 0; i < 3; i++) {
+//            System.out.println(zooAnimalsNames[i]);
+//        }
+//    }
 
     public static void main(String[] args) {
 
@@ -26,12 +26,12 @@ public class Zoo {
         zooAnimals[1] = bear1;
         zooAnimals[2] = goat1;
 
-        String[] zooAnimalsNames = new String[3];
-        zooAnimalsNames[0] = tiger1.getName();
-        zooAnimalsNames[1] = bear1.getName();
-        zooAnimalsNames[2] = goat1.getName();
+//        String[] zooAnimalsNames = new String[3];
+//        zooAnimalsNames[0] = tiger1.getName();
+//        zooAnimalsNames[1] = bear1.getName();
+//        zooAnimalsNames[2] = goat1.getName();
 
         zoo1.getAnimals(zooAnimals);
-        zoo1.getAnimalNames(zooAnimalsNames);
+//        zoo1.getAnimalNames(zooAnimalsNames);
     }
 }
