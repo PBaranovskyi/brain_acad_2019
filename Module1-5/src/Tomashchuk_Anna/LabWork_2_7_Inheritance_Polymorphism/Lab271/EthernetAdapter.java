@@ -5,13 +5,18 @@ public class EthernetAdapter extends Device {
     public String mac;
 
     //Add constructor
-    EthernetAdapter(int speed1, String mac1, String manufacturer, float price) {
+    EthernetAdapter(int speed1, String mac1, String manufacturer, float price, String serialNumber) {
         speed = speed1;
         mac = mac1;
 
         setManufacturer(manufacturer);
         setPrice(price);
-
+        setSerialNumber(serialNumber);
     }
+
+    public void showAdapter() {
+        System.out.println("Adapter " + speed + " " + mac);
+    }
+
 }
 

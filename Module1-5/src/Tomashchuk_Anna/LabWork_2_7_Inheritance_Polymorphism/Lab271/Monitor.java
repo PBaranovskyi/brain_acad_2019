@@ -12,7 +12,10 @@ public class Monitor extends Device {
         setManufacturer(manufacturer);
         setPrice(price);
         setSerialNumber(serialNumber);
+    }
 
+    public void showMonitor() {
+        System.out.println("Monitor " + resolutionX + " " + resolutionY);
     }
 
 }
