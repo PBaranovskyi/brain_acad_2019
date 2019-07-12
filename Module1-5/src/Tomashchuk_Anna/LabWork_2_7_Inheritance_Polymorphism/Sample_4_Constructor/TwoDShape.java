@@ -2,8 +2,8 @@ package Tomashchuk_Anna.LabWork_2_7_Inheritance_Polymorphism.Sample_4_Constructo
 
 // Добавление конструктора в класс Triangle
 public class TwoDShape {
-    public double width; // теперь эти переменные объявлены как закрытые
-    public double heigth;
+    private double width; // теперь эти переменные объявлены как закрытые
+    private double heigth;
 
     // Методы доступа к закрытым переменным экземпляра width и heigth
     double getWidth(){return width;}

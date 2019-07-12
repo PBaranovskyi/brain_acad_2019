@@ -3,8 +3,8 @@ package Tomashchuk_Anna.LabWork_2_7_Inheritance_Polymorphism.Sample_3_Getters_Se
 // использование методов доступа для установки
 // и получения значений закрытых членов
 public class TwoDShape {
-    public double width; // теперь эти переменные объявлены как закрытые
-    public double heigth;
+    private double width; // теперь эти переменные объявлены как закрытые
+    private double heigth;
 
     // Методы доступа к закрытым переменным экземпляра width и heigth
     double getWidth(){return width;}
