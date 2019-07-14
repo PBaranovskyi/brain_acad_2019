@@ -3,7 +3,7 @@ package mainclasses.equals;
 import mainclasses.inheritance2.Bear;
 import mainclasses.inheritance2.Tiger;
 
-public class Main {
+public class  Main {
 
     public static void main(String[] args) {
         Tiger tiger1 = new Tiger(new String("Vasya"), 6);
