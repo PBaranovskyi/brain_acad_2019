@@ -24,8 +24,8 @@ public class equals {
 
         Bear bear = new Bear();
 
-        System.out.println(tiger1.equals(tiger2));
-        System.out.println(tiger1.equals(bear));
+        System.out.println(tiger1.equals(tiger2)); //true- equals- переопределяет, сравнивает посимвольно
+        System.out.println(tiger1.equals(bear)); // false
 
 
         long c = 8;
