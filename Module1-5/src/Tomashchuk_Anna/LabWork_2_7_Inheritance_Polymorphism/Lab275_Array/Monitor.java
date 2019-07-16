@@ -6,7 +6,9 @@ public class Monitor extends Device {
 
     @Override
     public String toString() {
-        return "Monitor: ";
+        return "Model: " + this.getManufacturer() + "; price: " + this.getPrice() +" SN: "+ this.getSerialNumber()+
+            ", resolutionX: "+this.resolutionX+ ", resolutionY: "+ this.resolutionY+'\n';
+
     }
 
     //Add constructor

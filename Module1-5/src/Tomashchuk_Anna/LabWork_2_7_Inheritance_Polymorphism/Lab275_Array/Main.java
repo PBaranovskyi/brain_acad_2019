@@ -29,9 +29,13 @@ public class Main {
 
         Device[] arr = {monitor1, monitor2, adapt1};
         //device1.showDeviceParam();
-        device1.takeDevice(arr);
+        device1.takeDevice(arr); // [HP] [HP] [DELL]
+        System.out.println();
 
-        System.out.println(Arrays.toString(arr));
+        System.out.println(Arrays.toString(arr)); // [Monitor: , Monitor: , Adapter: ]
+
+
+
 
 
     }
