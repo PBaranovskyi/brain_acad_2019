@@ -48,8 +48,8 @@ public class Zoo {
                     }
                     System.out.println(arr[m].getName() + ", " + arr[m].getAge() + " years old");// Выводит зверя, если
                     // он не равен ни одному из предыдущих
-                    break; //Выводит только один раз
                 }
+                break; // Для оставшихся мест, равных null.
             }
         }
     }
@@ -75,7 +75,7 @@ public class Zoo {
 //        zoo1.showAnimals(zooResidents);
 
         //Создаём и принимаем следующих зверей:
-        Tiger tiger2 = new Tiger("Tiger2", 15);
+        Tiger tiger2 = new Tiger("Tiger1", 5);
         Bear bear2 = new Bear("Bear2", 13);
         Goat goat2 = new Goat("Goat2", 14);
 
