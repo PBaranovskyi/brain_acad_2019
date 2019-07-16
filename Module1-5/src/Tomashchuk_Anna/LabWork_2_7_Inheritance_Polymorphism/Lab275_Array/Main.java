@@ -28,7 +28,8 @@ public class Main {
         System.out.println(monitor1.equals(monitor2));
 
         Device[] arr = {monitor1, monitor2, adapt1};
-        device1.showDeviceParam();
+        // device1.showDeviceParam();
+        device1.takeDevice(arr);
 
         System.out.println(Arrays.toString(arr));
 
