@@ -4,7 +4,8 @@ public class EthernetAdapter extends Device {
     private int speed;
     private String mac;
 
-    public EthernetAdapter(int speed, String mac){
+    public EthernetAdapter(String manufacturer, float price, String serialNumber, int speed, String mac){
+        super(manufacturer, price, serialNumber);
         this.speed = speed;
         this.mac = mac;
     }
@@ -25,6 +26,10 @@ public class EthernetAdapter extends Device {
 
     public String toString(){
         return "Device: " + "manufacturer =" + getManufacturer() + ", price = " + getPrice() + ", serialNumber = " + getSerialNumber() + ", speed = " + getSpeed() + ", mac = " + getMac();
+    }
+    public boolean equals (String serialNumber){
+        if (this.getSerialNumber() == serialNumber) return true;
+        return false;
     }
 
 }

@@ -27,7 +27,9 @@ public class Zoo {
         }
 
     }
+
     int count = 0; //Счётчик для метода showAnimals
+
     //    Показываем список принятых зверей, при этом проверяем, чтобы каждый следующий зверь не был кем-то из предыдущих:
     public void showAnimals(Animal[] arr) {
 //        for (Animal zooResident : arr) {// Без проверки зверя равен ли он предыдущему.
@@ -47,8 +49,9 @@ public class Zoo {
                         break;
                     }
                     count++;
-                    if (count == m ) {System.out.println(arr[m].getName() + ", " + arr[m].getAge() + " years old");// Выводит зверя, если
-                    // он не равен ни одному из предыдущих
+                    if (count == m) {
+                        System.out.println(arr[m].getName() + ", " + arr[m].getAge() + " years old");// Выводит зверя, если
+                        // он не равен ни одному из предыдущих
                         count = 0;
                     }
                 }

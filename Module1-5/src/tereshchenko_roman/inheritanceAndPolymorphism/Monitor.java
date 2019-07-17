@@ -4,7 +4,8 @@ public class Monitor extends Device {
     private int resolutionX;
     private int resolutionY;
 
-    public Monitor(int resolutionX, int resolutionY) {
+    public Monitor(String manufacturer, float price, String serialNumber, int resolutionX, int resolutionY) {
+        super(manufacturer, price, serialNumber);
         this.resolutionX = resolutionX;
         this.resolutionY = resolutionY;
     }
@@ -25,7 +26,11 @@ public class Monitor extends Device {
         this.resolutionY = resolutionY;
     }
     public String toString(){
-        return "Device: " + "manufacturer =" + getManufacturer() + ", price = " + getPrice() + ", serialNumber = " + getSerialNumber() + ", resolutionX = " + getResolutionX() + ", resoulutionY = " + getResolutionY();
+        return "Device: " + "manufacturer =" + getManufacturer() + ", price = " + getPrice() + ", serialNumber = " + getSerialNumber() + ", X = " + getResolutionX() + ", Y = " + getResolutionY();
+    }
+    public boolean equals (String serialNumber){
+        if (this.getSerialNumber() == serialNumber) return true;
+        return false;
     }
 
 }

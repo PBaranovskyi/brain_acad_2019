@@ -40,6 +40,11 @@ public class Device {
     }
 
     public String toString(){
-        return "Device: " + "manufacturer =" + getManufacturer() + ", price = " + getPrice() + ", serialNumber = " + getSerialNumber();
+        return "Device: " + "manufacturer = " + getManufacturer() + ", price = " + getPrice() + ", serialNumber = " + getSerialNumber();
     }
+
+    public boolean equals (String serialNumber){
+        if (this.serialNumber == serialNumber) return true;
+        return false;
+        }
 }
