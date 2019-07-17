@@ -1,4 +1,4 @@
-package Tomashchuk_Anna.LabWork_2_7_Inheritance_Polymorphism.Lab271;
+package Tomashchuk_Anna.LabWork_2_7_Inheritance_Polymorphism.Lab272_New;
 
 public class Device {
     private String manufacturer;
@@ -21,5 +21,10 @@ public class Device {
         setSerialNumber(serialNumber);
     }
 
+    @Override
+    public String toString(){
+        return "Device: manufacturer= "+this.getManufacturer()+
+                ", price=" +this.getPrice()+", serialNumber= "+this.getSerialNumber();
+    }
 
 }

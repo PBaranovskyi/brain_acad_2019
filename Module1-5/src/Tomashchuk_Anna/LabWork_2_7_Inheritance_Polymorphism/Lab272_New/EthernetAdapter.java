@@ -1,4 +1,4 @@
-package Tomashchuk_Anna.LabWork_2_7_Inheritance_Polymorphism.Lab271;
+package Tomashchuk_Anna.LabWork_2_7_Inheritance_Polymorphism.Lab272_New;
 
 public class EthernetAdapter extends Device {
     private int speed;
@@ -17,6 +17,7 @@ public class EthernetAdapter extends Device {
         speed = speed1;
         mac = mac1;
     }
+
 
 }
 

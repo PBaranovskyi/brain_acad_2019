@@ -1,4 +1,4 @@
-package Tomashchuk_Anna.LabWork_2_7_Inheritance_Polymorphism.Lab271;
+package Tomashchuk_Anna.LabWork_2_7_Inheritance_Polymorphism.Lab272_New;
 
 public class Main {
     public static void main(String[] args) {
@@ -8,7 +8,7 @@ public class Main {
                 400, "19834");
 
         System.out.println(device1);
-        System.out.println(monitor1);
 
     }
+
 }
