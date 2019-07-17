@@ -1,4 +1,4 @@
-package Tomashchuk_Anna.LabWork_2_7_Inheritance_Polymorphism.Lab271;
+package Tomashchuk_Anna.LabWork_2_7_Inheritance_Polymorphism.Old.Lab271_Old;
 
 public class Device {
     private String manufacturer;
@@ -13,13 +13,6 @@ public class Device {
     public void setManufacturer(String manufacturer) { this.manufacturer = manufacturer; }
     public void setPrice(float price){this.price=price;}
     public void setSerialNumber(String serialNumber){this.serialNumber=serialNumber;}
-
-    //Add constructor
-    public Device(String manufacturer, float price, String serialNumber){
-        setManufacturer(manufacturer);
-        setPrice(price);
-        setSerialNumber(serialNumber);
-    }
 
     public void showDeviceParam(){
         System.out.println("manufacturer: "+manufacturer+" price: "+ price+" serialNumber: "+ serialNumber);
