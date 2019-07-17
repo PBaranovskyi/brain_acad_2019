@@ -27,7 +27,7 @@ public class Zoo {
         }
 
     }
-
+    int count = 0; //Счётчик для метода showAnimals
     //    Показываем список принятых зверей, при этом проверяем, чтобы каждый следующий зверь не был кем-то из предыдущих:
     public void showAnimals(Animal[] arr) {
 //        for (Animal zooResident : arr) {// Без проверки зверя равен ли он предыдущему.
@@ -44,12 +44,14 @@ public class Zoo {
                 if (arr[m] != null) { // Эта проверка здесь ни при чём, она только для метода takeAnimals (чтобы не
                     // выводить пустые места)
                     if (arr[m].equals(arr[n])) {
-                        System.out.print("==");; // Не выводит ничего, если зверь равен одному из предыдущих
+                        break;
                     }
-                    System.out.println(arr[m].getName() + ", " + arr[m].getAge() + " years old");// Выводит зверя, если
+                    count++;
+                    if (count == m ) {System.out.println(arr[m].getName() + ", " + arr[m].getAge() + " years old");// Выводит зверя, если
                     // он не равен ни одному из предыдущих
+                        count = 0;
+                    }
                 }
-                break; // Для оставшихся мест, равных null.
             }
         }
     }
@@ -75,8 +77,8 @@ public class Zoo {
 //        zoo1.showAnimals(zooResidents);
 
         //Создаём и принимаем следующих зверей:
-        Tiger tiger2 = new Tiger("Tiger1", 5);
-        Bear bear2 = new Bear("Bear2", 13);
+        Tiger tiger2 = new Tiger("Tiger2", 15);
+        Bear bear2 = new Bear("Bear1", 3);
         Goat goat2 = new Goat("Goat2", 14);
 
         //Принимаем следующих зверей в зоопарк и выводим их данные:
@@ -85,3 +87,4 @@ public class Zoo {
         //И т. д. пока зоопарк не заполнится.
     }
 }
+
