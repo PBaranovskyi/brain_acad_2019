@@ -37,5 +37,4 @@ public class Monitor extends Device {
     }
 
 
-
 }
