@@ -1,15 +1,9 @@
-package Tomashchuk_Anna.LabWork_2_7_Inheritance_Polymorphism.Lab272;
+package Tomashchuk_Anna.LabWork_2_7_Inheritance_Polymorphism.Lab271_Get_Set_Constr;
 
 public class Device {
     private String manufacturer;
     private float price;
     private String serialNumber;
-
-    @Override
-    public String toString(){
-        return "Device: ";
-    }
-
 
     //Add getters/setters
     public String getManufacturer(){return manufacturer;}
@@ -20,8 +14,12 @@ public class Device {
     public void setPrice(float price){this.price=price;}
     public void setSerialNumber(String serialNumber){this.serialNumber=serialNumber;}
 
-    public void showDeviceParam(){
-        System.out.println("manufacturer="+manufacturer+", price="+ price+", serialNumber="+ serialNumber);
+    //Add constructor
+    public Device(String manufacturer, float price, String serialNumber){
+        setManufacturer(manufacturer);
+        setPrice(price);
+        setSerialNumber(serialNumber);
     }
+
 
 }

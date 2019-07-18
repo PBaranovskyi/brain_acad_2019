@@ -1,4 +1,4 @@
-package Tomashchuk_Anna.LabWork_2_7_Inheritance_Polymorphism.Lab271;
+package Tomashchuk_Anna.LabWork_2_7_Inheritance_Polymorphism.Lab271_Get_Set_Constr;
 
 public class Monitor extends Device {
     private int resolutionX;
