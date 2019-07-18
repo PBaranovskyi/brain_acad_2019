@@ -1,4 +1,4 @@
-package Tomashchuk_Anna.ZooMisha;
+package Tomashchuk_Anna.LabWork_2_7_Inheritance_Polymorphism.ZooMisha;
 
 public class Main {
 
