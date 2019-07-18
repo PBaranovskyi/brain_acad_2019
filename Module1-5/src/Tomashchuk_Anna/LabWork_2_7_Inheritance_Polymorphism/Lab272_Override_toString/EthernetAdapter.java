@@ -1,4 +1,4 @@
-package Tomashchuk_Anna.LabWork_2_7_Inheritance_Polymorphism.Lab272_New;
+package Tomashchuk_Anna.LabWork_2_7_Inheritance_Polymorphism.Lab272_Override_toString;
 
 public class EthernetAdapter extends Device {
     private int speed;
@@ -17,6 +17,14 @@ public class EthernetAdapter extends Device {
         speed = speed1;
         mac = mac1;
     }
+
+    @Override
+    public String toString() {
+        return "Adapter: manufacturer=" + super.getManufacturer() + ", price=" + super.getPrice() + ", serialNumber=" +
+                super.getSerialNumber() + ", speed=" + this.getSpeed() + ", mac=" + this.getMac();
+    }
+
+
 
 
 }

@@ -1,4 +1,4 @@
-package Tomashchuk_Anna.LabWork_2_7_Inheritance_Polymorphism.Lab272_New;
+package Tomashchuk_Anna.LabWork_2_7_Inheritance_Polymorphism.Lab272_Override_toString;
 
 public class Monitor extends Device {
     private int resolutionX;
@@ -16,6 +16,12 @@ public class Monitor extends Device {
         super(manufacturer,price,serialNumber);
         resolutionX = resX;
         resolutionY = resY;
+    }
+
+    @Override
+    public String toString() {
+        return "Monitor: manufacturer=" + super.getManufacturer() + ", price=" + super.getPrice() + ", serialNumber="
+                + super.getSerialNumber() + ", resolutionX=" + this.resolutionX + ", resolutionY=" + this.resolutionY;
     }
 
 

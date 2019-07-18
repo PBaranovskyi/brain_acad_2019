@@ -1,6 +1,7 @@
-package Tomashchuk_Anna.LabWork_2_7_Inheritance_Polymorphism.Lab272_New;
+package Tomashchuk_Anna.LabWork_2_7_Inheritance_Polymorphism.Lab272_Override_toString;
 
 public class Main {
+    //Override toString() method in each class
     public static void main(String[] args) {
         Device device1 = new Device("ASUS", 1750.50f, "5982204209");
         Monitor monitor1 = new Monitor("HP", 2076.00f, "1897113008", 4300, 600);
@@ -8,6 +9,8 @@ public class Main {
                 400, "19834");
 
         System.out.println(device1);
+        System.out.println(monitor1);
+        System.out.println(adapt1);
 
     }
 

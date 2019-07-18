@@ -1,4 +1,4 @@
-package Tomashchuk_Anna.LabWork_2_7_Inheritance_Polymorphism.Lab272_New;
+package Tomashchuk_Anna.LabWork_2_7_Inheritance_Polymorphism.Lab272_Override_toString;
 
 public class Device {
     private String manufacturer;
@@ -22,9 +22,9 @@ public class Device {
     }
 
     @Override
-    public String toString(){
-        return "Device: manufacturer= "+this.getManufacturer()+
-                ", price=" +this.getPrice()+", serialNumber= "+this.getSerialNumber();
+    public String toString() {
+        return "Device: manufacturer= " + this.getManufacturer() +
+                ", price=" + this.getPrice() + ", serialNumber= " + this.getSerialNumber();
     }
 
 }
