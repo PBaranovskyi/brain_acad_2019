@@ -5,6 +5,8 @@ public class Tiger extends Animal {
     private int age;
     private String color;
 
+    private int tailLength;
+
     public Tiger(){
 
     }
@@ -21,8 +23,6 @@ public class Tiger extends Animal {
     public void setColor(String color) {
         this.color = color;
     }
-
-    private int tailLength;
 
     public int getTailLength() {
         return tailLength;
@@ -58,20 +58,24 @@ public class Tiger extends Animal {
 
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        if (!super.equals(obj)) return false;
 
-        Tiger tiger = (Tiger) o;
+        Tiger tiger = (Tiger) obj;
 
         if (age != tiger.age) return false;
-        return getTailLength() == tiger.getTailLength();
+        if (getTailLength() != tiger.getTailLength()) return false;
+        return getColor() != null ? getColor().equals(tiger.getColor()) : tiger.getColor() == null;
 
     }
 
     @Override
     public int hashCode() {
-        int result = age;
+        int result = super.hashCode();
+        result = 31 * result + age;
+        result = 31 * result + (getColor() != null ? getColor().hashCode() : 0);
         result = 31 * result + getTailLength();
         return result;
     }

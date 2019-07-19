@@ -25,6 +25,63 @@ public class Zoo {
 
     }*/
 
+    public void takeAnimals2(Animal[] someAnimals) {
+
+        Animal[] arr = checkIfDuplicates(someAnimals);
+
+        if (this.listOfAnimals == null) {
+            this.listOfAnimals = arr;
+        } else {
+            Animal[] combinedArray = combine(listOfAnimals, arr);
+            listOfAnimals = checkIfDuplicates(combinedArray);
+        }
+
+    }
+
+    public static Animal[] combine(Animal[] a, Animal[] b){
+        int length = a.length + b.length;
+        Animal[] result = new Animal[length];
+        System.arraycopy(a, 0, result, 0, a.length);
+        System.arraycopy(b, 0, result, a.length, b.length);
+        return result;
+    }
+
+
+    private Animal[] checkIfDuplicates(Animal[] someAnimals) {
+        Animal duplicate;
+        int counterDuplicates = 0;
+
+        for (int j = 0; j < someAnimals.length; j++) {
+            for (int i = 0; i < someAnimals.length; i++) {
+                if (j == i) {
+                    continue;
+                }
+
+                Animal someAnimal = someAnimals[i];
+                duplicate = someAnimals[j];
+
+                if (someAnimal != null && duplicate != null && duplicate.equals(someAnimal)) {
+                    someAnimals[i] = null;
+                    counterDuplicates++;
+                }
+
+            }
+        }
+
+        int lenthWithotDuplicates = someAnimals.length - counterDuplicates;
+        Animal[] withoutDuplicates = new Animal[lenthWithotDuplicates];
+        int newArrayCounter = 0;
+
+        for (Animal someAnimal : someAnimals) {
+            if (someAnimal != null) {
+                withoutDuplicates[newArrayCounter] = someAnimal;
+                newArrayCounter++;
+            }
+        }
+
+        return withoutDuplicates;
+    }
+
     public void takeAnimals(Animal[] someAnimals) {
         if (this.listOfAnimals == null) {
             this.listOfAnimals = new Animal[]{someAnimals[0]};
@@ -49,8 +106,12 @@ public class Zoo {
         }
 
 
+        show();
+    }
+
+    public void show() {
         for (Animal animal : this.listOfAnimals) {
-            System.out.print("[" + animal.getName() + ", "+ animal.getAge() + "] ");
+            System.out.print("[" + animal.getName() + ", " + animal.getAge() + "] ");
         }
     }
 }

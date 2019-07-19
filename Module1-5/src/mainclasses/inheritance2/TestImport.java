@@ -33,5 +33,12 @@ public class TestImport {
 
         kievZoo.feedAnimals();
 
+        Tiger tiger2 = new Tiger();
+        tiger2.setName("Тигр Тузик");
+        tiger2.setLegs(4);
+//        tiger.eat();
+        tiger2.setTailLength(10);
+
+        System.out.println(tiger.equals(tiger2));
     }
 }

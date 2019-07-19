@@ -12,7 +12,8 @@ public class Main {
         Goat goat2 = new Goat("goat Angela", 2);
         Tiger tiger = new Tiger("tiger Tigra", 3);
 
-        zooN1.takeAnimals(Animal.createArrayOfAnimals(bear1, goat, goat2, tiger));
+        Animal[] animals = {bear1, goat, goat2, tiger};
+        zooN1.takeAnimals2(animals);
         System.out.println();
 
         Bear bear2 = new Bear("bear Jay", 5);
@@ -21,7 +22,8 @@ public class Main {
         Snake snake2 = new Snake("snake Lo", 11);
         Wolf wolf = new Wolf("wolf Grey", 7);
 
-        zooN1.takeAnimals(Animal.createArrayOfAnimals(bear2, goat3, snake, snake2, wolf, bear1));
+        zooN1.takeAnimals2(Animal.createArrayOfAnimals(bear2, goat3, snake, snake2, wolf, bear1));
 
+        zooN1.show();
     }
 }

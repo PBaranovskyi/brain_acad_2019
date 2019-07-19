@@ -51,4 +51,25 @@ public class Animal {
     public String toString() {
         return " name: " + getName();
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Animal animal = (Animal) o;
+
+        if (isMamal() != animal.isMamal()) return false;
+        if (getLegs() != animal.getLegs()) return false;
+        return getName() != null ? getName().equals(animal.getName()) : animal.getName() == null;
+
+    }
+
+    @Override
+    public int hashCode() {
+        int result = (isMamal() ? 1 : 0);
+        result = 31 * result + getLegs();
+        result = 31 * result + (getName() != null ? getName().hashCode() : 0);
+        return result;
+    }
 }
