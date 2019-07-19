@@ -1,4 +1,4 @@
-package Tomashchuk_Anna.LabWork_2_7_Inheritance_Polymorphism.ZooMisha;
+package Tomashchuk_Anna.LabWork_2_7_Inheritance_Polymorphism.ZooMisha2;
 
 public class Zoo {
 
@@ -31,13 +31,7 @@ public class Zoo {
                     count++;
                 }
             }
-            if (count == 0) {
-                Animal[] additionalOneAnimal = {someAnimals[i]};
-                Animal[] newListOfAnimals = new Animal[listOfAnimals.length + 1];
-                System.arraycopy(listOfAnimals, 0, newListOfAnimals, 0, listOfAnimals.length);
-                System.arraycopy(additionalOneAnimal, 0, newListOfAnimals, newListOfAnimals.length - 1, 1);
-                this.listOfAnimals = newListOfAnimals;
-            }
+
         }
 
 

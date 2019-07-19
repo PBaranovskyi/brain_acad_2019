@@ -1,4 +1,4 @@
-package Tomashchuk_Anna.LabWork_2_7_Inheritance_Polymorphism.ZooMisha;
+package Tomashchuk_Anna.LabWork_2_7_Inheritance_Polymorphism.ZooMisha2;
 
 public class Animal {
 
