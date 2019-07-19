@@ -38,9 +38,9 @@ public class MyMath {
         this.arr = newArr;
     }
 
-    public static int findMin(int[] arr) {
+    public static int findMin(int... arr) {
         int temp = arr[0];
-        for (int i = 0; i < arr.length - 1; i++) {
+        for (int i = 0; i < arr.length; i++) {
             if (temp > arr[i]) {
                 temp = arr[i];
             }
@@ -51,8 +51,8 @@ public class MyMath {
 
     public static int findMin(int[][] matrix) {
         int temp = matrix[0][0];
-        for (int i = 0; i < matrix.length - 1; i++) {
-            for (int j = 0; j < matrix[0].length - 1; j++) {
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[0].length; j++) {
                 if (temp > matrix[i][j]) {
                     temp = matrix[i][j];
                 }
@@ -62,9 +62,9 @@ public class MyMath {
         return minVal;
     }
 
-    public static int findMax(int[] arr) {
+    public static int findMax(int... arr) {
         int temp = arr[0];
-        for (int i = 0; i < arr.length - 1; i++) {
+        for (int i = 0; i < arr.length; i++) {
             if (temp < arr[i]) {
                 temp = arr[i];
             }
@@ -75,8 +75,8 @@ public class MyMath {
 
     public static int findMax(int[][] matrix) {
         int temp = matrix[0][0];
-        for (int i = 0; i < matrix.length - 1; i++) {
-            for (int j = 0; j < matrix[0].length - 1; j++) {
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[0].length; j++) {
                 if (temp < matrix[i][j]) {
                     temp = matrix[i][j];
                 }

@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class GravityCalculator {
     private static double distance;
-    private static final double ACCEL = 9.81;
+    private static final double ACCEL = -9.81;
     private static int inVel = 0;
     private static int inPos = 0;
 
@@ -19,11 +19,11 @@ public class GravityCalculator {
             calcDist(time);
             System.out.println("Если взять время " + Math.round(time * 100.0) / 100.0 + " секунды, то дальность падения будет равна " + Math.round(getDistance() * 100.0) / 100.0 + " метров.");
         } else {
-            System.out.print("Задайте время падения в секундах (double): ");
+            System.out.print("Задайте время падения в секундах: ");
             double time = scan.nextDouble();
-            System.out.print("Теперь задайте начальную скорость (int): ");
+            System.out.print("Теперь задайте начальную скорость: ");
             int startVel = scan.nextInt();
-            System.out.print("и задайте начальную позицию (int): ");
+            System.out.print("и задайте начальную позицию: ");
             int startPos = scan.nextInt();
             calcDist(time, startVel, startPos);
             System.out.println("Если взять время " + Math.round(time * 100.0) / 100.0 + " секунды, начальную скорость " + startVel + " и стартовую позицию " + startPos + ", то дальность падения будет равна " + Math.round(getDistance() * 100.0) / 100.0 + " метров.");

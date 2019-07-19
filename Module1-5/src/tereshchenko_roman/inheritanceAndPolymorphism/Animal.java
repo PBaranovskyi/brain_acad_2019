@@ -1,51 +1,44 @@
 package tereshchenko_roman.inheritanceAndPolymorphism;
 
 public class Animal {
-
     private String name;
+    private int age;
+
+    public Animal(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
 
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public int getAge() {
+        return age;
+    }
+
+    public boolean equals(Animal animal) {
+        if (this.name == animal.name && this.age == animal.age) return true;
+        return false;
     }
 }
 
 class Tiger extends Animal {
-//    private String name = "Тигр";
-//
-//    public String getName() {
-//        return name;
-//    }
 
-    public String toString(){
-        return "Tiger";
-    }
+    public Tiger(String name, int age){ super(name, age); };
 }
 
 class Bear extends Animal {
-//    private String name = "Медведь";
-//
-//    public String getName() {
-//        return name;
-//    }
 
-    public String toString(){
-        return "Bear";
+    public Bear(String name, int age) {
+        super(name, age);
     }
 }
 
 class Goat extends Animal {
-//    private String name = "Коза";
-//
-//    public String getName() {
-//        return name;
-//    }
 
-    public String toString(){
-        return "Goat";
+    public Goat(String name, int age) {
+        super(name, age);
     }
 }
 

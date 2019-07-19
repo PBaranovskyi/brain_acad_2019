@@ -1,5 +1,7 @@
 package bilan_max.InheritanceAndPolymorfysm.Zoo.Lab2_7_2;
 
+import java.util.Objects;
+
 public class Device {
     protected String manufacturer;
     protected double price;
@@ -39,7 +41,17 @@ public class Device {
         this.serialNumber = serialNumber;
         }
 
-    public String toString() {
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Device)) return false;
+        Device device = (Device) o;
+        return Double.compare(device.getPrice(), getPrice()) == 0 &&
+                Objects.equals(getManufacturer(), device.getManufacturer()) &&
+                Objects.equals(serialNumber, device.serialNumber);
+    }
+
+       public String toString() {
         return"Device:" +manufacturer+" price:" +price+ " serialNumber:"+serialNumber;
     }
 }
