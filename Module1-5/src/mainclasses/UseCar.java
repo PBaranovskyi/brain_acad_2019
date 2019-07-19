@@ -11,10 +11,9 @@ public class UseCar {
             car2.setMaxSpeed(500);
 
             System.out.println(car1.getModel());
-            System.out.println("year : " + getValue(car1));
+
+            System.out.println(car1.hashCode());
+            System.out.println(car2.hashCode());
         }
 
-        private static int getValue (Car opelAstra){
-            return opelAstra.getYear() / 0;
-        }
     }

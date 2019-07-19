@@ -4,6 +4,7 @@ public class Zoo {
 
     private String zooName;
     private Animal[] listOfAnimals;
+    private Tiger[] listOfTigers;
 
     public String getZooName() {
         return zooName;

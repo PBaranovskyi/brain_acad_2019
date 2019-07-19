@@ -46,13 +46,33 @@ public class Tiger extends Animal {
         return getLegs();
     }
 
-    @Override
-    public boolean equals(Object obj) {
+//    @Override
+//    public boolean equals(Object obj) {
+//
+//        if (!this.getClass().toString().equals(obj.getClass().toString())) {
+//            return false;
+//        }
+//        Tiger second = (Tiger) obj;
+//        return this.age == second.age && this.name.equals(second.name);
+//    }
 
-        if (!this.getClass().toString().equals(obj.getClass().toString())) {
-            return false;
-        }
-        Tiger second = (Tiger) obj;
-        return this.age == second.age && this.name.equals(second.name);
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Tiger tiger = (Tiger) o;
+
+        if (age != tiger.age) return false;
+        return getTailLength() == tiger.getTailLength();
+
+    }
+
+    @Override
+    public int hashCode() {
+        int result = age;
+        result = 31 * result + getTailLength();
+        return result;
     }
 }

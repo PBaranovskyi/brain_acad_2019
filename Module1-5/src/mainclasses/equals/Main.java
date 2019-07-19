@@ -8,6 +8,7 @@ public class Main {
     public static void main(String[] args) {
         Tiger tiger1 = new Tiger(new String("Vasya"), 6);
         Tiger tiger2 = new Tiger(new String("Vasya"), 6);
+        Tiger tiger3 = new Tiger(new String("Vasya"), 6);
 
         tiger1.setColor("grey");
         tiger2.setColor("blue");
@@ -28,8 +29,8 @@ public class Main {
         System.out.println(tiger1.equals(bear));
 
 
-        long c = 8;
 
-        a = (int) c;
+
+
     }
 }
