@@ -1,5 +1,7 @@
 package tereshchenko_roman.inheritanceAndPolymorphism;
 
+import java.util.Objects;
+
 public class Monitor extends Device {
     private int resolutionX;
     private int resolutionY;
@@ -25,12 +27,20 @@ public class Monitor extends Device {
     public void setResolutionY(int resolutionY) {
         this.resolutionY = resolutionY;
     }
+
+    @Override
     public String toString(){
         return "Device: " + "manufacturer =" + getManufacturer() + ", price = " + getPrice() + ", serialNumber = " + getSerialNumber() + ", X = " + getResolutionX() + ", Y = " + getResolutionY();
     }
-    public boolean equals (String serialNumber){
-        if (this.getSerialNumber() == serialNumber) return true;
+
+    @Override
+    public boolean equals (Object o){
+        if (this.getSerialNumber() == super.getSerialNumber()) return true;
         return false;
     }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(super.hashCode(), resolutionX, resolutionY);
+    }
 }

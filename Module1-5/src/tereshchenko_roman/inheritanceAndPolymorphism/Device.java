@@ -39,12 +39,21 @@ public class Device {
         this.serialNumber = serialNumber;
     }
 
+    @Override
     public String toString(){
         return "Device: " + "manufacturer = " + getManufacturer() + ", price = " + getPrice() + ", serialNumber = " + getSerialNumber();
     }
 
-    public boolean equals (String serialNumber){
-        if (this.serialNumber == serialNumber) return true;
+    @Override
+    public boolean equals (Object o){
+        Device device = (Device) o;
+        if (this.serialNumber == device.serialNumber) return true;
         return false;
         }
+
+    @Override
+    public int hashCode() {
+        int result = Float.floatToIntBits(price);
+        return result;
+    }
 }
