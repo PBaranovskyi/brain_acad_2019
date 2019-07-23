@@ -1,5 +1,7 @@
 package Tomashchuk_Anna.LabWork_2_7_Inheritance_Polymorphism.Lab274_hashCode;
 
+import java.util.Objects;
+
 public class EthernetAdapter extends Device {
     private int speed;
     private String mac;
@@ -35,5 +37,9 @@ public class EthernetAdapter extends Device {
 
     }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(super.hashCode(), getSpeed());
+    }
 }
 

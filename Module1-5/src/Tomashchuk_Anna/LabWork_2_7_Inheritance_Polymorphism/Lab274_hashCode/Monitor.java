@@ -1,5 +1,7 @@
 package Tomashchuk_Anna.LabWork_2_7_Inheritance_Polymorphism.Lab274_hashCode;
 
+import java.util.Objects;
+
 public class Monitor extends Device {
     private int resolutionX;
     private int resolutionY;
@@ -43,5 +45,9 @@ public class Monitor extends Device {
                         this.resolutionX == second.resolutionX && this.resolutionY == second.resolutionY;
     }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(super.hashCode(), getResolutionX(), getResolutionY());
+    }
 
 }
