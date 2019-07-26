@@ -1,5 +1,7 @@
 package sinitsyn_ihor.LabWorks.LabWorks2_7;
 
+import java.util.Objects;
+
 public class EthernetAdapter extends Device {
     private int speed;
     private String mac;
@@ -33,23 +35,20 @@ public class EthernetAdapter extends Device {
     }
 
     @Override
-    public boolean equals(Object obj) {
-        if (this == obj) return true;
-        if (obj == null || getClass() != obj.getClass()) return false;
-        if (!super.equals(obj)) return false;
-
-        EthernetAdapter ethAd = (EthernetAdapter) obj;
-
-        if (getSpeed() != ethAd.getSpeed()) return false;
-        if (getMac() != ethAd.getMac()) return false;
-        return ethAd != null;
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        if (!super.equals(o)) return false;
+        EthernetAdapter that = (EthernetAdapter) o;
+        return speed == that.speed &&
+                Objects.equals(mac, that.mac);
     }
 
     @Override
     public int hashCode() {
         int result = super.hashCode();
         result = 31 * result + speed;
-        result = 31 * result + speed;
+        result = 31 * result + mac.hashCode();
         return result;
     }
 }
