@@ -1,5 +1,7 @@
 package sinitsyn_ihor.LabWorks.LabWorks2_7;
 
+import java.util.Objects;
+
 public class Device {
     private String manufacturer;
     private float price;
@@ -42,21 +44,20 @@ public class Device {
     }
 
     @Override
-    public boolean equals(Object obj) {
-        if (this == obj) return true;
-        if (obj == null || getClass() != obj.getClass()) return false;
-
-        Device device = (Device) obj;
-
-        if (getManufacturer() != device.getManufacturer()) return false;
-        if (getSerialNumber() != device.getSerialNumber()) return false;
-        return getManufacturer() != null;
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Device device = (Device) o;
+        return Float.compare(device.price, price) == 0 &&
+                Objects.equals(manufacturer, device.manufacturer) &&
+                Objects.equals(serialNumber, device.serialNumber);
     }
 
     @Override
     public int hashCode() {
-        int result = (int)price;
-        result = 31 * result + (int)price;
+        int result = 31 * manufacturer.hashCode();
+        result = 31 * result + Float.floatToIntBits(price);
+        result = 31 * result + serialNumber.hashCode();
         return result;
     }
 

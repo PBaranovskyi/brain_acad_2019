@@ -1,10 +1,12 @@
 package mykhailo_kaloshyn.mainacad.lab2_7;
 
+import java.util.Objects;
+
 public class Device {
 
-    protected String manufacturer;
-    protected float price;
-    protected String serialNumber;
+    private String manufacturer;
+    private float price;
+    private String serialNumber;
 
     public Device(String manufacturer, float price, String serialNumber) {
         this.manufacturer = manufacturer;
@@ -12,7 +14,8 @@ public class Device {
         this.serialNumber = serialNumber;
     }
 
-
+    /*public Device() {
+    }*/
 
     public String getManufacturer() {
         return manufacturer;
@@ -44,4 +47,18 @@ public class Device {
                 ", price = " + this.getPrice() + ", serialNumber = " + this.getSerialNumber();
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Device device = (Device) o;
+        return Float.compare(device.price, price) == 0 &&
+                Objects.equals(manufacturer, device.manufacturer) &&
+                Objects.equals(serialNumber, device.serialNumber);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(manufacturer, price, serialNumber);
+    }
 }

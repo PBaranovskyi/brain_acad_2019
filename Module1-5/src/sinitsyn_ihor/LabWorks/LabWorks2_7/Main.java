@@ -13,12 +13,12 @@ public class Main {
         Random rand = new Random();
         for (int i = 0; i < 5; i++) {
             int r = rand.nextInt(resX.length);
-            Monitor newMon = new Monitor(manufacturer[rand.nextInt(manufacturer.length)], rand.nextFloat(), serNum[rand.nextInt(serNum.length)], resX[r], resY[r]);
-            System.out.println(newMon);
+            Monitor newMon = new Monitor(manufacturer[rand.nextInt(manufacturer.length)], ((float) Math.round(rand.nextFloat() * 10000) / 100 + 50), serNum[rand.nextInt(serNum.length)], resX[r], resY[r]);
+            System.out.println(newMon.toString());
         }
         for (int i = 0; i < 5; i++) {
-            EthernetAdapter newEA = new EthernetAdapter(manufacturer[rand.nextInt(manufacturer.length)], rand.nextFloat(), serNum[rand.nextInt(serNum.length)], rand.nextInt(999) + 1000, macs[rand.nextInt(macs.length)]);
-            System.out.println(newEA);
+            EthernetAdapter newEA = new EthernetAdapter(manufacturer[rand.nextInt(manufacturer.length)], ((float) Math.round(rand.nextFloat() * 1000) / 100 + 10), serNum[rand.nextInt(serNum.length)], rand.nextInt(999) + 1000, macs[rand.nextInt(macs.length)]);
+            System.out.println(newEA.toString());
         }
     }
 }

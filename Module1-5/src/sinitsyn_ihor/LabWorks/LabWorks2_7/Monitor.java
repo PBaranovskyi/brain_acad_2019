@@ -1,5 +1,7 @@
 package sinitsyn_ihor.LabWorks.LabWorks2_7;
 
+import java.util.Objects;
+
 public class Monitor extends Device {
     private int resolutionX;
     private int resolutionY;
@@ -33,17 +35,15 @@ public class Monitor extends Device {
     }
 
     @Override
-    public boolean equals(Object obj) {
-        if (this == obj) return true;
-        if (obj == null || getClass() != obj.getClass()) return false;
-        if (!super.equals(obj)) return false;
-
-        Monitor monitor = (Monitor) obj;
-
-        if (getResolutionX() != monitor.getResolutionX()) return false;
-        if (getResolutionY() != monitor.getResolutionY()) return false;
-        return monitor != null;
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        if (!super.equals(o)) return false;
+        Monitor monitor = (Monitor) o;
+        return resolutionX == monitor.resolutionX &&
+                resolutionY == monitor.resolutionY;
     }
+
     @Override
     public int hashCode() {
         int result = super.hashCode();

@@ -1,5 +1,7 @@
 package mykhailo_kaloshyn.mainacad.lab2_7;
 
+import java.util.Objects;
+
 public class Monitor extends Device {
 
     private int resolutionX;
@@ -27,10 +29,31 @@ public class Monitor extends Device {
         this.resolutionY = resolutionY;
     }
 
-    @Override
+    /*@Override
     public String toString() {
         return this.getClass().toString() + ": manufacturer = " + this.getManufacturer() +
                 ", price = " + this.getPrice() + ", serialNumber = " + this.getSerialNumber() +
                 ", X = " + this.getResolutionX() + ", Y = " + this.getResolutionY();
+
+    }*/
+
+    @Override
+    public String toString() {
+        return super.toString() + ", X = " + this.getResolutionX() + ", Y = " + this.getResolutionY() ;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        if (!super.equals(o)) return false;
+        Monitor monitor = (Monitor) o;
+        return resolutionX == monitor.resolutionX &&
+                resolutionY == monitor.resolutionY;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(super.hashCode(), resolutionX, resolutionY);
     }
 }
