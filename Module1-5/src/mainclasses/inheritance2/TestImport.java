@@ -19,16 +19,19 @@ public class TestImport {
 //        bear.eat();
         bear.fishing();
 
-        Animal chupakabra = new Animal();
+        Animal chupakabra = new Chupacabra();
         chupakabra.setName("Чупакабра Оля");
 //        chupakabra.eat();
 
+
+        Tiger tiger3 = new Tiger();
+        tiger3.setName("Musya");
 
         Zoo kievZoo = new Zoo();
 
         kievZoo.feedAnimals();
 
-        Animal[] animals = {bear, tiger, chupakabra};
+        Animal[] animals = {bear, tiger, chupakabra, tiger3};
         kievZoo.takeAnimals(animals);
 
         kievZoo.feedAnimals();
@@ -39,6 +42,19 @@ public class TestImport {
 //        tiger.eat();
         tiger2.setTailLength(10);
 
+
+
         System.out.println(tiger.equals(tiger2));
+
+        if (Bear.class instanceof Class) {
+            System.out.println("Class comparison :" + true);
+        }
+
+        if (tiger2 instanceof Animal) {
+            System.out.println("tiger is animal" + true);
+        }
+
+        kievZoo.springIsComing();
+
     }
 }

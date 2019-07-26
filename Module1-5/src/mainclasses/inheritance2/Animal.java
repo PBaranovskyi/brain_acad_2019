@@ -1,6 +1,6 @@
 package mainclasses.inheritance2;
 
-public class Animal {
+public abstract class Animal {
     private boolean mamal;
     private int legs;
     protected String name;
@@ -46,6 +46,10 @@ public class Animal {
         System.out.println("prepareFood");
     }
 
+    public abstract Animal multiply(Animal animal);
+
+
+    public abstract boolean canMultiplyAlone();
 
     @Override
     public String toString() {

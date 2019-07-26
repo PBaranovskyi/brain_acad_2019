@@ -1,11 +1,14 @@
 package mainclasses.inheritence4;
 
+import mainclasses.interfaces.HasColor;
+
 import java.util.Date;
 
-public class RetroCar extends Car implements Cloneable {
+public class RetroCar extends Car implements Cloneable, HasColor {
 
     private String name;
     private Date date;
+    private String color;
 
     public RetroCar(int maxSpeed, String name) {
         super(maxSpeed);
@@ -26,5 +29,15 @@ public class RetroCar extends Car implements Cloneable {
 
         RetroCar clone = (RetroCar) super.clone();
         return clone;
+    }
+
+    @Override
+    public String getColor() {
+        return color;
+    }
+
+
+    public void setColor(String color) {
+        this.color = color;
     }
 }

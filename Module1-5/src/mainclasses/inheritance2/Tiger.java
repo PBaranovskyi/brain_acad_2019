@@ -1,6 +1,8 @@
 package mainclasses.inheritance2;
 
-public class Tiger extends Animal {
+import mainclasses.interfaces.HasColor;
+
+public class Tiger extends Animal implements HasColor {
 
     private int age;
     private String color;
@@ -11,6 +13,10 @@ public class Tiger extends Animal {
 
     }
 
+    public Tiger(String name){
+        super(name);
+    }
+
     public Tiger(String name, int age){
         this.name = name;
         this.age = age;
@@ -18,6 +24,11 @@ public class Tiger extends Animal {
 
     public String getColor() {
         return color;
+    }
+
+    @Override
+    public void mixColors(String color) {
+        // do nothing
     }
 
     public void setColor(String color) {
@@ -78,5 +89,20 @@ public class Tiger extends Animal {
         result = 31 * result + (getColor() != null ? getColor().hashCode() : 0);
         result = 31 * result + getTailLength();
         return result;
+    }
+
+    @Override
+    public Tiger multiply(Animal pair) {
+        if (pair instanceof Tiger) {
+            return new Tiger("Son of " + getName());
+        } else {
+            System.out.println("Error: pair is not tiger ");
+            return null;
+        }
+    }
+
+    @Override
+    public boolean canMultiplyAlone() {
+        return false;
     }
 }
