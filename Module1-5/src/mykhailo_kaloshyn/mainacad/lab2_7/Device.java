@@ -12,8 +12,7 @@ public class Device {
         this.serialNumber = serialNumber;
     }
 
-    public Device() {
-    }
+
 
     public String getManufacturer() {
         return manufacturer;

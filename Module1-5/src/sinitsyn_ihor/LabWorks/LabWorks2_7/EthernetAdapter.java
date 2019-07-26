@@ -48,8 +48,8 @@ public class EthernetAdapter extends Device {
     @Override
     public int hashCode() {
         int result = super.hashCode();
-        result = 31 * result + speed;
-        result = 31 * result + speed;
+        result = 31 * result + getSpeed();
+        result = 31 * result + (getMac() != null ? getMac().hashCode() : 0);
         return result;
     }
 }

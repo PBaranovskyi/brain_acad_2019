@@ -14,11 +14,11 @@ public class Main {
         for (int i = 0; i < 5; i++) {
             int r = rand.nextInt(resX.length);
             Monitor newMon = new Monitor(manufacturer[rand.nextInt(manufacturer.length)], rand.nextFloat(), serNum[rand.nextInt(serNum.length)], resX[r], resY[r]);
-            newMon.toString();
+            System.out.println(newMon);
         }
         for (int i = 0; i < 5; i++) {
             EthernetAdapter newEA = new EthernetAdapter(manufacturer[rand.nextInt(manufacturer.length)], rand.nextFloat(), serNum[rand.nextInt(serNum.length)], rand.nextInt(999) + 1000, macs[rand.nextInt(macs.length)]);
-            newEA.toString();
+            System.out.println(newEA);
         }
     }
 }
