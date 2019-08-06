@@ -2,7 +2,7 @@ package mainclasses.inheritence4;
 
 public class Main {
 
-    public static void main(String[] args) throws CloneNotSupportedException {
+  /*  public static void main(String[] args) throws CloneNotSupportedException {
 
         Car car = new Car(200);
 
@@ -46,6 +46,6 @@ public class Main {
             }
         }
 
-    }
+    }*/
 
 }

@@ -1,14 +1,15 @@
 package mainclasses.interfaces;
 
-import mainclasses.inheritance2.Tiger;
-import mainclasses.inheritence4.SuperCar;
+//import mainclasses.inheritance2.Tiger;
+//import mainclasses.inheritence4.SuperCar;
 
+/*
 public class DesctopColorPaint {
 
 
     public static void main(String[] args) {
-        SuperCar superCar = new SuperCar(200);
-        superCar.setColor("Blue");
+       SuperCar superCar = new SuperCar(200);
+       superCar.setColor("Blue");
 
         paintDesktop(superCar);
 
@@ -32,3 +33,4 @@ public class DesctopColorPaint {
 
     }
 }
+*/
