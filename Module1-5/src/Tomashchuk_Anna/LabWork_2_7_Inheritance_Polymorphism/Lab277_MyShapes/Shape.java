@@ -1,9 +1,9 @@
-package Tomashchuk_Anna.LabWork_2_7_Inheritance_Polymorphism.Lab276_MyShapes;
+package Tomashchuk_Anna.LabWork_2_7_Inheritance_Polymorphism.Lab277_MyShapes;
 
 public class Shape {
     private String shapeColor;
     private String shapeName = "Shape";
-    private double area = 0.0;
+    protected double area = 0.0;
 
     public String getShapeColor() {
         return shapeColor;
