@@ -5,7 +5,8 @@ import mainclasses.interfaces.HasColor;
 import java.util.Date;
 
 /*
-public class RetroCar extends Car  implements Cloneable , HasColor
+
+public class RetroCar extends Car  implements Cloneable ,HasColor
 {
 
     private String name;
@@ -43,4 +44,5 @@ public class RetroCar extends Car  implements Cloneable , HasColor
         this.color = color;
     }
 }
+
 */

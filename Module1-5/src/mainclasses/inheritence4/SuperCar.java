@@ -2,8 +2,8 @@ package mainclasses.inheritence4;
 
 import mainclasses.interfaces.HasColor;
 
-/*public class SuperCar extends Car  implements HasColor
-{
+/*
+public class SuperCar extends Car  implements HasColor {
 
     private String color;
 
@@ -19,4 +19,5 @@ import mainclasses.interfaces.HasColor;
     public void setColor(String color) {
         this.color = color;
     }
-}*/
+}
+*/
