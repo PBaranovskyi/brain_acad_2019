@@ -27,14 +27,14 @@ public class Main {
 
 
         Rectangle rectangle2 = new Rectangle("BLUE", 7.0, 5.0);
-        Rectangle rectangle3 = new Rectangle("WHITE", 7.0, 5.0);
-        Rectangle rectangle4 = new Rectangle("PINC", 7.0, 5.0);
-        Rectangle rectangle5 = new Rectangle("YELLOW", 7.0, 5.0);
-        Rectangle rectangle6 = new Rectangle("BROUN", 7.0, 5.0);
+        Rectangle rectangle3 = new Rectangle("WHITE", 4.0, 3.0);
+        Rectangle rectangle4 = new Rectangle("PINC", 2.0, 1.0);
+        Rectangle rectangle5 = new Rectangle("YELLOW", 6.0, 5.0);
+        Rectangle rectangle6 = new Rectangle("BROUN", 8.0, 4.0);
         Circle circle2 = new Circle("PURPLE", 5.0);
         Circle circle3 = new Circle("GREEN", 8.0);
         Triangle triangle2 = new Triangle("BLACK", 3.0, 4.0, 2.5);
-        Triangle triangle3 = new Triangle("BLACK", 3.0, 4.0, 2.5);
+        Triangle triangle3 = new Triangle("BLACK", 5.0, 3.0, 6.2);
 
         Shape[] arr = new Shape[9];
         arr[0] = rectangle2;
@@ -57,12 +57,37 @@ public class Main {
         System.out.println();
 
         double sumArea = 0.0;
-        for (int i = 1; i < arr.length; i++) {
+        for (int i = 0; i <= arr.length - 1; i++) {
             sumArea = sumArea + arr[i].calcArea();
         }
-
         System.out.println("SumArea: " + sumArea);
+        System.out.println();
 
+        double sumRectArea = 0.0;
+        for (int i = 0; i <= arr.length - 1; i++) {
+            if (arr[i] instanceof Rectangle) {
+                sumRectArea = sumRectArea + arr[i].calcArea();
+            }
+        }
+        System.out.println("Rectangles total area: " + sumRectArea);
+        System.out.println();
+
+        double sumTriangleArea = 0.0;
+        for (int i = 0; i <= arr.length - 1; i++) {
+            if (arr[i] instanceof Triangle) {
+                sumTriangleArea = sumTriangleArea + arr[i].calcArea();
+            }
+        }
+        System.out.println("Triangle total area: " + sumTriangleArea);
+        System.out.println();
+
+        double sumCircleArea = 0.0;
+        for (int i = 0; i <= arr.length - 1; i++) {
+            if (arr[i] instanceof Circle) {
+                sumCircleArea = sumCircleArea + arr[i].calcArea();
+            }
+        }
+        System.out.println("Circle total area: " + sumCircleArea);
 
     }
 }
