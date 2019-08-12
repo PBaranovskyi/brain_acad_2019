@@ -18,9 +18,6 @@ abstract class Shape {
         return "This is " + this.shapeName + ", color is: " + this.shapeColor;
     }
 
-    public double calcArea() {
-        double area = 0.0;
-        return area;
-    }
+    abstract double calcArea();
 
 }
