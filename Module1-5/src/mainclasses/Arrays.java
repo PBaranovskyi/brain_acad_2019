@@ -1,5 +1,7 @@
 package mainclasses;
 
+import tereshchenko_roman.inheritanceAndPolymorphism.MyShapes.com.brainacad.oop.testshapes.Rectangle;
+
 public class Arrays {
 
     public static void main(String[] args) {
@@ -37,4 +39,5 @@ public class Arrays {
 
     public static void toString(int[] arr) {
     }
-}
+
+    }

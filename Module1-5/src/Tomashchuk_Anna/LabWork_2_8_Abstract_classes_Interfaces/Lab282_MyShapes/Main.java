@@ -96,6 +96,15 @@ public class Main {
         ob.draw();
         System.out.println();
 
+        Drawable[] i=new Drawable[3];
+        i[0]=new Rectangle("RED",4.7,3.0);
+        i[1]=new Triangle("YELLOW",2.0,4.5,3.5);
+        i[2]=new Circle("GREEN",4.5);
+
+        for(int x=0;x<i.length;x++){
+            System.out.println(" "+ i[x].getClass());
+        }
+
 
     }
 }

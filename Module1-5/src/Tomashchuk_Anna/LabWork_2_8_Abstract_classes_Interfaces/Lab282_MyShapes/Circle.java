@@ -1,6 +1,6 @@
 package Tomashchuk_Anna.LabWork_2_8_Abstract_classes_Interfaces.Lab282_MyShapes;
 
-public class Circle extends Shape {
+public class Circle extends Shape implements Drawable {
     private double radius;
     public static final double PI = 3.14;
     private String shapeName = "Circle";
@@ -24,6 +24,12 @@ public class Circle extends Shape {
     @Override
     public String toString() {
         return "This is " + this.shapeName + " , color: " + super.getShapeColor() + ", radious=" + radius;
+    }
+
+    public void draw(){
+        shapeName="Circle";
+        radius=2.5;
+
     }
 
 }
