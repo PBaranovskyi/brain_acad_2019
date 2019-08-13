@@ -1,7 +1,5 @@
 package Tomashchuk_Anna.LabWork_2_8_Abstract_classes_Interfaces.Lab282_MyShapes;
 
-import Tomashchuk_Anna.LabWork_2_8_Abstract_classes_Interfaces.Book2_Interface.Series;
-
 public class Rectangle extends Shape implements Drawable {
     private String shapeName = "Rectangle";
     private double width;
@@ -33,6 +31,8 @@ public class Rectangle extends Shape implements Drawable {
 
     @Override
     public void draw(){
+        System.out.println(this);
+        System.out.println(getClass().getName());
         shapeName="RED";
         width=6.7;
         height=4.0;

@@ -1,8 +1,10 @@
 package mainclasses.inheritence4;
 
+import java.util.Arrays;
+
 public class Main {
 
-   public static void main(String[] args) throws CloneNotSupportedException {
+    public static void main(String[] args) throws CloneNotSupportedException {
 
         Car car = new Car(200);
 
@@ -20,20 +22,37 @@ public class Main {
 
         createCopyOfRetroCar(cars);
 
-        Car old = new OldRetroCar(30,"ford");
+        Car old = new OldRetroCar(30, "ford");
 
         System.out.println(old instanceof RetroCar);
 
         RetroCar retro = (RetroCar) old;
+        RetroCar retroDuplicate = retro.clone();
 
 
         System.out.println(old.getClass() == RetroCar.class);
+
+        System.out.println(Arrays.toString(cars));
+        Arrays.sort(cars);
+        System.out.println(Arrays.toString(cars));
+        String first = "Vasya";
+        String second = "human";
+        String third = "adress";
+        String forth = "Vasiliy";
+
+        String[] arr = {first, second, third, forth};
+
+        System.out.println(first.compareTo(second));
+
+        Arrays.sort(arr);
+
+        System.out.println(Arrays.toString(arr));
 
     }
 
     private static void createCopyOfRetroCar(Car[] cars) throws CloneNotSupportedException {
         for (Car car : cars) {
-            if (car.getClass() == RetroCar.class){
+            if (car.getClass() == RetroCar.class) {
                 RetroCar retro = (RetroCar) car;
                 System.out.println("We found retrocar");
 

@@ -32,11 +32,11 @@ public class Triangle extends Shape implements Drawable {
         return "This is " + this.shapeName + ", color: " + super.getShapeColor() + ", a=" + a + ",b=" + b + ",c=" + c;
     }
 
-    public void draw(){
-        shapeName="Triangle";
-        a=5.7;
-        b=4.3;
-        c=1.2;
+    public void draw() {
+        shapeName = "Triangle";
+        a = 5.7;
+        b = 4.3;
+        c = 1.2;
     }
 
 }
