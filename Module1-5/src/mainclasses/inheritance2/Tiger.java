@@ -26,10 +26,6 @@ public class Tiger extends Animal implements HasColor {
         return color;
     }
 
-    @Override
-    public void mixColors(String color) {
-        // do nothing
-    }
 
     public void setColor(String color) {
         this.color = color;

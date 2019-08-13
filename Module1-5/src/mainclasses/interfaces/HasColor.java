@@ -5,7 +5,6 @@ public interface HasColor {
 
      String getColor();
 
-    void mixColors(String color);
 
 }
 
