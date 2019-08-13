@@ -20,7 +20,7 @@ public class DesctopColorPaint {
 
         paintDesktop(tiger);
 
-        tiger.setColor("Yello");
+        tiger.setColor("Yellow");
 
         paintDesktop(tiger);
     }
