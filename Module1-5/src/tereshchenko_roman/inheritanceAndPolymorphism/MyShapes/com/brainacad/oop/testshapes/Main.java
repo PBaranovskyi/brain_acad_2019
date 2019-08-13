@@ -63,7 +63,7 @@ public class Main {
 
         Rectangle[] comparatorRectangles = {compRect1, compRect2, compRect3, compRect4, compRect5, compRect6};
 
-        Arrays.sort(comparatorRectangles);
+        Arrays.sort(comparatorRectangles, new ShapeCodeComparator());
         for (Rectangle comparatorRectangle : comparatorRectangles) {
             System.out.println(comparatorRectangle.getShapeCode());
         }
