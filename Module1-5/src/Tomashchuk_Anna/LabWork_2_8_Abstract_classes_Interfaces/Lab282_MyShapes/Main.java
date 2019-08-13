@@ -89,6 +89,11 @@ public class Main {
             }
         }
         System.out.println("Circle total area: " + sumCircleArea);
+        System.out.println();
+
+        Rectangle ob=new Rectangle("Red",8.0,9.0);
+        ob.draw();
+
 
     }
 }
