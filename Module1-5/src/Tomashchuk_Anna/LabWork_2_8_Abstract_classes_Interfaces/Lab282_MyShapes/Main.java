@@ -19,6 +19,7 @@ public class Main {
 
         System.out.println(rectangle1);
         System.out.println("Shape area is : " + rectangle1.calcArea());
+
         System.out.println();
 
         Triangle triangle1 = new Triangle("BLACK", 5.0, 5.0, 5.0);
@@ -93,6 +94,7 @@ public class Main {
 
         Rectangle ob=new Rectangle("Red",8.0,9.0);
         ob.draw();
+        System.out.println();
 
 
     }
