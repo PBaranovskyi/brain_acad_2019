@@ -29,9 +29,9 @@ public class Circle extends Shape implements Comparable {
     }
 
     @Override
-    public void draw(Shape circle) {
-        System.out.print(circle);
-        System.out.println(", area is " + circle.calcArea());
+    public void draw() {
+        System.out.print(this);
+        System.out.println(", area is " + this.calcArea());
     }
 
     @Override

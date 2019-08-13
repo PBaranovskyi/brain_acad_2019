@@ -32,9 +32,9 @@ public class Triangle extends Shape implements Comparable {
     }
 
     @Override
-    public void draw(Shape triangle) {
-        System.out.print(triangle);
-        System.out.println(", area is " + triangle.calcArea());
+    public void draw() {
+        System.out.print(this);
+        System.out.println(", area is " + this.calcArea());
     }
 
     @Override

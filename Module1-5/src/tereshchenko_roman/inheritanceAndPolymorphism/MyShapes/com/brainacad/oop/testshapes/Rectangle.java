@@ -31,9 +31,9 @@ public class Rectangle extends Shape implements Comparable{
     }
 
     @Override
-    public void draw(Shape rectangle) {
-        System.out.print(rectangle);
-        System.out.println(", area is " + rectangle.calcArea());
+    public void draw() {
+        System.out.print(this);
+        System.out.println(", area is " + this.calcArea());
     }
 
     @Override
