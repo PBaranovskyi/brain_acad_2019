@@ -1,6 +1,6 @@
 package Tomashchuk_Anna.LabWork_2_8_Abstract_classes_Interfaces.Lab282_MyShapes;
 
-public class Triangle extends Shape {
+public class Triangle extends Shape implements Drawable {
     private String shapeName = "Triangle";
     private double a;
     private double b;
@@ -30,6 +30,13 @@ public class Triangle extends Shape {
     @Override
     public String toString() {
         return "This is " + this.shapeName + ", color: " + super.getShapeColor() + ", a=" + a + ",b=" + b + ",c=" + c;
+    }
+
+    public void draw(){
+        shapeName="Triangle";
+        a=5.7;
+        b=4.3;
+        c=1.2;
     }
 
 }

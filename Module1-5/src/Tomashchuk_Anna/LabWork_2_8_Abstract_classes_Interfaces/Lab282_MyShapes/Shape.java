@@ -1,6 +1,6 @@
 package Tomashchuk_Anna.LabWork_2_8_Abstract_classes_Interfaces.Lab282_MyShapes;
 
-abstract class Shape {
+abstract class Shape implements Drawable {
     private String shapeColor;
     private String shapeName = "Shape";
 
@@ -19,5 +19,11 @@ abstract class Shape {
     }
 
     abstract double calcArea();
+
+    public void draw(){
+        shapeColor="WHITE";
+        shapeName="Shape";
+    }
+
 
 }
