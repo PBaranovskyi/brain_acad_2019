@@ -6,33 +6,6 @@ public class Main {
 
 
     public static void main(String[] args) {
-//        Shape shape1 = new Shape("RED");
-//
-//        System.out.println(shape1);
-//        System.out.println("Shape area is : " + shape1.calcArea());
-//
-//        System.out.println();
-
-//        Circle circle1 = new Circle("GREEN");
-//
-//        System.out.println(circle1);
-//        System.out.println("Shape area is : " + circle1.calcArea());
-//
-//        System.out.println();
-//
-//        Rectangle rectangle1 = new Rectangle("BLUE");
-//
-//        System.out.println(rectangle1);
-//        System.out.println("Shape area is : " + rectangle1.calcArea());
-//
-//        System.out.println();
-//
-//        Triangle triangle1 = new Triangle("BLACK");
-//
-//        System.out.println(triangle1);
-//        System.out.println("Shape area is : " + triangle1.calcArea());
-//
-//        System.out.println();
 
         Rectangle rectangle2 = new Rectangle("Grey");
         Rectangle rectangle3 = new Rectangle("Violet");
@@ -78,52 +51,20 @@ public class Main {
         for (Rectangle rectangle : arrRectangles) {
             System.out.println(rectangle);
         }
-//            {
-//            System.out.print(shape);
-//                System.out.println(" Area is: " + shape.calcArea());
-//            }
-//
-//        System.out.println();
-//
-//        double sumArea = 0;
-//        for (int i = 0; i < arr.length; i++) {
-//        sumArea = sumArea + arr[i].calcArea();
-//        }
-//        System.out.println("All shapes' total area = " + sumArea);
-//
-//        System.out.println();
-//
-//        double sumRectArea = 0;
-//        for (int i = 0; i < arr.length; i++) {
-//            if (arr[i] instanceof Rectangle){
-//                sumRectArea = sumRectArea + arr[i].calcArea();
-//            }
-//        }
-//        System.out.println("Rectangles' total area = " + sumRectArea);
-//
-//        System.out.println();
-//
-//        double sumTriangleArea = 0;
-//        for (int i = 0; i < arr.length; i++) {
-//            if (arr[i] instanceof Triangle){
-//                sumTriangleArea = sumTriangleArea + arr[i].calcArea();
-//            }
-//        }
-//        System.out.println("Triangles' total area = " + sumTriangleArea);
-//
-//        System.out.println();
-//
-//        double sumCircleArea = 0;
-//        for (int i = 0; i < arr.length; i++) {
-//            if (arr[i] instanceof Circle){
-//                sumCircleArea = sumCircleArea + arr[i].calcArea();
-//            }
-//        }
-//        System.out.println("Circles' total area = " + sumCircleArea);
-//
-//
-//            };
-//        }
+
+        System.out.println();
+
+        Rectangle compRect1 = new Rectangle(5);
+        Rectangle compRect2 = new Rectangle(12);
+        Rectangle compRect3 = new Rectangle(546);
+        Rectangle compRect4 = new Rectangle(100);
+        Rectangle compRect5 = new Rectangle(15);
+        Rectangle compRect6 = new Rectangle(50000);
+
+        Rectangle[] comparatorRectangles = {compRect1, compRect2, compRect3, compRect4, compRect5, compRect6};
+
+        Arrays.sort(comparatorRectangles);
+        System.out.println(Arrays.toString(comparatorRectangles));
     }
 }
 

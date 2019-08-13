@@ -3,10 +3,19 @@ package tereshchenko_roman.inheritanceAndPolymorphism.MyShapes.com.brainacad.oop
 public abstract class Shape implements Drawable {
 
     private String shapeColor;
-//    private String shapeName = "Shape";
 
     public String getShapeColor() {
         return shapeColor;
+    }
+
+    private int shapeCode;
+
+    public int getShapeCode() {
+        return shapeCode;
+    }
+
+    public Shape(int shapeCode) {
+        this.shapeCode = shapeCode;
     }
 
     public Shape(String shapeColor) {
@@ -14,14 +23,5 @@ public abstract class Shape implements Drawable {
     }
 
     public abstract double calcArea();
-//    {
-//        double area = 0.0;
-//        return area;
-//    }
-//
-//    @Override
-//    public String toString() {
-//        return "This is " + shapeName +
-//                ", color is: " + shapeColor;
-//    }
+
 }

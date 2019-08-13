@@ -10,6 +10,8 @@ public class Rectangle extends Shape implements Comparable{
         super(shapeColor);
     }
 
+    public Rectangle (int shapeCode) {super(shapeCode);}
+
     public Rectangle(String shapeColor, double width, double heigth) {
         super(shapeColor);
         this.width = width;
