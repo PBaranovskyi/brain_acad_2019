@@ -1,10 +1,10 @@
 package mainclasses.inheritence4;
 
 
-public class OldRetroCar // extends RetroCar
+public class OldRetroCar extends RetroCar
   {
-/*    public OldRetroCar(int maxSpeed, String name) {
+  public OldRetroCar(int maxSpeed, String name) {
         super(maxSpeed, name);
-    }*/
+    }
 }
 

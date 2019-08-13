@@ -2,7 +2,7 @@ package mainclasses.inheritence4;
 
 import mainclasses.interfaces.HasColor;
 
-/*
+
 
 public class SuperCar extends Car  implements HasColor {
 
@@ -22,4 +22,4 @@ public class SuperCar extends Car  implements HasColor {
     }
 }
 
-*/
+

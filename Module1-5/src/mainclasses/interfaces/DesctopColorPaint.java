@@ -1,9 +1,10 @@
 package mainclasses.interfaces;
 
-//import mainclasses.inheritance2.Tiger;
-//import mainclasses.inheritence4.SuperCar;
+import mainclasses.inheritance2.Tiger;
+import mainclasses.inheritence4.SuperCar;
 
-/*
+
+
 public class DesctopColorPaint {
 
 
@@ -33,4 +34,5 @@ public class DesctopColorPaint {
 
     }
 }
-*/
+
+
