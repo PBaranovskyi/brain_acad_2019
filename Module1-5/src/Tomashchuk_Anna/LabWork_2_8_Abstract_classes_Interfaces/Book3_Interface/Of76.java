@@ -2,13 +2,14 @@ package Tomashchuk_Anna.LabWork_2_8_Abstract_classes_Interfaces.Book3_Interface;
 
 public class Of76 extends Clowns {
     public static void main(String[] args) {
-        Nose[] i = new Nose[3];
-        i[0] = new Acts();
-        i[1] = new Clowns();
-        i[2] = new Of76();
+        Nose[] arr = new Nose[3];
+        arr[0] = new Acts();
+        arr[1] = new Clowns();
+        arr[2] = new Of76();
 
-        for (int x = 0; x < 3; x++) {
-            System.out.println(i[x].iMethod() + " " + i[x].getClass());
+        for (int i = 0; i < 3; i++) {
+            System.out.println(arr[i].iMethod() //+ " " + i[x].getClass()
+            );
         }
     }
 }

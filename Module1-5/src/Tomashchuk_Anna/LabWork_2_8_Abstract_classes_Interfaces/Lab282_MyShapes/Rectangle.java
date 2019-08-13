@@ -31,6 +31,7 @@ public class Rectangle extends Shape implements Drawable {
         return "This is " + this.shapeName + ", color: " + super.getShapeColor() + " ,width=" + this.width + " ,heigth=" + this.height;
     }
 
+    @Override
     public void draw(){
         shapeName="RED";
         width=6.7;
