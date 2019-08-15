@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Main {
 
-    public static void main(String[] args) throws CloneNotSupportedException {
+    public static void main(String[] args)  throws CloneNotSupportedException {
 
         Car car = new Car(200);
 
