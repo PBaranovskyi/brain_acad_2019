@@ -33,8 +33,8 @@ public class Triangle extends Shape implements Drawable {
     }
 
     public void draw() {
-        System.out.println(this);
-        System.out.println(getClass().getName());
+        System.out.print(this);
+        System.out.println(", area is " +this.calcArea());
     }
 
 }

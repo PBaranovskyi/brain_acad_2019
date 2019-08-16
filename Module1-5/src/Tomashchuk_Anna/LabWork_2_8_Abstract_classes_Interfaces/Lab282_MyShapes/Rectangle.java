@@ -31,8 +31,8 @@ public class Rectangle extends Shape implements Drawable {
 
     @Override
     public void draw(){
-        System.out.println(this);
-        System.out.println(getClass().getName().toString());
+        System.out.print(this);
+        System.out.println(", area is " +this.calcArea());
     }
 
 }

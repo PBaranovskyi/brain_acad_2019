@@ -103,7 +103,6 @@ public class Main {
 
         for (int x = 0; x < i.length; x++) {
             i[x].draw();
-            System.out.println();
         }
 
     }
