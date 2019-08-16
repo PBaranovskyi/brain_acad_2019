@@ -1,4 +1,4 @@
-package Tomashchuk_Anna.Test;
+package Tomashchuk_Anna.AnnTest;
 
 public class Test_E {
     public static void main(String[] args) {

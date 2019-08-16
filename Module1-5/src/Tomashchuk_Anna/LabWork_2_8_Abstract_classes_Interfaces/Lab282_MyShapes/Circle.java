@@ -28,9 +28,8 @@ public class Circle extends Shape implements Drawable {
 
     @Override
     public void draw(){
-        shapeName="Circle";
-        radius=2.5;
-
+        System.out.println(this);
+        System.out.println(getClass().getName());
     }
 
 }

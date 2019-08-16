@@ -102,14 +102,9 @@ public class Main {
         i[2] = new Circle("GREEN", 4.5);
 
         for (int x = 0; x < i.length; x++) {
-            System.out.println(" " + i[x].getClass());
             i[x].draw();
+            System.out.println();
         }
-
-        int a=10;
-        int b=10;
-        System.out.println(a+b); // 20
-        System.out.println(a=b); // 10
 
     }
 }

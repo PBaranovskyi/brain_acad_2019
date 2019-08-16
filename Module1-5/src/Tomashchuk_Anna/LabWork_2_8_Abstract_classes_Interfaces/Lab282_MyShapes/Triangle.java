@@ -33,10 +33,8 @@ public class Triangle extends Shape implements Drawable {
     }
 
     public void draw() {
-        shapeName = "Triangle";
-        a = 5.7;
-        b = 4.3;
-        c = 1.2;
+        System.out.println(this);
+        System.out.println(getClass().getName());
     }
 
 }
