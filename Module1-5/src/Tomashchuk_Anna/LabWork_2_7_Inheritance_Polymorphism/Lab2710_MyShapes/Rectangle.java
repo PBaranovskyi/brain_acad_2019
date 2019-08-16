@@ -1,6 +1,6 @@
 package Tomashchuk_Anna.LabWork_2_7_Inheritance_Polymorphism.Lab2710_MyShapes;
 
-public class Rectangle extends Shape {
+public class   Rectangle extends Shape {
     private String shapeName = "Rectangle";
     private double width;
     private double height;
