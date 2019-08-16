@@ -31,8 +31,8 @@ public class Triangle extends Shape {
 
     @Override
     public double calcArea() {
-        double square = (sideA + sideB + sideC) / 2;
-        double area = (double) Math.sqrt(square * (square - sideA) * (square - sideB) * (square - sideC));
+        double square = (sideA + sideB + sideC)/2;
+        double area = (double) Math.round(Math.sqrt(square * (square - sideA) * (square - sideB) * (square - sideC))*100)/100.0;
         System.out.println("Triangle area is: " + area);
         return area;
     }

@@ -3,7 +3,6 @@ package sinitsyn_ihor.LabWorks.LabWorks2_7.MyShapes;
 import java.util.Scanner;
 
 public class Main {
-
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("Please, select your shape: 1 - Cirlce, 2 - Rectangle, 3 - Triangle");

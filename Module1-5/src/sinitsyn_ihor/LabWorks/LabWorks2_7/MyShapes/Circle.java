@@ -3,7 +3,7 @@ package sinitsyn_ihor.LabWorks.LabWorks2_7.MyShapes;
 public class Circle extends Shape {
     private double radius;
     private String name = "Circle";
-    public final double Pi = 3.1415926535;
+    public final double Pi = 3.1416;
 
     public Circle(String shapeColor, double rad) {
         super(shapeColor);
@@ -20,7 +20,7 @@ public class Circle extends Shape {
 
     @Override
     public double calcArea() {
-        double area = (double) Pi * radius * radius;
+        double area = (double) Math.round(Pi * radius * radius*100)/100.0;
         System.out.println("Circle area is: " + area);
         return area;
     }
