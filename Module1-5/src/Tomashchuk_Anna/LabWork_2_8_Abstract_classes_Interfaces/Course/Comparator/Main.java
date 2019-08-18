@@ -11,7 +11,7 @@ public class Main {
         Arrays.sort(myCars, new CarMaxSpeedComparator());
 
         for(Car car: myCars){
-            System.out.println(car.toString());
+            System.out.println(car);
             System.out.println();
         }
     }
