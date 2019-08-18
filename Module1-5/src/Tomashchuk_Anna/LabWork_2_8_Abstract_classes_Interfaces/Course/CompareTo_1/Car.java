@@ -9,6 +9,11 @@ public class Car implements Comparable {
     }
 
     @Override
+    public String toString(){
+        return "Max speed = " + this.maxSpeed;
+    }
+
+    @Override
     public int compareTo(Object o){
         // char превращает в int и сравнивает по таблице ASCI-кодов
         // большие буквы вначале в алфавитном порядке
