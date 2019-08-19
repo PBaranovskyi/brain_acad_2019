@@ -24,4 +24,13 @@ public abstract class Shape implements Drawable {
 
     public abstract double calcArea();
 
+    //Wraper classes
+
+    public static Shape parseShape(String s){
+
+
+
+        return null;
+    }
+
 }
