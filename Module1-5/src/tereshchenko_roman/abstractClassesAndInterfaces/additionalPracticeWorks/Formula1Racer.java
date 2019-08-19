@@ -1,4 +1,4 @@
-package tereshchenko_roman.abstractClassesAndInterfaces.AdditionalPracticeWorks;
+package tereshchenko_roman.abstractClassesAndInterfaces.additionalPracticeWorks;
 
 public class Formula1Racer implements Sportsman {
 
