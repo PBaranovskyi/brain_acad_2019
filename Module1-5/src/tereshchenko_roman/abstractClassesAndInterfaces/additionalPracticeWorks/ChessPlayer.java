@@ -1,6 +1,6 @@
-package tereshchenko_roman.AbstractClassesAndInterfaces.AdditionalPracticeWorks;
+package tereshchenko_roman.abstractClassesAndInterfaces.additionalPracticeWorks;
 
-public class ChessPlayer implements Sportsman{
+public class ChessPlayer implements Sportsman {
 
     private String name;
     private String sport = "шахматы";

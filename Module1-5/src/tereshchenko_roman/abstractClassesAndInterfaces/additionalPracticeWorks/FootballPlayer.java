@@ -1,4 +1,4 @@
-package tereshchenko_roman.AbstractClassesAndInterfaces.AdditionalPracticeWorks;
+package tereshchenko_roman.abstractClassesAndInterfaces.additionalPracticeWorks;
 
 public class FootballPlayer implements Sportsman {
 
