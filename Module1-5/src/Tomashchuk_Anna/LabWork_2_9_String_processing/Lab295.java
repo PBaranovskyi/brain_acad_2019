@@ -14,7 +14,7 @@ public class Lab295 {
         if(m.matches())
             System.out.println("This is name");
         else
-            System.out.println("Tis is not name");
+            System.out.println("This is not name");
 
     }
 }
