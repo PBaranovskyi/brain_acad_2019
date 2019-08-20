@@ -1,6 +1,7 @@
 package mainclasses.inheritence4;
 
 import java.util.Arrays;
+import java.util.Comparator;
 
 public class Main {
 
@@ -48,19 +49,32 @@ public class Main {
 
         System.out.println(Arrays.toString(arr));
 
+
+        Arrays.sort(arr, new Comparator() {
+            @Override
+            public int compare(Object o1, Object o2) {
+                return o1.hashCode() - o2.hashCode();
+            }
+        });
+        System.out.println(Arrays.toString(arr));
+
     }
 
-    private static void createCopyOfRetroCar(Car[] cars) throws CloneNotSupportedException {
+    private static void createCopyOfRetroCar(Car[] cars) {
         for (Car car : cars) {
             if (car.getClass() == RetroCar.class) {
                 RetroCar retro = (RetroCar) car;
                 System.out.println("We found retrocar");
 
-                RetroCar copy = retro.clone();
-                System.out.println(copy.getMaxSpeed());
-                System.out.println(copy.getName());
-
-                copy.fix();
+                try {
+                    RetroCar copy = retro.clone();
+                    System.out.println(copy.getMaxSpeed());
+                    System.out.println(copy.getName());
+                    copy.fix();
+                } catch (CloneNotSupportedException e) {
+                    retro.fix();
+                }
+                System.out.println("final");
 
             }
         }

@@ -1,4 +1,4 @@
-package tereshchenko_roman.StringProcessing;
+package tereshchenko_roman.stringProcessing;
 
 public class Main2 {
 

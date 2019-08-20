@@ -1,4 +1,4 @@
-package tereshchenko_roman.StringProcessing;
+package tereshchenko_roman.stringProcessing;
 
 import java.util.StringTokenizer;
 
