@@ -35,4 +35,10 @@ public class Rectangle extends Shape {
         System.out.println("This is " + this.getName() + ", color is " + this.getShapeColor() + ", width: " + getWidth() + ", height: " + getHeight());
         return super.toString();
     }
+
+    @Override
+    public void draw() {
+        this.calcArea();
+        this.toString();
+    }
 }

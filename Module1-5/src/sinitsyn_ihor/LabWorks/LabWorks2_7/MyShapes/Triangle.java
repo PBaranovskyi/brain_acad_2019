@@ -31,8 +31,8 @@ public class Triangle extends Shape {
 
     @Override
     public double calcArea() {
-        double square = (sideA + sideB + sideC)/2;
-        double area = (double) Math.round(Math.sqrt(square * (square - sideA) * (square - sideB) * (square - sideC))*100)/100.0;
+        double square = (sideA + sideB + sideC) / 2;
+        double area = (double) Math.round(Math.sqrt(square * (square - sideA) * (square - sideB) * (square - sideC)) * 100) / 100.0;
         System.out.println("Triangle area is: " + area);
         return area;
     }
@@ -41,5 +41,11 @@ public class Triangle extends Shape {
     public String toString() {
         System.out.println("This is " + this.getName() + ", color is " + this.getShapeColor() + ", side A = " + getSideA() + ", side B = " + getSideB() + ", side C = " + getSideC());
         return super.toString();
+    }
+
+    @Override
+    public void draw() {
+        this.calcArea();
+        this.toString();
     }
 }

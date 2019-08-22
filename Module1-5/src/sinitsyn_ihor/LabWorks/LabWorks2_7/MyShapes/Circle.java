@@ -30,4 +30,10 @@ public class Circle extends Shape {
         System.out.println("This is " + this.getName() + ", color is " + this.getShapeColor() + ", radius: " + getRadius());
         return super.toString();
     }
+
+    @Override
+    public void draw() {
+        this.calcArea();
+        this.toString();
+    }
 }

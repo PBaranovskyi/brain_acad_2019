@@ -1,7 +1,6 @@
 package sinitsyn_ihor.LabWorks.LabWorks2_7.MyShapes;
 
-public class Shape {
-    private double area;
+abstract class Shape implements Drawable{
     private String shapeColor;
 //    private String name;
 
@@ -17,22 +16,11 @@ public class Shape {
         this.shapeColor = shapeColor;
     }
 
-//    public String getName() {
-//        return name;
-//    }
+    public abstract double calcArea();
 
-//    public void setName(String name) {
-//        this.name = name;
-//    }
-
-    public double calcArea() {
-        System.out.println("Shape area is: " + area);
-        return area;
+    @Override
+    public String toString() {
+        System.out.println("This is " + getClass().toString() + ", color is " + this.getShapeColor());
+        return super.toString();
     }
-
-//    @Override
-//    public String toString() {
-//        System.out.println("This is " + this.getName() + ", color is " + this.getShapeColor());
-//        return super.toString();
-//    }
 }

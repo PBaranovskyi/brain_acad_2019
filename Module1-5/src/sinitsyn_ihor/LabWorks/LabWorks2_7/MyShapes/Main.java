@@ -13,8 +13,9 @@ public class Main {
             System.out.println("Set the color of circle now: ");
             String shapeColor = scan.next();
             Circle shapeCir = new Circle(shapeColor, radius);
-            shapeCir.toString();
-            shapeCir.calcArea();
+//            shapeCir.toString();
+//            shapeCir.calcArea();
+            shapeCir.draw();
         }
         else if (numb == 2) {
             System.out.println("Please, set the width of rectangle: ");
@@ -24,8 +25,9 @@ public class Main {
             System.out.println("And set the color of rectangle: ");
             String shapeColor = scan.next();
             Rectangle shapeRec = new Rectangle(shapeColor, width, height);
-            shapeRec.toString();
-            shapeRec.calcArea();
+//            shapeRec.toString();
+//            shapeRec.calcArea();
+            shapeRec.draw();
         }
         else if (numb == 3) {
             System.out.println("Please, set the side A of triangle: ");
@@ -37,8 +39,9 @@ public class Main {
             System.out.println("And set the color of triangle: ");
             String shapeColor = scan.next();
             Triangle shapeTri = new Triangle(shapeColor, a, b, c);
-            shapeTri.toString();
-            shapeTri.calcArea();
+//            shapeTri.toString();
+//            shapeTri.calcArea();
+            shapeTri.draw();
         }
         else {
             System.out.println("It was wrong number, try again...");
