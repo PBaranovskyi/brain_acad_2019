@@ -12,19 +12,20 @@ public class TestStrings3 {
         System.out.println(myStr);
     }
 
-    public static String uniqueChars(String str){
+    public static String uniqueChars(String str) {
         char[] arr = str.toCharArray();
-        boolean check = true;
+        int check = 0;
         StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < arr.length; i++){
-            for (int j = arr.length -1; j > i; j--){
-                if (arr[i] == arr[j]){
-                    check = false;
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr.length; j++) {
+                if (arr[i] == arr[j]) {
+                    check++;
                 }
             }
-            if (check){
+            if (check == 1) {
                 sb.append(arr[i]);
             }
+            check = 0;
         }
         String myStr = sb.toString();
         //char[] newArr = myStr.toCharArray();
