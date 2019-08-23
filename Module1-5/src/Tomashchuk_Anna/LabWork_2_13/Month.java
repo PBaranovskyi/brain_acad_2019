@@ -23,13 +23,13 @@ public class Month {
                 monthNumber = 30;
                 break;
             case "may":
-                monthNumber = 5;
+                monthNumber = 31;
                 break;
             case "june":
-                monthNumber = 6;
+                monthNumber = 30;
                 break;
             case "july":
-                monthNumber = 7;
+                monthNumber = 31;
                 break;
             case "august":
                 monthNumber = 8;
