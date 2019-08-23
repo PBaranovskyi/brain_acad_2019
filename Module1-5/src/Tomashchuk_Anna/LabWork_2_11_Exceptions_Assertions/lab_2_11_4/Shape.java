@@ -34,6 +34,11 @@ public abstract class Shape implements Drawable, Comparable {
         return shapeColor;
     }
 
+    // Rewrite the parseShape(String) method in class Shape
+    // to throw InvalidShapeStringException if string passed as method argument is not valid
+    // Example of valid string: “Rectangle:RED:10,20”;
+    // Example of invalid strings: “RectangRED12”; “sdzgdzhgd”;
+
     public static Shape parseShape(String str) throws InvalidShapeStringException {
         Shape obj = null;
         String[] words = str.split(":");
