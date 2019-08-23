@@ -32,19 +32,19 @@ public class Month {
                 monthNumber = 31;
                 break;
             case "august":
-                monthNumber = 8;
+                monthNumber = 31;
                 break;
             case "september":
-                monthNumber = 9;
+                monthNumber = 30;
                 break;
             case "october":
-                monthNumber = 10;
+                monthNumber = 31;
                 break;
             case "november":
-                monthNumber = 11;
+                monthNumber = 30;
                 break;
             case "december":
-                monthNumber = 12;
+                monthNumber = 30;
                 break;
             default:
                 monthNumber = 0;
