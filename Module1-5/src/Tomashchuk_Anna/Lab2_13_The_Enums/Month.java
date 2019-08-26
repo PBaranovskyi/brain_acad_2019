@@ -1,4 +1,4 @@
-package Tomashchuk_Anna.LabWork_2_13;
+package Tomashchuk_Anna.Lab2_13_The_Enums;
 
 public class Month {
     public static int getMonthNumber(String month) {
