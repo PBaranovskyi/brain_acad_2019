@@ -11,10 +11,10 @@ public class Gen {
 
     public static void main(String[] args) {
 
-       Car[] cars = { new Car(20), new Car(50)};
-       Car[] cars2 = { new Car(20), new Car(50)};
+        Car[] cars = {new Car(20), new Car(50)};
+        Car[] cars2 = {new Car(20), new Car(50)};
 
-       Car[] cars3 = addArray(cars, cars2);
+        Car[] cars3 = addArray(cars, cars2);
 
 
         Animal[] animals = {};
@@ -49,7 +49,5 @@ public class Gen {
         }
         return target;
     }
-
-
 
 }
