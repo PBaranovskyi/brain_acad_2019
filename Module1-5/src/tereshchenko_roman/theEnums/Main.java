@@ -25,13 +25,13 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the day of the week: ");
         String day = scanner.next();
+        day = day.toUpperCase();
 
         try {
-            MyDayOfWeek dayOfWeek = MyDayOfWeek.valueOf(day.toUpperCase());
+            MyDayOfWeek dayOfWeek = MyDayOfWeek.valueOf(day);
             System.out.println("The next day of week: " + dayOfWeek.nextDay());
         } catch (IllegalArgumentException exp) {
             System.out.println("The name of the day of the week is not correct");
         }
-
     }
 }
