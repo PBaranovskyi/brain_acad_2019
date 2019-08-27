@@ -13,10 +13,10 @@ public class Test {
 
     static int checkMonth(String month) {
         int days = 0;
-        if (month == "february") {
+        if (month == "February") {
             days = 28;
             System.out.println(days + " days in this month.");
-        } else if (month == "January" & month == "March" & month == "May" & month == "July" & month == "August" & month == "October" & month == "December"){
+        } else if (month == "January" | month == "March" | month == "May" | month == "July" | month == "August" | month == "October" | month == "December"){
             days = 31;
             System.out.println(days + " days in this month.");
         } else {
