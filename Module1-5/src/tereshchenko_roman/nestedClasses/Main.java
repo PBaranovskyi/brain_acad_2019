@@ -34,5 +34,14 @@ public class Main {
         System.out.println("Sort by phone");
         phoneBook1.sortByPhoneNumber();
         phoneBook1.printPhoneBook();
+
+        //2-12-3
+
+MyPhone myPhone = new MyPhone();
+
+myPhone.switchOn();
+
+myPhone.call(3);
+
     }
 }
