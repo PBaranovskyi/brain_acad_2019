@@ -40,4 +40,7 @@ public class Arrays {
     public static void toString(int[] arr) {
     }
 
+    public static String toString(Integer[] intArrRand) {
+        return null;
     }
+}
