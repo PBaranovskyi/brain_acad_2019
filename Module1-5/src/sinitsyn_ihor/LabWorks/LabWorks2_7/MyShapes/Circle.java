@@ -18,18 +18,21 @@ public class Circle extends Shape {
         return name;
     }
 
+    public static Circle parseCircle(String str) {
+        String[] words = str.split(":");
+        return new Circle(words[1], Double.parseDouble(words[2]));
+    }
+
     @Override
     public double calcArea() {
-        double area = (double) Math.round(Pi * radius * radius*100)/100.0;
-        System.out.println("Circle area is: " + area);
-        return area;
+        return Math.PI * Math.pow(radius, 2);
     }
 
     @Override
     public String toString() {
-        System.out.println("This is " + this.getName() + ", color is " + this.getShapeColor() + ", radius: " + getRadius());
-        return super.toString();
+        return super.toString() + ", radius = " + radius;
     }
+
 
     @Override
     public void draw() {

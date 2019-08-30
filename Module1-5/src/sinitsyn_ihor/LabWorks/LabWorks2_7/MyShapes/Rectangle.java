@@ -23,17 +23,19 @@ public class Rectangle extends Shape {
         return name;
     }
 
+    public static Rectangle parseRectangle(String str) {
+        String[] words = str.split(":");
+        return new Rectangle(words[1], Double.parseDouble(words[2]), Double.parseDouble(words[3]));
+    }
+
     @Override
     public double calcArea() {
-        double area = Math.round(width * height*100)/100.0;
-        System.out.println("Rectangle area is: " + area);
-        return area;
+        return width * height;
     }
 
     @Override
     public String toString() {
-        System.out.println("This is " + this.getName() + ", color is " + this.getShapeColor() + ", width: " + getWidth() + ", height: " + getHeight());
-        return super.toString();
+        return super.toString() + ", width = " + width + ", height = " + height;
     }
 
     @Override

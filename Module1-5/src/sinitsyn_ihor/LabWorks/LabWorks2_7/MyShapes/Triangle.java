@@ -29,18 +29,20 @@ public class Triangle extends Shape {
         return sideC;
     }
 
+    public static Triangle parseTriangle(String str) {
+        String[] words = str.split(":");
+        return new Triangle(words[1], Double.parseDouble(words[2]), Double.parseDouble(words[3]), Double.parseDouble(words[4]));
+    }
+
     @Override
     public double calcArea() {
-        double square = (sideA + sideB + sideC) / 2;
-        double area = (double) Math.round(Math.sqrt(square * (square - sideA) * (square - sideB) * (square - sideC)) * 100) / 100.0;
-        System.out.println("Triangle area is: " + area);
-        return area;
+        double p = (sideA + sideB + sideC) / 2;
+        return Math.sqrt(p * (p - sideA) * (p - sideB) * (p - sideC));
     }
 
     @Override
     public String toString() {
-        System.out.println("This is " + this.getName() + ", color is " + this.getShapeColor() + ", side A = " + getSideA() + ", side B = " + getSideB() + ", side C = " + getSideC());
-        return super.toString();
+        return super.toString() + ", side a = " + sideA + ", side b = " + sideB + ", side c = " + sideC;
     }
 
     @Override
