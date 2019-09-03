@@ -1,6 +1,9 @@
 package mainclasses.inheritence4;
 
-public class Car implements Comparable {
+import java.util.Iterator;
+import java.util.Random;
+
+public class Car implements Comparable, Iterable<Car> {
 
     private int maxSpeed;
 
@@ -29,5 +32,20 @@ public class Car implements Comparable {
         return "Car{" +
                 "maxSpeed=" + maxSpeed +
                 '}';
+    }
+
+    @Override
+    public Iterator<Car> iterator() {
+        return new Iterator<Car>() {
+            @Override
+            public boolean hasNext() {
+                return new Random().nextBoolean();
+            }
+
+            @Override
+            public Car next() {
+                return new Car(9000);
+            }
+        };
     }
 }

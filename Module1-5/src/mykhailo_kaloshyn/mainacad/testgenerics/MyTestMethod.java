@@ -20,13 +20,14 @@ public class MyTestMethod {
     }
 
 
-    public static <T extends Number&Comparable<T>> void calcSum (T[] arr, T maxElem) {
+    public static <T extends Number & Comparable<T>> void calcSum(T[] arr, T maxElem) {
 
         double sumOfElements = 0.0;
 
-        for (int i=0; i<arr.length; i++) {
-            if (arr[i].compareTo(maxElem)>0) {
-                sumOfElements+=arr[i].doubleValue();            }
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i].compareTo(maxElem) > 0) {
+                sumOfElements += arr[i].doubleValue();
+            }
         }
 
         System.out.println(Arrays.toString(arr) + "\nSumm of elements that are greater than " + maxElem + ":"
