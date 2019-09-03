@@ -2,7 +2,7 @@ package tereshchenko_roman.generics.testGenerics2;
 
 public class MyTestMethod<T extends Number> {
 
-    public static <T extends Comparable> int calcNum(T[] a, T maxElem) {
+    public static <T extends Comparable <T>>int calcNum(T[] a, T maxElem) {
 
         int t = 0;
         for (int i = 0; i < a.length; i++)
@@ -11,7 +11,7 @@ public class MyTestMethod<T extends Number> {
         return t;
     }
 
-    public static <T extends Number & Comparable> double calcSum(T[] arr, T maxVal) {
+    public static <T extends Number & Comparable<T>> double calcSum(T[] arr, T maxVal) {
 
         double sum = 0.0;
 
