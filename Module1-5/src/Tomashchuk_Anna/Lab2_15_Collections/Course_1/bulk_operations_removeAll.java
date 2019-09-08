@@ -3,7 +3,7 @@ package Tomashchuk_Anna.Lab2_15_Collections.Course_1;
 import java.util.ArrayList;
 import java.util.Collection;
 
-public class bulk_operations {
+public class bulk_operations_removeAll {
     public static void main(String[] args) {
         // bulk operations perform - выполнение массовых операций
         Collection<String> myColl1=new ArrayList<>();

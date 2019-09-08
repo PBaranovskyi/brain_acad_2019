@@ -3,7 +3,7 @@ package Tomashchuk_Anna.Lab2_15_Collections.Course_1;
 import java.util.ArrayList;
 import java.util.Collection;
 
-public class myColl_1 {
+public class myColl_1_remove {
     public static void main(String[] args) {
         Collection<String> myColl = new ArrayList<>();
         myColl.add("aaa");
