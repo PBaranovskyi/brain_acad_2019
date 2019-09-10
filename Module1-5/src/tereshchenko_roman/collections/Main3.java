@@ -1,9 +1,6 @@
 package tereshchenko_roman.collections;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 public class Main3 {
 
@@ -13,7 +10,7 @@ public class Main3 {
         List<String> linkList = new LinkedList<>();
 
         for (int i = 0; i < 10; i++) {
-            arrList.add("num_" + i);
+            arrList.add("number_" + i);
         }
 
         for (int i = 0; i < 10; i++) {
@@ -33,6 +30,18 @@ public class Main3 {
 //            String element = iter2.next();
             System.out.println(iter2.next());
         }
+
+        System.out.println("=============");
+
+        ListIterator<String> listIterator = linkList.listIterator();
+
+        while (listIterator.hasNext()){
+
+            arrList.add(1, listIterator.next());
+        }
+
+        System.out.println(arrList);
+        System.out.println(linkList);
 
     }
 
