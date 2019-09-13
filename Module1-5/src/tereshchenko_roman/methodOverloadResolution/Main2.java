@@ -11,10 +11,12 @@ public class Main2 {
     }
 
     public static void foo (int a, int b) {
-        System.out.println(a + "" + b);
+        System.out.println(a + " " + b);
     }
 
     public static void foo (int ... a) {
-        System.out.println(a.toString());
+        for (int i : a) {
+            System.out.print(i + " ");
+        }
     };
 }

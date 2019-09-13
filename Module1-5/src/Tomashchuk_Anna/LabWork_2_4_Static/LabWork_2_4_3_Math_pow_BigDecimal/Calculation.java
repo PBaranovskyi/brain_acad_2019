@@ -23,7 +23,7 @@ public class Calculation {
         System.out.println("Округляем 1 метод: ((2.7*100.0)/100.0) : " + Math.round(MyMath.areaOfCircle(2.75)*100.0)/100.0);
 
         // Округляем 2 метод
-        //  BigDecimal - округляет, например до 5 числа после запятой, не имеет ограничений double
+        //  BigDec - округляет, например до 5 числа после запятой, не имеет ограничений double
         BigDecimal decimal = new BigDecimal(MyMath.areaOfCircle(2.75));
         //.doubleValue() - Чтобы был тип double
         //decimal.setScale -- установить размер - 5 знаков после запятой
