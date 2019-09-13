@@ -11,32 +11,31 @@ import javafx.stage.Stage;
 
 public class Main_FX extends Application {
     @Override
-    public void start(Stage primaryStage) throws Exception{
-       primaryStage.setTitle("MyWin");
-       primaryStage.setWidth(300);
-       primaryStage.setHeight(300);
+    public void start(Stage primaryStage) throws Exception {
+        primaryStage.setTitle("MyWin");
+        primaryStage.setWidth(300);
+        primaryStage.setHeight(300);
 
-       Pane root =new Pane();
-       Button btn =new Button();
-       btn.setText("Click me");
-       btn.setTranslateX(140);
-       btn.setTranslateY(140);
+        Pane root = new Pane();
+        Button btn = new Button();
+        btn.setText("Click me");
+        btn.setTranslateX(140);
+        btn.setTranslateY(140);
 
-       btn.setPrefSize(70,20);
-       Rectangle rect =new Rectangle(50,50);
-       btn.setOnAction(event -> {
-           rect.setFill(Color.RED);
-           System.out.println("Hello!");
-       });
+        btn.setPrefSize(70, 20);
+        Rectangle rect = new Rectangle(50, 50);
+        btn.setOnAction(event -> {
+            rect.setFill(Color.RED);
+            System.out.println("Hello!");
+        });
 
 
+        Scene scene = new Scene(root);
 
-       Scene scene=new Scene(root);
+        root.getChildren().addAll(btn, rect);
 
-       root.getChildren().addAll(btn,rect);
-
-       primaryStage.setScene(scene);
-       primaryStage.show();
+        primaryStage.setScene(scene);
+        primaryStage.show();
 
 
     }
