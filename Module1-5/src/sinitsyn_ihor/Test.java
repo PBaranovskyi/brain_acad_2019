@@ -1,28 +1,21 @@
 package sinitsyn_ihor;
 
-import java.util.Scanner;
+import java.math.BigDecimal;
+import java.util.Map;
 
 public class Test {
-
     public static void main(String[] args) {
-        System.out.println("Enter month (in English with big letter first, please: ");
-        Scanner scan = new Scanner(System.in);
-        String myMonth = scan.nextLine();
-        Test.checkMonth(myMonth);
-    }
-
-    static int checkMonth(String month) {
-        int days = 0;
-        if (month == "February") {
-            days = 28;
-            System.out.println(days + " days in this month.");
-        } else if (month == "January" | month == "March" | month == "May" | month == "July" | month == "August" | month == "October" | month == "December"){
-            days = 31;
-            System.out.println(days + " days in this month.");
-        } else {
-            days = 30;
-            System.out.println(days + " days in this month.");
+        BigDecimal dec = new BigDecimal("0.1");
+        BigDecimal dec2 = new BigDecimal("0.1");
+        System.out.println(dec);
+        for (int x = 0; x < 10; x++) {
+            dec = dec.add(dec2);
+            System.out.println(dec);
         }
-        return days;
+        Map<String, String> getenv = System.getenv();
+        for (String key : getenv.keySet()) {
+            String value = getenv.get(key);
+            System.out.println("Key = " + key + ", value = " + value);
+        }
     }
 }
