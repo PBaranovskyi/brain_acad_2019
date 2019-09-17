@@ -19,6 +19,11 @@ public class TestCore2 {
             System.out.println("Please, number from 0 to 9...");
         }
     }
+    TestCore2(int number){
+        int x = countNails(number);
+        double y = countChange((double) number / 10);
+        toPrint(x, y);
+    }
 
     public static void toPrint(int value, double money) {
         System.out.println(value + " nail(s) bought. Money left over: $" + money);
