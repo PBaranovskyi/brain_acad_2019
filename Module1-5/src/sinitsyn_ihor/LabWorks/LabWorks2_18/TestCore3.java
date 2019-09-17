@@ -17,13 +17,13 @@ public class TestCore3 {
         Date date = new Date();
         System.out.println("Date: " + date);
     }
-    protected static void sout (Object curLoc){
-        NumberFormat numb = NumberFormat.getNumberInstance((Locale) curLoc);
-        NumberFormat curNumb = NumberFormat.getCurrencyInstance((Locale) curLoc);
-        Currency cur = Currency.getInstance((Locale) curLoc);
+    protected static void sout (Locale curLoc){
+        NumberFormat numb = NumberFormat.getNumberInstance(curLoc);
+        NumberFormat curNumb = NumberFormat.getCurrencyInstance(curLoc);
+        Currency cur = Currency.getInstance(curLoc);
         long longVal = 1234567890L;
         double doubleVal = 2.123456789;
-        System.out.println("Current locale: " + ((Locale) curLoc).getDisplayName());
+        System.out.println("Current locale: " + (curLoc).getDisplayName());
         System.out.println("Long value: " + numb.format(longVal));
         System.out.println("Double value: " + numb.format(doubleVal));
         System.out.println("Currency: " + cur.getDisplayName() + " : " + curNumb.format(longVal));

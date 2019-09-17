@@ -3,10 +3,8 @@ package sinitsyn_ihor.LabWorks.LabWorks2_18;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.TextArea;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
-import sinitsyn_ihor.LabWorks.LabWorks2_18.TestCore2;
 
 public class Nails extends Application {
 
@@ -15,7 +13,7 @@ public class Nails extends Application {
     }
 
     @Override
-    public void start(Stage primaryStage) throws Exception {
+    public void start(Stage primaryStage) {
         primaryStage.setTitle("Nail shop");
         primaryStage.setWidth(814);
         primaryStage.setHeight(400);
@@ -29,7 +27,7 @@ public class Nails extends Application {
         but1.setStyle("-fx-background-color: lightGreen");
         but1.setPrefSize(60, 40);
         but1.setOnAction(event -> {
-            TestCore2 myCore = new TestCore2(1);
+            new TestCore2(1);
             but1.setStyle("-fx-background-color: red");
         });
 
@@ -40,7 +38,7 @@ public class Nails extends Application {
         but2.setStyle("-fx-background-color: lightGreen");
         but2.setPrefSize(60, 40);
         but2.setOnAction(event -> {
-            TestCore2 myCore = new TestCore2(2);
+            new TestCore2(2);
             but2.setStyle("-fx-background-color: red");
         });
 
@@ -51,7 +49,7 @@ public class Nails extends Application {
         but3.setStyle("-fx-background-color: lightGreen");
         but3.setPrefSize(60, 40);
         but3.setOnAction(event -> {
-            TestCore2 myCore = new TestCore2(3);
+            new TestCore2(3);
             but3.setStyle("-fx-background-color: red");
         });
 
@@ -62,7 +60,7 @@ public class Nails extends Application {
         but4.setStyle("-fx-background-color: lightGreen");
         but4.setPrefSize(60, 40);
         but4.setOnAction(event -> {
-            TestCore2 myCore = new TestCore2(4);
+            new TestCore2(4);
             but4.setStyle("-fx-background-color: red");
         });
 
@@ -73,7 +71,7 @@ public class Nails extends Application {
         but5.setStyle("-fx-background-color: lightGreen");
         but5.setPrefSize(60, 40);
         but5.setOnAction(event -> {
-            TestCore2 myCore = new TestCore2(5);
+            new TestCore2(5);
             but5.setStyle("-fx-background-color: red");
         });
 
@@ -84,7 +82,7 @@ public class Nails extends Application {
         but6.setStyle("-fx-background-color: lightGreen");
         but6.setPrefSize(60, 40);
         but6.setOnAction(event -> {
-            TestCore2 myCore = new TestCore2(6);
+            new TestCore2(6);
             but6.setStyle("-fx-background-color: red");
         });
 
@@ -95,7 +93,7 @@ public class Nails extends Application {
         but7.setStyle("-fx-background-color: lightGreen");
         but7.setPrefSize(60, 40);
         but7.setOnAction(event -> {
-            TestCore2 myCore = new TestCore2(7);
+            new TestCore2(7);
             but7.setStyle("-fx-background-color: red");
         });
 
@@ -106,7 +104,7 @@ public class Nails extends Application {
         but8.setStyle("-fx-background-color: lightGreen");
         but8.setPrefSize(60, 40);
         but8.setOnAction(event -> {
-            TestCore2 myCore = new TestCore2(8);
+            new TestCore2(8);
             but8.setStyle("-fx-background-color: red");
         });
 
@@ -117,7 +115,7 @@ public class Nails extends Application {
         but9.setStyle("-fx-background-color: lightGreen");
         but9.setPrefSize(60, 40);
         but9.setOnAction(event -> {
-            TestCore2 myCore = new TestCore2(9);
+            new TestCore2(9);
             but9.setStyle("-fx-background-color: red");
         });
 
