@@ -61,6 +61,5 @@ public class MyWindow extends Application {
         primaryStage.setScene(scene);
         primaryStage.show();
 
-
     }
 }
