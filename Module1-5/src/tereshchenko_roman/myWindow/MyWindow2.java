@@ -4,18 +4,10 @@ import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
-import javafx.scene.Group;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Label;
-import javafx.scene.layout.Background;
-import javafx.scene.layout.BackgroundFill;
-import javafx.scene.layout.CornerRadii;
-import javafx.scene.layout.StackPane;
-import javafx.scene.paint.Color;
+import javafx.scene.layout.*;
 import javafx.stage.Stage;
 import javafx.scene.control.Button;
-
 import static javafx.scene.paint.Color.*;
 
 
@@ -31,21 +23,21 @@ public class MyWindow2 extends Application {
     public void start(Stage primaryStage) throws Exception {
 
         primaryStage.setTitle("Window that changes colors");
-        primaryStage.setWidth(500);
-        primaryStage.setHeight(300);
+        primaryStage.setWidth(1350);
+        primaryStage.setHeight(700);
 
-        StackPane pane = new StackPane();
+        Pane pane = new Pane();
         Scene scene = new Scene(pane);
         primaryStage.setScene(scene);
 
         Button red = new Button("Paint to red");
-        red.setTranslateY(-100);
+        red.relocate(600, 150);
         Button blue = new Button("Paint to blue");
-        blue.setTranslateY(-50);
+        blue.relocate(600, 250);
         Button yellow = new Button("Paint to yellow");
-        yellow.setTranslateY(-50);
+        yellow.relocate(600, 350);
         Button green = new Button("Paint to green");
-        blue.setTranslateY(50);
+        green.relocate (600,450);
 
         red.setOnAction(new EventHandler<ActionEvent>() {
 
