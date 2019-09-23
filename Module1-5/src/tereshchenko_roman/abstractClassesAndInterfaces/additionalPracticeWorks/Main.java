@@ -43,6 +43,11 @@ public class Main {
         for (Sportsman sportsman : arr3) {
             System.out.println("Я " + sportsman.getName() + " играю в " + sportsman.getSport());
         }
+
+
+
+
+
     }
 
 }
