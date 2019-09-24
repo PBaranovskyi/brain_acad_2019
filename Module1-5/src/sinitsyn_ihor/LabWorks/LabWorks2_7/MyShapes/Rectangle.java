@@ -25,7 +25,9 @@ public class Rectangle extends Shape {
 
     public static Rectangle parseRectangle(String str) {
         String[] words = str.split(":");
-        return new Rectangle(words[1], Double.parseDouble(words[2]), Double.parseDouble(words[3]));
+        Rectangle thisRectangle = new Rectangle(words[1], Double.parseDouble(words[2]), Double.parseDouble(words[3]));
+        System.out.println("This is " + words[0] + ", color: " + words[1] + ", width:" + words[2] + ", height: " + words[3] + ", area is: " + thisRectangle.calcArea());
+        return thisRectangle;
     }
 
     @Override

@@ -6,9 +6,12 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        Shape[] arrayShape = createArrayShape(scan);
-        fillArrayShape(arrayShape);
-        printArrayShape(arrayShape);
+//        Shape[] arrayShape = createArrayShape(scan);
+//        fillArrayShape(arrayShape);
+//        printArrayShape(arrayShape);
+        System.out.println("Please, enter your shape: ");
+        String toParse = scan.nextLine();
+        Shape.parseShape(toParse);
     }
 
     public static Shape[] createArrayShape(Scanner scan) {
@@ -28,18 +31,21 @@ public class Main {
             switch (myShape) {
                 case "Circle":
                     System.out.println("Circle!");
-                    shape = (myShape + ":" + myColor[rand.nextInt(myColor.length)] + ":" + rand.nextDouble() * 100);
+                    shape = (myShape + ":" + myColor[rand.nextInt(myColor.length)] + ":" + rand.nextDouble() * 100.0);
+                    System.out.println(shape);
                     break;
                 case "Rectangle":
                     System.out.println("Rectangle!");
                     shape = (myShape + ":" + myColor[rand.nextInt(myColor.length)] + ":" + rand.nextDouble() * 100 + ":" + rand.nextDouble() * 100);
+                    System.out.println(shape);
                     break;
                 case "Triangle":
                     System.out.println("Triangle!");
-                    shape = (myShape + ":" + myColor[rand.nextInt(myColor.length)] + ":" + rand.nextDouble() * 100) + ":" + rand.nextDouble() * 100 + ":" + rand.nextDouble() * 100;
+                    shape = (myShape + ":" + myColor[rand.nextInt(myColor.length)] + ":" + rand.nextDouble() * 100 + ":" + rand.nextDouble() * 100 + ":" + rand.nextDouble() * 100);
+                    System.out.println(shape);
                     break;
                 default:
-                    shape = ("Circle:" + myColor[rand.nextInt(myColor.length)] + ":" + rand.nextDouble() * 100);
+                    System.out.println("Something was wrong...");
             }
             array[i] = Shape.parseShape(shape);
         }

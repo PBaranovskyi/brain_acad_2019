@@ -31,7 +31,9 @@ public class Triangle extends Shape {
 
     public static Triangle parseTriangle(String str) {
         String[] words = str.split(":");
-        return new Triangle(words[1], Double.parseDouble(words[2]), Double.parseDouble(words[3]), Double.parseDouble(words[4]));
+        Triangle thisTriangle = new Triangle(words[1], Double.parseDouble(words[2]), Double.parseDouble(words[3]), Double.parseDouble(words[4]));
+        System.out.println("This is " + words[0] + ", color: " + words[1] + ", a=" + words[2] + ", b=" + words[3] + ", c=" + words[4] + ", area is: " + thisTriangle.calcArea());
+        return thisTriangle;
     }
 
     @Override

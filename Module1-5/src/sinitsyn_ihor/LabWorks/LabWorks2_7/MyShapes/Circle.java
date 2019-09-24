@@ -20,7 +20,9 @@ public class Circle extends Shape {
 
     public static Circle parseCircle(String str) {
         String[] words = str.split(":");
-        return new Circle(words[1], Double.parseDouble(words[2]));
+        Circle thisCircle = new Circle(words[1], Double.parseDouble(words[2]));
+        System.out.println("This is " + words[0] + ", color: " + words[1] + ", radius:" + words[2] + ", area is: " + thisCircle.calcArea());
+        return thisCircle;
     }
 
     @Override
