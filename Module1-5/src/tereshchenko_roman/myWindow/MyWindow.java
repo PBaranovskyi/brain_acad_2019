@@ -2,14 +2,15 @@ package tereshchenko_roman.myWindow;
 
 import javafx.application.Application;
 import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.layout.StackPane;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 public class MyWindow extends Application {
+
+    static Scene scene;
 
     public static void main(String[] args) {
 
@@ -17,49 +18,47 @@ public class MyWindow extends Application {
 
     }
 
+
     @Override
     public void start(Stage primaryStage) throws Exception {
 
-//        primaryStage.setTitle("My window");
-//        primaryStage.setWidth(500);
-//        primaryStage.setHeight(300);
-//        primaryStage.show();
+        Parent root = FXMLLoader.load(getClass().getResource("MyFlow.fxml"));
+        Scene buttonScene = new Scene(root, 500, 300, Color.RED);
+        scene = buttonScene;
 
-        Button button = new Button();
-        button.setText("Say hello to the world");
+//        for (int i = 0; i < 10; i++) {
+//            Button newButton = new Button("My Button " + i);
+////            newButton.setLayoutX(i*10 + 100);
+////            newButton.setLayoutY(100);
+////            newButton.setOnAction(new EventHandler<ActionEvent>() {
+////                @Override
+////                public void handle(ActionEvent event) {
+////                    primaryStage.setTitle(newButton.getText());
+////                    buttonScene.setFill(Paint.valueOf("#008B8B"));
+////                }
+////            });
+//            newButton.setOnMouseClicked(new EventHandler<MouseEvent>() {
+//                @Override
+//                public void handle(MouseEvent event) {
+//                    buttonScene.setFill(Color.BLACK);
+//                }
+//            });
+//            ourParent.getChildren().add(newButton);
+//        }
 
-        button.setOnAction(new EventHandler<ActionEvent>() {
 
-            @Override
-            public void handle(ActionEvent event) {
 
-                Label label = new Label("Hello, world!");
 
-                StackPane secondaryLayout = new StackPane();
-                secondaryLayout.getChildren().add(label);
 
-                Scene secondScene = new Scene(secondaryLayout, 230, 100);
-// New window (Stage)
-                Stage newWindow = new Stage();
-                newWindow.setTitle("My new window");
-                newWindow.setScene(secondScene);
+        primaryStage.setScene(buttonScene);
 
-                // Set position of second window, related to primary window.
-                newWindow.setX(primaryStage.getX() + 100);
-                newWindow.setY(primaryStage.getY() + 50);
-
-                newWindow.show();
-            }
-        });
-
-        StackPane root = new StackPane();
-        root.getChildren().add(button);
-
-        Scene scene = new Scene(root, 450, 250);
-
-        primaryStage.setTitle("My window");
-        primaryStage.setScene(scene);
+        primaryStage.setMaxWidth(1000);
+        primaryStage.setMaxHeight(500);
         primaryStage.show();
 
+    }
+
+    public void click(ActionEvent actionEvent) {
+        scene.setFill(Color.BLACK);
     }
 }

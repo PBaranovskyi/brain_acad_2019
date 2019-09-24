@@ -32,24 +32,15 @@ public class MyPhone {
         }
 
         public void sortByName() {
-            Arrays.sort(phoneNumbers, new Comparator() {
-                @Override
-                public int compare(Object o1, Object o2) {
-                    PhoneNumber obj_1 = (PhoneNumber)o1;
-                    PhoneNumber obj_2 = (PhoneNumber)o2;
-                    String name_1 = obj_1.getName();
-                    String name_2 = obj_2.getName();
-                    return name_1.compareTo(name_2);
-                }
-            });
+            Arrays.sort(phoneNumbers, (o1, o2) -> o1.getName().compareTo(o2.getName()));
         }
 
         public void sortByPhoneNumber() {
             Arrays.sort(phoneNumbers, new Comparator() {
                 @Override
                 public int compare(Object o1, Object o2) {
-                    String phone_1 = ((PhoneNumber)o1).getPhone();
-                    String phone_2 = ((PhoneNumber)o2).getPhone();
+                    String phone_1 = ((PhoneNumber) o1).getPhone();
+                    String phone_2 = ((PhoneNumber) o2).getPhone();
                     return phone_1.compareTo(phone_2);
                 }
             });
@@ -88,7 +79,7 @@ public class MyPhone {
     }
 
     //Lab work 2_12_3
-    public void switchOn (){
+    public void switchOn() {
 
         System.out.println("Loading PhoneBook records…");
 
@@ -106,19 +97,34 @@ public class MyPhone {
         System.out.println("OK!");
     }
 
-public void call (int number){
-    System.out.println("Calling to: " + phonebook.phoneNumbers[number]);
-}
+    public void call(int number) {
+        System.out.println("Calling to: " + phonebook.phoneNumbers[number]);
+    }
 
 //Lab work 2_12_4
 
-class Camera {}
-class Bluetooth {}
-class MemoryCard {}
-class SimCard {}
-class PowerOnButton {}
-class PhoneBattery {}
-class PhoneDisplay {}
-class PhoneSpeaker {}
+    class Camera {
+    }
+
+    class Bluetooth {
+    }
+
+    class MemoryCard {
+    }
+
+    class SimCard {
+    }
+
+    class PowerOnButton {
+    }
+
+    class PhoneBattery {
+    }
+
+    class PhoneDisplay {
+    }
+
+    class PhoneSpeaker {
+    }
 
 }
