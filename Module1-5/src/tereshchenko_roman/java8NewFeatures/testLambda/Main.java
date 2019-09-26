@@ -28,7 +28,7 @@ public class Main {
 
     public static void updateList(List<String> list) {
         MyConverter converter = s -> {
-            if (MyConverter.isNull(s)) {
+            if (!MyConverter.isNull(s)) {
                 s = s.toUpperCase();
             }
             return s;
