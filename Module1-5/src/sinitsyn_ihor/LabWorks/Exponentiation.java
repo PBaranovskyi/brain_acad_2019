@@ -9,7 +9,6 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
-
 import java.math.BigDecimal;
 
 public class Exponentiation extends Application {
@@ -61,8 +60,8 @@ public class Exponentiation extends Application {
         AnchorPane.setBottomAnchor(secondLabel, 200.0);
 
         AnchorPane.setTopAnchor(thirdLabel, 100.0);
-        AnchorPane.setLeftAnchor(thirdLabel, 130.0);
-        AnchorPane.setRightAnchor(thirdLabel, 120.0);
+        AnchorPane.setLeftAnchor(thirdLabel, 50.0);
+        AnchorPane.setRightAnchor(thirdLabel, 50.0);
         AnchorPane.setBottomAnchor(thirdLabel, 100.0);
         root.getChildren().addAll(button1, firstField, secondField, firstLabel, secondLabel, thirdLabel);
     }
