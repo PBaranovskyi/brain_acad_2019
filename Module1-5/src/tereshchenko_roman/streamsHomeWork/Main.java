@@ -20,10 +20,10 @@ public class Main {
         Set<Employee> employeeSet = new HashSet<>();
 
         for (Company company : companies) {
-//            employeeSet.addAll(companies.)
+            employeeSet.addAll(company.getEmployeeList());
         }
 
-        System.out.println(employeeList1.stream().map(p -> p.getAge()).collect(Collectors.toSet()));
+        System.out.println(employeeSet.stream().map(p -> p.getAge()).collect(Collectors.toList()));
 
     }
 
