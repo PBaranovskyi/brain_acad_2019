@@ -11,7 +11,7 @@ public class PresonMain_7 {
 
         System.out.println("Person name: " + adj1.getName());
         System.out.println("Age: " + adj1.getAge());
-        System.out.println("Gender: " + adj1.getGender());
+        System.out.println("Gend: " + adj1.getGender());
         System.out.println("YearOfBirth: " + adj1.getYearOfBirth());
     }
 }

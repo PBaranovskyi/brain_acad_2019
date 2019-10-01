@@ -21,7 +21,7 @@ public class Main {
 
         System.out.println("Person's name: " + person.getName());
         System.out.println("Person's age: " + person.getAge());
-        System.out.println("Person's Gender: " + person.getGender());
+        System.out.println("Person's Gend: " + person.getGender());
         System.out.println("Person's YearOfBirth: " + person.getYearOfBirth());
         System.out.println("Person " + person.getName() + " has a dog: " + dog.getName());
         System.out.println("Dog's age: " + dog.getAge());
