@@ -2,7 +2,7 @@ package Tomashchuk_Anna.LabWork_2_2_Methods.Lab224;
 
 public class Person {
     public String PersonDemo(String firstName, String lastName, String gender) {
-        System.out.println("FirstName: " + firstName + ", lastName: " + lastName + " , Gender: " + gender);
+        System.out.println("FirstName: " + firstName + ", lastName: " + lastName + " , Gend: " + gender);
         return firstName + lastName + gender;
     }
 
@@ -12,7 +12,7 @@ public class Person {
     }
 
     public String PersonDemo1(String lastName, String gender) {
-        System.out.println("LastName: " + lastName + " , Gender: " + gender);
+        System.out.println("LastName: " + lastName + " , Gend: " + gender);
         return lastName + gender;
     }
 

@@ -11,7 +11,7 @@ public class PersonMain {
 
         System.out.println("Name of Person: " + one.getName());
         System.out.println("Age: " + one.getAge());
-        System.out.println("Gender: " + one.getGender());
+        System.out.println("Gend: " + one.getGender());
         System.out.println("YearOfBirth: " + one.getYearOfBirth());
 
     }
