@@ -32,7 +32,7 @@ public class MyPhone {
         }
 
         public void sortByName() {
-            Arrays.sort(phoneNumbers, (o1, o2) -> o1.getName().compareTo(o2.getName()));
+            Arrays.sort(phoneNumbers, Comparator.comparing(PhoneNumber::getName));
         }
 
         public void sortByPhoneNumber() {
