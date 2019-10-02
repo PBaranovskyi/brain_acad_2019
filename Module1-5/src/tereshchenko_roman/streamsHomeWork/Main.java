@@ -23,7 +23,21 @@ public class Main {
             employeeSet.addAll(company.getEmployeeList());
         }
 
-        System.out.println(employeeSet.stream().map(p -> p.getAge()).collect(Collectors.toList()));
+        Map<Integer, List<String>> employeesMap = new HashMap<>();
+
+        Set<Integer> employeesAge = employeeSet.stream().map(employee -> employee.getAge()).collect(Collectors.toSet());
+
+        for (Integer eachAge : employeesAge) {
+            employeesMap.put(eachAge, new ArrayList<>());
+        }
+
+        for (Employee employee : employeeSet) {
+            employeesMap.get(employee.getAge()).add(employee.getName());
+        }
+
+        System.out.println(employeesMap);
+
+//        System.out.println(employeeSet.stream().map(p -> p.getAge()).collect(Collectors.toList()));
 
     }
 
