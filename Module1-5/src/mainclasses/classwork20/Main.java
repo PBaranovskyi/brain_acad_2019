@@ -68,7 +68,12 @@ public class Main {
                 .flatMap(comp -> comp.getEmployeeList().stream())
                 .collect(Collectors.groupingBy(Employee::getAge, Collectors.mapping(Employee::getName, Collectors.toSet())));
 
-        System.out.println(collect);
+
+        Map<Integer, Long> collect2 = companyList.stream()
+                .flatMap(comp -> comp.getEmployeeList().stream())
+                .collect(Collectors.groupingBy(Employee::getAge, Collectors.counting()));
+
+        System.out.println(collect2);
 
     }
 }
