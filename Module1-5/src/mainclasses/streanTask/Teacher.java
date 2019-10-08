@@ -4,6 +4,7 @@ public class Teacher {
 
     private Subject subject;
     private String name;
+    private int age;
 
     public void setSubject(Subject subject) {
         this.subject = subject;
@@ -26,6 +27,15 @@ public class Teacher {
         return "Teacher{" +
                 "subject=" + subject +
                 ", name='" + name + '\'' +
+                ", age=" + age +
                 '}';
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public int getAge() {
+        return age;
     }
 }

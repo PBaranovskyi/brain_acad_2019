@@ -40,6 +40,7 @@ public class Main {
             Teacher teacher = new Teacher();
             teacher.setSubject(generateSubject());
             teacher.setName(generateName());
+            teacher.setAge(new Random().nextInt(70));
             list.add(teacher);
         }
 
