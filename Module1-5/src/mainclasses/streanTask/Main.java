@@ -1,62 +1,69 @@
 package mainclasses.streanTask;
 
-import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
-import java.util.Random;
+import java.util.Optional;
+import java.util.stream.Collectors;
 
 public class Main {
 
 
     public static final int SCHOOLS_COUNT = 100;
     public static final int TEACHERS_COUNT = 5;
-    static List<String> teacherNames = Arrays.asList("Koly",  "Lena", "Nata");
+    static List<String> teacherNames = Arrays.asList("Koly", "Lena", "Nata", "Max", "Misha", "Roma", "Igor");
 
     public static void main(String[] args) {
-        List<School> schoolList = generateScools(SCHOOLS_COUNT, teacherNames);
-        for (School school : schoolList) {
-            System.out.println(school);
-        }
-    }
 
-    public static List<School> generateScools(int count, List<String> teacherNames) {
-        if (teacherNames !=null && !teacherNames.isEmpty()) {
-            Main.teacherNames = teacherNames;
-        }
+        SchoolsGenerator sc = new SchoolsGenerator();
 
-        List<School> list = new ArrayList<>();
-        for (int i = 0; i < count; i++) {
+        List<School> schools = sc.generateScools(100, 2, teacherNames);
 
-            List<Teacher> listTeacher = generateTeachers(TEACHERS_COUNT);
-            list.add(new School(listTeacher));
+        long count = schools.stream()
+                .filter(school -> schoolContainInformatics(school))
+                .count();
 
-        }
-        return list;
-    }
+        System.out.println("SChools with information count: " + count);
 
-    private static List<Teacher> generateTeachers(int count) {
-        List<Teacher> list = new ArrayList<>();
-        for (int i = 0; i < count; i++) {
-            Teacher teacher = new Teacher();
-            teacher.setSubject(generateSubject());
-            teacher.setName(generateName());
-            teacher.setAge(new Random().nextInt(70));
-            list.add(teacher);
+        long countTeachersWithInform = schools.stream()
+                .flatMap(school -> school.getListTeacher().stream())
+                .filter(teacher -> teacher.getSubject() == Subject.INFORMATICA)
+                .count();
+
+        System.out.println("Teachers of INOFMATICA " + countTeachersWithInform);
+
+        List<School> sortedSchools = schools.stream()
+                .sorted((o1, o2) -> getSubjectCount(o2) - getSubjectCount(o1))
+                .collect(Collectors.toList());
+
+
+        for (School sortedSchool : sortedSchools) {
+            System.out.println(sortedSchool);
         }
 
-        return list;
+        Optional<Teacher> result = schools.stream()
+                .flatMap(school -> school.getListTeacher().stream())
+                .max(Comparator.comparing(Teacher::getAge));
+
+        if (result.isPresent()){
+            System.out.println(result.get());
+        }
+
+        result.ifPresent(x -> System.out.println(x));
+
     }
 
-    private static String generateName() {
-        Random random = new Random();
-        int randomIndex = random.nextInt(teacherNames.size());
-        return teacherNames.get(randomIndex);
+    private static int getSubjectCount(School school) {
+        return (int) school.getListTeacher().stream()
+                .map(teacher -> teacher.getSubject())
+                .distinct().count();
     }
 
-    private static Subject generateSubject() {
-        Subject[] subjects = Subject.values();
-        Random random = new Random();
-        int randomIndex = random.nextInt(subjects.length);
-        return subjects[randomIndex];
+    private static boolean schoolContainInformatics(School school) {
+        return school.getListTeacher().stream()
+                .filter(teacher -> teacher.getSubject() == Subject.INFORMATICA)
+                .count() > 0;
     }
+
+
 }
