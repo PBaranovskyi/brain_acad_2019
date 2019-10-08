@@ -14,7 +14,7 @@ public class ColorSwitcher extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        //Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
+        //Parent root = FXMLLoader.load(getClass().getResource("sampleApplication.fxml"));
         AnchorPane root = new AnchorPane();
         primaryStage.setTitle("Hello World");
         primaryStage.setScene(new Scene(root, 450, 250));

@@ -1,4 +1,4 @@
-package tereshchenko_roman.sample;
+package tereshchenko_roman.sampleApplication;
 
 import java.net.URL;
 import java.util.ResourceBundle;

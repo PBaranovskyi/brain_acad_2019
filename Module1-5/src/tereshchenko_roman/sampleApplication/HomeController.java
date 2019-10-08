@@ -1,4 +1,4 @@
-package tereshchenko_roman.sample;
+package tereshchenko_roman.sampleApplication;
 
 import javafx.fxml.FXML;
 import javafx.scene.image.ImageView;
