@@ -51,6 +51,7 @@ public class Main {
 
         result.ifPresent(x -> System.out.println(x));
 
+
     }
 
     private static int getSubjectCount(School school) {
