@@ -5,11 +5,11 @@ import java.util.Random;
 
 public class SchoolGenerator {
 
-    public static void main(String[] args) {
-        String[] name = {"Alex", "Ivan", "Andrew", "John", "Viola", "Sonya", "Victoria", "Iren"};
-        String[] surname = {"Bond", "Snow", "Sand", "Smith", "Black", "Bailey", "White", "Snowden"};
-        String[] subjects = {"Algebra", "Geometry", "Chemistry", "Language", "Informatics", "Literature", "Physics", "Biology"};
+    public static String[] name = {"Alex", "Ivan", "Andrew", "John", "Viola", "Sonya", "Victoria", "Iren"};
+    public static String[] surname = {"Bond", "Snow", "Sand", "Smith", "Black", "Bailey", "White", "Snowden"};
+    public static String[] subjects = {"Algebra", "Geometry", "Chemistry", "Language", "Informatics", "Literature", "Physics", "Biology"};
 
+    public static void main(String[] args) {
         //Create connection to DB server:
         Connection newConnect = CreateConnection();
         try (Statement st = newConnect.createStatement()) {
@@ -35,8 +35,8 @@ public class SchoolGenerator {
             for (int j = 1; j <= 20; j++) {
                 Random rand = new Random();
                 String teacherName = name[rand.nextInt(name.length)] + " " + surname[rand.nextInt(surname.length)];
-                int x = rand.nextInt(4) + 1;
-                int y = rand.nextInt(7) + 1;
+                int x = rand.nextInt(5) + 1;
+                int y = rand.nextInt(8) + 1;
                 String generateTeacher = "INSERT INTO teacher (id, name, school_id, subject_id) VALUES (" + j + ", '" + teacherName + "', " + x + ", " + y + ")";
                 st.execute(generateTeacher);
             }
@@ -46,6 +46,7 @@ public class SchoolGenerator {
         }
     }
 
+    //Public method for connecting to selected database:
     public static Connection CreateConnection() {
         Connection dbConnect = null;
         try {
