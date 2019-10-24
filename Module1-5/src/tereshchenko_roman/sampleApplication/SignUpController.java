@@ -17,7 +17,7 @@ public class SignUpController {
     private URL location;
 
     @FXML
-    private PasswordField signUpCountry;
+    private TextField signUpCountry;
 
     @FXML
     private Button signUpButton;
@@ -42,6 +42,14 @@ public class SignUpController {
 
     @FXML
     void initialize() {
+        DatabaseHandler dbHaldler = new DatabaseHandler();
+
+        signUpButton.setOnAction(event -> {
+            dbHaldler.signUpUser(signUpName.getText(), signUpLastName.getText(),
+                    signUpLogin.getText(), signUpPassword.getText(), signUpCountry.getText(),
+                    "Male");
+        });
+
     }
 }
 

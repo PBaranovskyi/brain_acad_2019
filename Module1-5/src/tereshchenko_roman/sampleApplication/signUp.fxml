@@ -12,11 +12,6 @@
     <children>
         <AnchorPane layoutY="57.0" prefHeight="343.0" prefWidth="700.0" style="-fx-background-color: #fafafa; -fx-border-color: silver;">
             <children>
-                <PasswordField fx:id="signUpCountry" layoutX="208.0" layoutY="236.0" prefHeight="38.0" prefWidth="285.0" promptText="Страна">
-                    <font>
-                        <Font size="17.0" />
-                    </font>
-                </PasswordField>
                 <Button fx:id="signUpButton" layoutX="285.0" layoutY="295.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="131.0" text="Зарегистрироваться" />
             <TextField fx:id="signUpLogin" layoutX="38.0" layoutY="106.0" prefHeight="25.0" prefWidth="285.0" promptText="Логин">
                <font>
@@ -40,6 +35,11 @@
             </TextField>
             <CheckBox fx:id="signUpCheckBoxMale" layoutX="250.0" layoutY="188.0" mnemonicParsing="false" selected="true" text="Мужчина" />
             <CheckBox fx:id="signUpCheckBoxFemale" layoutX="384.0" layoutY="188.0" mnemonicParsing="false" text="Женщина" />
+            <TextField fx:id="signUpCountry" layoutX="208.0" layoutY="222.0" prefHeight="25.0" prefWidth="285.0" promptText="Страна">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </TextField>
             </children>
         </AnchorPane>
         <Label layoutX="220.0" layoutY="1.0" prefHeight="48.0" prefWidth="261.0" text="MyApplication" textAlignment="CENTER" textFill="WHITE">
