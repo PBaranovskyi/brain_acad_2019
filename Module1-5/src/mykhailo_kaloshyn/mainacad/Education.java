@@ -47,18 +47,27 @@ public class Education {
             }
 
 
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+
+    } catch(
+    SQLException e)
+
+    {
+        e.printStackTrace();
+    }
 
         System.out.println(schoolsWithInformatics);
 
-        try {
-            dbConnection.close();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+        try
+
+    {
+        dbConnection.close();
+    } catch(
+    SQLException e)
+
+    {
+        e.printStackTrace();
     }
+}
 
 
 }
