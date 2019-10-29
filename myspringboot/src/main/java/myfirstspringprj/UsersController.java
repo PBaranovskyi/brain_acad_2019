@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
+import repository.UserRepository;
 import services.UserServices;
 
 @RestController
@@ -14,6 +15,10 @@ public class UsersController {
 
     @Autowired
     UserServices userServices;
+
+    @Autowired
+    UserRepository repository;
+
 
 
     @ResponseBody
@@ -37,5 +42,13 @@ public class UsersController {
         }
 
         return userServices.getUsersByCompany(companyId);
+    }
+
+
+    @ResponseBody
+    @GetMapping("/users/add")
+    public void addUser(){
+
+        repository.addUser(13, 3, "Kolya" );
     }
 }

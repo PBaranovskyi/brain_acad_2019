@@ -18,13 +18,14 @@ public class UserRepository extends AbstractRepository {
     public void addUser(int age, int companyId, String name){
         Connection connection = getConnection();
 
-        String query = "Insert INTO users values(?,?,?,?)";
+        String query = "Insert INTO users values(?,?,?,?,?)";
 
         try (PreparedStatement ps = connection.prepareStatement(query)) {
-//            ps.setInt(1, 4);
+            ps.setInt(1, 4);
             ps.setInt(2, age);
             ps.setInt(3, companyId);
             ps.setString(4, name);
+            ps.setBoolean(5, true);
             ps.executeUpdate();
 
         } catch (SQLException e) {
