@@ -2,9 +2,10 @@ package mainclasses.dbpack;
 
 public class User {
 
-    String name;
-    int age;
-    String companyName;
+    private String name;
+    private int age;
+    private String companyName;
+    private boolean active;
 
     public String getName() {
         return name;
@@ -31,6 +32,14 @@ public class User {
     }
 
 
+    public void setActive(boolean active) {
+        this.active = active;
+    }
+
+    public boolean isActive() {
+        return active;
+    }
+
     @Override
     public String toString() {
         return "User{" +
@@ -39,4 +48,5 @@ public class User {
                 ", companyName='" + companyName + '\'' +
                 '}';
     }
+
 }
