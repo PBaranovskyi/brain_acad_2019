@@ -20,18 +20,29 @@ public class UserRepository extends AbstractRepository {
 
         String query = "Insert INTO users values(?,?,?,?,?)";
 
-        try (PreparedStatement ps = connection.prepareStatement(query)) {
-            ps.setInt(1, 4);
+        try (PreparedStatement ps = connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS)) {
+            ps.setInt(1, generateId());
             ps.setInt(2, age);
             ps.setInt(3, companyId);
             ps.setString(4, name);
             ps.setBoolean(5, true);
             ps.executeUpdate();
-
         } catch (SQLException e) {
             e.printStackTrace();
         }
+    }
 
+    private int generateId() {
+        Connection connection = getConnection();
+        try (Statement st = connection.createStatement()) {
+            st.execute("SELECT MAX(id) from users");
+            ResultSet resultSet = st.getResultSet();
+            resultSet.next();
+            return resultSet.getInt(1) + 1;
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return 0;
     }
 
     public List<User> getUsers(){
@@ -41,7 +52,7 @@ public class UserRepository extends AbstractRepository {
 
         try (Statement st = connection.createStatement()) {
 
-            st.execute("SELECT username, age, C.name, active  FROM users U LEFT JOIN Company C ON U.company= C.id");
+            st.execute("SELECT username, age, C.name, active,  U.id  FROM users U LEFT JOIN Company C ON U.company= C.id");
             return getUsers( st);
         } catch (SQLException e) {
             e.printStackTrace();
@@ -55,7 +66,7 @@ public class UserRepository extends AbstractRepository {
 
         Connection connection = getConnection();
         try (Statement st = connection.createStatement()) {
-            st.execute("SELECT username, age, C.name, active  FROM users U LEFT JOIN Company C ON U.company= C.id where U.company=" + companyId);
+            st.execute("SELECT username, age, C.name, active,  U.id  FROM users U LEFT JOIN Company C ON U.company= C.id where U.company=" + companyId);
             return getUsers(st);
         } catch (SQLException e) {
             e.printStackTrace();
@@ -76,6 +87,7 @@ public class UserRepository extends AbstractRepository {
             user.setAge(rs.getInt(2));
             user.setCompanyName(rs.getString(3));
             user.setActive(rs.getBoolean(4));
+            user.setId(rs.getInt(5));
 
             userList.add(user);
         }

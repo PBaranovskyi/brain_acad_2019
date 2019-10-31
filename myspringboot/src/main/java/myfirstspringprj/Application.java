@@ -8,13 +8,17 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 
 import java.util.Arrays;
+import java.util.Collections;
 
 @SpringBootApplication
 @ComponentScan({"repository", "myfirstspringprj", "services"})
 public class Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
+        SpringApplication app = new SpringApplication(Application.class);
+        app.setDefaultProperties(Collections
+                .singletonMap("server.port", "8083"));
+        app.run(args);
     }
 
     @Bean

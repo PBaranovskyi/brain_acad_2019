@@ -6,6 +6,7 @@ public class User {
     private int age;
     private String companyName;
     private boolean active;
+    private int id;
 
     public String getName() {
         return name;
@@ -40,6 +41,13 @@ public class User {
         return active;
     }
 
+    public void setId(int id) {
+
+        this.id = id;
+    }
+    public int getId() {
+        return id;
+    }
     @Override
     public String toString() {
         return "User{" +

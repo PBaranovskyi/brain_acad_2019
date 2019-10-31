@@ -47,8 +47,12 @@ public class UsersController {
 
     @ResponseBody
     @GetMapping("/users/add")
-    public void addUser(){
+    public void addUser(@RequestParam Integer age,
+                        @RequestParam Integer companyId,
+                        @RequestParam String name){
 
-        repository.addUser(13, 3, "Kolya" );
+
+        //http://localhost:8083/users/add?age=55&companyId=2&name=Nastya
+        repository.addUser(age, companyId, name );
     }
 }
