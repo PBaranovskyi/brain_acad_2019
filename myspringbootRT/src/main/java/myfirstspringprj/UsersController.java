@@ -2,12 +2,13 @@ package myfirstspringprj;
 
 import mainclasses.dbpack.User;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
+import repository.UserRepository;
 import services.UserServices;
-
-import java.util.List;
 
 @RestController
 public class UsersController {
@@ -15,18 +16,39 @@ public class UsersController {
     @Autowired
     UserServices userServices;
 
+    @Autowired
+    UserRepository repository;
+
+
+
     @ResponseBody
-    @RequestMapping("/users")
-    public java.util.List<User> getUsers(){
+    @GetMapping("/users")
+    public java.util.List<User> getUsers(@RequestParam(required = false) Integer companyId){
 
-        List<User> userList = userServices.getActiveUsers();
+        if (companyId == null) {
+            return userServices.getActiveUsers();
+        }
 
-//        StringBuilder sb = new StringBuilder();
-//        for (User user : userList) {
-//            System.out.println(user);
-//            sb.append(user).append("/n");
-//        }
-        return userList;
+        return userServices.getUsersByCompany(companyId);
     }
 
+
+    @ResponseBody
+    @PostMapping("/users")
+    public java.util.List<User> getUsersPost(@RequestParam(required = false) Integer companyId){
+
+        if (companyId == null) {
+            return userServices.getActiveUsers();
+        }
+
+        return userServices.getUsersByCompany(companyId);
+    }
+
+
+    @ResponseBody
+    @GetMapping("/users/add")
+    public void addUser(){
+
+        repository.addUser(13, 3, "Kolya" );
+    }
 }

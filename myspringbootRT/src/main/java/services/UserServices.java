@@ -24,4 +24,11 @@ public class UserServices {
 
     }
 
+
+    public List<User> getUsersByCompany(int companyId) {
+
+        return userRepository.getUsersByCompany(companyId);
+
+    }
+
 }
