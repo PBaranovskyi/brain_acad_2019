@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.brainacad</groupId>
-    <artifactId>my-spring-boot</artifactId>
+    <artifactId>my-spring-bootRT</artifactId>
     <version>1.0-SNAPSHOT</version>
 
 
@@ -25,10 +25,16 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.mainclasses</groupId>
-            <artifactId>my-project</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.8.1</version>
         </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.18</version>
+        </dependency>
+
     </dependencies>
 
 
