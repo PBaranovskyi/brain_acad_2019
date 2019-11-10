@@ -21,41 +21,38 @@ public class SignUpWindowController {
     private TextField signUpFirstName;
 
     @FXML
-    private TextField getSignUpLastName;
+    private TextField signUpLastName;
 
     @FXML
-    private TextField SignUpLastName;
+    private TextField signUpRole;
 
     @FXML
-    private TextField SignUpRole;
+    private TextField signUpPhone;
 
     @FXML
-    private TextField SignUpPhone;
+    private TextField signUpAddress;
 
     @FXML
-    private TextField SignUpAddress;
+    private TextField signUpLogin;
+
+    @FXML
+    private PasswordField signUpPassword;
 
     @FXML
     private Button signUpButton;
 
+
     @FXML
-    private PasswordField signUpPassword;}
+    void initialize() {
+        ReaderRepository readerRepository = new ReaderRepository();
 
-//    public SignUpWindowController() {
-//    }
+        signUpButton.setOnAction(event -> {
+            readerRepository.signUpUser(signUpFirstName.getText(), signUpLastName.getText(),
+                    "READER", signUpPhone.getText(), signUpAddress.getText(),
+                    signUpLogin.getText(), signUpPassword.getText());
+        });
+
+    }
 
 
-//    @FXML
-//    void initialize() {
-//        ReaderRepository readerRepository = new ReaderRepository();
-//
-//        signUpButton.setOnAction(event -> {
-//            readerRepository.signUpUser(signUpFirstName.getText(), signUpLastName.getText(),
-//                    signUpRole.getText(), signUpPassword.getText(), signUpCountry.getText(),
-//                    "Male");
-//        });
-//
-//    }
-//
-//
-//}
+}

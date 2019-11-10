@@ -31,7 +31,7 @@ public class ReaderRepository extends DBConfigs {
                 + DBConstants.USERS_ADDRESS + ","
                 + DBConstants.USERS_LOGIN + ","
                 + DBConstants.USERS_PASSWORD + ","
-                + "VALUES(?,?,?,?,?,?,&)";
+                + "VALUES(?,?,?,?,?,?,?)";
 
         try {
             PreparedStatement prSt = getDbConnection().prepareStatement(insert);
