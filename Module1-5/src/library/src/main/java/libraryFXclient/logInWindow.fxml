@@ -34,6 +34,6 @@
             <Font name="System Bold" size="36.0" />
          </font>
       </Label>
-      <Button fx:id="loginSignupButton" layoutX="540.0" layoutY="17.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="146.0" text="Зарегистрироваться" />
+      <Button fx:id="loginSignUpButton" layoutX="540.0" layoutY="17.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="146.0" text="Зарегистрироваться" />
    </children>
 </AnchorPane>
