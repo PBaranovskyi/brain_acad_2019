@@ -5,10 +5,13 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.brainacad</groupId>
+    <parent>
+        <groupId>com.brainacad</groupId>
+        <artifactId>parent-library</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
     <artifactId>javafx</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    <packaging>jar</packaging>
 
     <properties>
         <java.version>1.8</java.version>
@@ -64,9 +67,15 @@
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
-            <version>2.10.0</version>
         </dependency>
-
+        <dependency>
+            <groupId>com.brainacad</groupId>
+            <artifactId>transfer-to</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-jar-plugin</artifactId>
+        </dependency>
     </dependencies>
 
 

@@ -1,7 +1,7 @@
 package services;
 
 
-import mainclasses.dbpack.User;
+import fxclient.to.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import repository.UserRepository;

@@ -1,7 +1,7 @@
 package repository;
 
-import mainclasses.dbpack.User;
 import org.springframework.stereotype.Repository;
+import fxclient.to.User;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

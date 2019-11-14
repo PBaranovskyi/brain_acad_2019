@@ -1,4 +1,4 @@
-package fxclient;
+package fxclient.to;
 
 public class User {
 
