@@ -1,4 +1,4 @@
-package library.src.main.java.libraryFXclient;
+package libraryFXclient;
 
 import java.io.IOException;
 import java.net.URL;

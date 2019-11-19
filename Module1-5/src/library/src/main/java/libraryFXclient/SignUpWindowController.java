@@ -1,4 +1,4 @@
-package library.src.main.java.libraryFXclient;
+package libraryFXclient;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -7,7 +7,8 @@ import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
-import library.src.main.java.repository.ReaderRepository;
+import repository.ReaderRepository;
+
 
 public class SignUpWindowController {
 

@@ -1,4 +1,4 @@
-package library.src.main.java.repository;
+package repository;
 
 public class DBConfigs {
     protected String dbHost = "db4free.net";

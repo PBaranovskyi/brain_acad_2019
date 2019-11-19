@@ -1,4 +1,4 @@
-package library.src.main.java.repository;
+package repository;
 
 public class DBConstants {
     public static final String USER_TABLE = "users";

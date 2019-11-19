@@ -1,4 +1,7 @@
-package library.src.main.java.repository;
+package repository;
+
+import repository.DBConfigs;
+import repository.DBConstants;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
